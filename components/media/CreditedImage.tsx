@@ -5,15 +5,21 @@ import type { ImageAsset } from '@/content/types';
 /**
  * The only way images render on this site. Runway and editorial photography
  * is almost always owned by the photographer, not the designer, so the credit
- * is mandatory and rendered visibly under every image. A missing or TODO
- * credit renders a loud warning in development instead of silently shipping
- * an uncredited image; the asset must also be listed in RIGHTS.md.
+ * is mandatory and always rendered. A missing or TODO credit shows a loud
+ * warning in development rather than silently shipping an uncredited image;
+ * the asset must also be listed in RIGHTS.md.
+ *
+ * Two variants:
+ *  - `block` (default): the image sits in the flow, credit beneath it.
+ *  - `cover`: the image fills its positioned parent (object-cover) and the
+ *    credit floats over the bottom edge — for full-bleed editorial frames.
  */
 export function CreditedImage({
   asset,
   sizes,
   priority = false,
   className,
+  variant = 'block',
 }: {
   asset: ImageAsset;
   /** Responsive sizes attribute — required so nothing ships at full width by accident. */
@@ -21,9 +27,46 @@ export function CreditedImage({
   /** Only the single LCP hero may set this. */
   priority?: boolean;
   className?: string;
+  variant?: 'block' | 'cover';
 }) {
   const t = useTranslations('credits');
   const creditMissing = !asset.credit || asset.credit === 'TODO';
+  const showDevWarning = creditMissing && process.env.NODE_ENV !== 'production';
+
+  const creditText = creditMissing
+    ? t('photo', { credit: 'TODO' })
+    : t('photo', { credit: asset.credit });
+
+  if (variant === 'cover') {
+    // The credit sits BELOW the frame, never over the photograph: overlaid
+    // text is unreadable against unpredictable imagery and cheapens the page.
+    return (
+      <figure className={`flex flex-col ${className ?? ''}`}>
+        <div className="relative min-h-0 flex-1 overflow-hidden">
+          <Image
+            src={asset.src}
+            alt={asset.alt}
+            fill
+            sizes={sizes}
+            priority={priority}
+            className="object-cover"
+          />
+        </div>
+        <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted/60">
+          {showDevWarning ? (
+            <span
+              role="alert"
+              className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
+            >
+              ⚠ {t('missing')}
+            </span>
+          ) : (
+            <span>{creditText}</span>
+          )}
+        </figcaption>
+      </figure>
+    );
+  }
 
   return (
     <figure className={className}>
@@ -35,23 +78,18 @@ export function CreditedImage({
         sizes={sizes}
         priority={priority}
         loading={priority ? undefined : 'lazy'}
-        className="h-auto w-full border border-line"
+        className="h-auto w-full"
       />
-      <figcaption className="mt-2 font-utility text-[0.65rem] uppercase tracking-widest text-muted">
-        {creditMissing ? (
-          process.env.NODE_ENV !== 'production' ? (
-            <span
-              role="alert"
-              className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
-            >
-              ⚠ {t('missing')}
-            </span>
-          ) : (
-            // Production fallback: never render an empty credit line silently.
-            <span>{t('photo', { credit: 'TODO' })}</span>
-          )
+      <figcaption className="mt-2 font-utility text-[0.6rem] uppercase tracking-[0.18em] text-muted/70">
+        {showDevWarning ? (
+          <span
+            role="alert"
+            className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
+          >
+            ⚠ {t('missing')}
+          </span>
         ) : (
-          <span>{t('photo', { credit: asset.credit })}</span>
+          <span>{creditText}</span>
         )}
         {asset.usageNote ? (
           <span className="ml-3 normal-case tracking-normal">{asset.usageNote}</span>

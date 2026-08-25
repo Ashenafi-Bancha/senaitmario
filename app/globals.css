@@ -115,11 +115,11 @@ html {
  */
 @media (prefers-reduced-motion: no-preference) {
   [data-reveal][data-reveal-armed="true"] {
-    opacity: 0;
+    opacity: 0.001;
     transform: translateY(24px);
     transition:
-      opacity 600ms var(--theme-ease),
-      transform 600ms var(--theme-ease);
+      opacity 700ms var(--theme-ease),
+      transform 700ms var(--theme-ease);
   }
   [data-reveal][data-reveal-armed="true"][data-revealed="true"] {
     opacity: 1;
@@ -178,9 +178,17 @@ html {
  * become visible.
  */
 @media (prefers-reduced-motion: no-preference) {
-  /* Hero entrance: copy rises in sequence, the image unveils. */
+  /*
+   * Entrance animations are TRANSFORM-ONLY — deliberately no opacity fade.
+   *
+   * A backgrounded or throttled tab freezes the animation clock at the `from`
+   * keyframe. If that keyframe were opacity:0 the hero could paint blank and
+   * stay blank, which is an unacceptable risk for the LCP image on someone's
+   * portfolio. Starting from a visible-but-offset state means the worst case
+   * is a slightly displaced element, never an invisible one.
+   */
   .rise {
-    animation: rise 750ms var(--theme-ease) backwards;
+    animation: rise 800ms var(--theme-ease) backwards;
   }
   .rise-2 {
     animation-delay: 110ms;
@@ -193,26 +201,34 @@ html {
   }
   @keyframes rise {
     from {
-      opacity: 0;
-      transform: translateY(26px);
+      transform: translateY(22px);
     }
     to {
-      opacity: 1;
       transform: none;
     }
   }
 
+  /* The image settles out of a slow push-in — visible the whole way. */
   .unveil {
-    animation: unveil 1100ms var(--theme-ease) 250ms backwards;
+    animation: unveil 1400ms var(--theme-ease) backwards;
   }
   @keyframes unveil {
     from {
-      opacity: 0;
-      clip-path: inset(10% 10% 10% 10%);
+      clip-path: inset(0 0 12% 0);
     }
     to {
-      opacity: 1;
       clip-path: inset(0 0 0 0);
+    }
+  }
+  .unveil img {
+    animation: unveil-scale 1600ms var(--theme-ease) backwards;
+  }
+  @keyframes unveil-scale {
+    from {
+      transform: scale(1.08);
+    }
+    to {
+      transform: none;
     }
   }
 
