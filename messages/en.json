@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "siteName": "Dr. Senait Mario",
+    "titleTemplate": "Dr. Senait Mario",
+    "description": "Dr. Senait Mario — fashion designer, model, sociologist and UN Peace Ambassador. Founder and CEO of Da Mario's Fashion and Technology Institute, Addis Ababa. Based in Rome.",
+    "pages": {
+      "home": { "title": "Dr. Senait Mario", "description": "Fashion designer, model, sociologist and UN Peace Ambassador, based in Rome. She promotes Ethiopia through the colours of her collections." },
+      "work": { "title": "Work", "description": "Collections by Dr. Senait Mario, presented on the fashion stages of Milan, London and Paris." },
+      "colour": { "title": "The Colour Index", "description": "How Dr. Senait Mario promotes Ethiopia through the colours of her collections — one evergreen for now, and the index where the garment colours will live." },
+      "story": { "title": "Story", "description": "From Wolaita Sodo to Rome and back to Addis Ababa — the arc of Dr. Senait Mario's life and work." },
+      "peace": { "title": "Peace", "description": "Advocacy and UN work: the African Fashion Expo, Fashion for Peace and the One Peace Fashion Show." },
+      "institute": { "title": "The Institute", "description": "Da Mario's Fashion and Technology Institute, founded 2024 in Addis Ababa." },
+      "press": { "title": "Press", "description": "Press kit, biography and recognition for Dr. Senait Mario." },
+      "contact": { "title": "Contact", "description": "Booking and enquiries for Dr. Senait Mario." }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "colour": "Colour",
+    "story": "Story",
+    "peace": "Peace",
+    "institute": "Institute",
+    "press": "Press",
+    "contact": "Contact",
+    "menuLabel": "Main navigation",
+    "localeLabel": "Language"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
+  "footer": {
+    "roles": "Fashion designer · Model · Sociologist · UN Peace Ambassador",
+    "based": "Rome, Italy",
+    "contactTodo": "TODO — contact email",
+    "bookingTodo": "TODO — booking contact",
+    "socialTodo": "TODO — Instagram / Facebook handles to be supplied by client",
+    "institute": "Da Mario's Fashion and Technology Institute, Addis Ababa",
+    "copyright": "© {year} Dr. Senait Mario. All rights reserved."
+  },
+  "home": {
+    "heroName": "Senait Mario",
+    "heroTitlePrefix": "Dr.",
+    "heroRoles": "Fashion designer, model, sociologist, UN Peace Ambassador",
+    "heroLede": "She promotes Ethiopia through the colours of her collections — colour is not decoration here; it is the structure of the work.",
+    "heroBased": "Rome, Italy",
+    "heroOrigin": "Born and raised in Wolaita Sodo, southern Ethiopia",
+    "chaptersHeading": "Chapters",
+    "chapters": {
+      "story": {
+        "title": "The Story",
+        "lede": "Wolaita Sodo to Rome — and back to Addis Ababa.",
+        "cta": "Read the story"
+      },
+      "work": {
+        "title": "The Work",
+        "lede": "Collections presented on the fashion stages of Milan, London and Paris.",
+        "cta": "See the collections"
+      },
+      "colour": {
+        "title": "The Colour Index",
+        "lede": "One deep green, explained — and the index where the colours of the collections will live.",
+        "cta": "Open the index"
+      },
+      "peace": {
+        "title": "Peace",
+        "lede": "UN Peace Ambassador. Fashion as a carrier of peace and unity.",
+        "cta": "The advocacy"
+      },
+      "institute": {
+        "title": "The Institute",
+        "lede": "Da Mario's Fashion and Technology Institute — founded 2024, Addis Ababa.",
+        "cta": "Visit the institute"
+      }
+    }
+  },
+  "story": {
+    "heading": "The Story",
+    "intro": "An arc that begins in Wolaita Sodo, moves through East Africa to Rome and the runways of Europe, and resolves where it began: in Ethiopia.",
+    "chapters": {
+      "sodo": {
+        "place": "Wolaita Sodo",
+        "title": "Where it begins",
+        "body": "Born and raised in Wolaita Sodo, in southern Ethiopia. Before fashion there was another discipline: she trained as a sociologist — a way of reading people, dress and belonging that never left the work."
+      },
+      "nairobi": {
+        "place": "Nairobi",
+        "title": "Leaving",
+        "body": "She left Ethiopia around 2009. Kenya was the first stop of a long route north."
+      },
+      "kampala": {
+        "place": "Kampala",
+        "title": "In transit",
+        "body": "Uganda followed — another chapter of a journey that would eventually cross a continent."
+      },
+      "rome": {
+        "place": "Rome",
+        "title": "A second home",
+        "body": "She settled in Rome and became an Italian citizen — Ethiopian by birth, Italian by citizenship. She kept studying: as of 2019 she was pursuing a master's degree in Agricultural Science."
+      },
+      "stages": {
+        "place": "Milan · London · Paris",
+        "title": "The stages",
+        "body": "Her work has been presented on the fashion stages of Milan, London and Paris. Her own account of how it got there is consistent: she promotes Ethiopia through the colours she uses in her collections, and she credits that approach with carrying the work to those stages."
+      },
+      "addis": {
+        "place": "Addis Ababa",
+        "title": "The return",
+        "body": "In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa — the resolution of the arc. Her aim: to promote Ethiopia in the fashion industry while attracting investment that supports the empowerment of young Ethiopians."
+      }
+    }
+  },
+  "work": {
+    "heading": "Collections",
+    "intro": "Bodies of work, each owning its own palette.",
+    "placeholderNote": "TODO — collection data pending. These three entries are layout placeholders.",
+    "filteredBy": "Showing pieces using {swatch}",
+    "clearFilter": "Clear filter",
+    "viewCollection": "View collection",
+    "backToIndex": "All collections",
+    "detail": {
+      "imagesHeading": "Images",
+      "paletteHeading": "Palette"
+    }
+  },
+  "collections": {
+    "placeholder-01": {
+      "title": "TODO — Collection one",
+      "description": "TODO — collection description pending from client. This placeholder exists so the layout can be reviewed."
+    },
+    "placeholder-02": {
+      "title": "TODO — Collection two",
+      "description": "TODO — collection description pending from client. This placeholder exists so the layout can be reviewed."
+    },
+    "placeholder-03": {
+      "title": "TODO — Collection three",
+      "description": "TODO — collection description pending from client. This placeholder exists so the layout can be reviewed."
+    }
+  },
+  "colour": {
+    "heading": "The Colour Index",
+    "intro": "Her stated method: Ethiopia, promoted through the colours of the collections. This page is where the site's colour is explained — and where each garment colour will be indexed.",
+    "aboutHeading": "One colour, held",
+    "aboutBody1": "For now, this site wears a single colour: a deep evergreen. It never changes hue — it only moves through its own depths as you read, from the pale register to the primary ground to the deepest green, the way you just watched it do when you entered this section. Nothing competes with the work.",
+    "aboutBody2": "When the collections are photographed, their colours will be lifted directly from the garments and take over these grounds — each body of work owning its own palette, with every colour indexed below: its name, the collection it comes from, and what it carries.",
+    "aboutNoteTodo": "TODO — a note in her own words on this green, to be written and approved with the client.",
+    "indexHeading": "The index",
+    "placeholderNote": "TODO — swatches pending real collection photography. These placeholders demonstrate the index.",
+    "filterAction": "See pieces in this colour",
+    "fromCollection": "From {collection}",
+    "carriesLabels": {
+      "region": "A region",
+      "fabric": "A fabric",
+      "ceremony": "A ceremony",
+      "meaning": "A meaning"
+    }
+  },
+  "swatches": {
+    "placeholder-a": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." },
+    "placeholder-b": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." },
+    "placeholder-c": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." },
+    "placeholder-d": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." },
+    "placeholder-e": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." },
+    "placeholder-f": { "name": "TODO — swatch name", "carries": "TODO — what this colour carries (a region, a fabric, a ceremony, a meaning), to be written with the client." }
+  },
+  "peace": {
+    "heading": "Peace",
+    "intro": "Named a UN Peace Ambassador in 2017, she organises the African Fashion Expo and the Fashion for Peace / One Peace Fashion Show.",
+    "positionsHeading": "Positions",
+    "positions": {
+      "colour": "She promotes Ethiopia through the colours she uses in her collections — and credits that approach with taking her work to major fashion stages.",
+      "investment": "Her aim is to promote Ethiopia in the fashion industry while attracting investment to Ethiopia in support of youth empowerment.",
+      "seriousness": "African fashion, she has argued, deserves to be treated as a serious source of design — not reduced to a narrow set of visual clichés.",
+      "expression": "Fashion can carry messages of peace and unity; people should be able to express who they are and where they are from through what they wear."
+    },
+    "pullQuoteTodo": "TODO — verbatim quote to be approved by client",
+    "sodoShowHeading": "Peace Fashion Show — Wolaita Sodo, June 2019",
+    "sodoShowBody": "In June 2019 she staged a Peace Fashion Show in her hometown of Wolaita Sodo, alongside the annual cultural festival of the Southern Nations, Nationalities and Peoples' Regional State, where 56 southern Ethiopian nations showcased their cultural diversity. The show featured the work of eight Ethiopian designers.",
+    "sodoShowAttendance": "It was attended by Ethiopia's State Minister of Tourism and Culture, the Vice President of the Southern regional state, the head of the Addis Ababa Women, Children and Youth Affairs Bureau, and guests from embassies and international organisations.",
+    "eventsHeading": "Events she organises",
+    "events": {
+      "expo": "African Fashion Expo",
+      "fashionForPeace": "Fashion for Peace / One Peace Fashion Show"
+    }
+  },
+  "institute": {
+    "heading": "Da Mario's Fashion and Technology Institute",
+    "founded": "Founded 2024 · Bole Sub City, Addis Ababa",
+    "body": "The institute teaches fashion design, modeling, cosmetology, nail technology, information technology and professional security officer training. It is accredited by the Addis Ababa City Administration Education and Training Quality Regulatory Authority and partnered with the Rome Business School.",
+    "bridge": "This site is about the designer. The institute has its own home.",
+    "ctaTodo": "TODO — outbound link pending the institute site going live",
+    "programmesHeading": "Programmes",
+    "programmes": {
+      "fashionDesign": "Fashion design",
+      "modeling": "Modeling",
+      "cosmetology": "Cosmetology",
+      "nailTechnology": "Nail technology",
+      "it": "Information technology",
+      "security": "Professional security officer training"
+    }
+  },
+  "press": {
+    "heading": "Press",
+    "bioHeading": "Short biography",
+    "bio": "Dr. Senait Mario is a fashion designer, model, sociologist and UN Peace Ambassador based in Rome. Born and raised in Wolaita Sodo in southern Ethiopia, she left the country around 2009, lived in Kenya and Uganda, and settled in Italy, where she is a citizen. Her work has been presented on the fashion stages of Milan, London and Paris; her stated method is to promote Ethiopia through the colours she uses in her collections. In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa.",
+    "recognitionHeading": "Recognition",
+    "recognition": {
+      "mice2016": {
+        "title": "Top 40 Women of Africa — MICE award, Ghana",
+        "detail": "Recognised in 2016 among the Top 40 Women of Africa."
+      },
+      "un2017": {
+        "title": "UN Peace Ambassador",
+        "detail": "Named a UN Peace Ambassador in 2017."
+      },
+      "doctorate2019": {
+        "title": "Honorary doctorate, Nigeria",
+        "detail": "Awarded an honorary doctorate in 2019 for work promoting African culture."
+      }
+    },
+    "confirmationNote": "Details of each recognition are being confirmed for the press kit.",
+    "downloadsHeading": "Press kit & downloads",
+    "downloadsTodo": "TODO — high-resolution images and press kit PDF pending cleared photography and client sign-off.",
+    "coverageHeading": "Coverage",
+    "coverageTodo": "TODO — press coverage links to be supplied by client."
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Booking, press and partnership enquiries.",
+    "emailTodo": "TODO — direct contact email pending",
+    "form": {
+      "name": "Name",
+      "organisation": "Organisation",
+      "enquiryType": "Enquiry type",
+      "enquiryTypes": {
+        "booking": "Booking",
+        "press": "Press",
+        "partnership": "Partnership",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Send enquiry",
+      "sending": "Sending…",
+      "success": "Thank you — your enquiry has been sent.",
+      "errorGeneric": "Something went wrong. Please try again later.",
+      "errorRateLimited": "Too many requests — please wait a moment and try again.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "organisationRequired": "Please enter your organisation (or “—” if none).",
+        "enquiryTypeRequired": "Please choose an enquiry type.",
+        "messageRequired": "Please enter a message.",
+        "messageTooLong": "Message is too long (max 5000 characters)."
+      }
+    }
+  },
+  "credits": {
+    "photo": "Photo: {credit}",
+    "missing": "IMAGE CREDIT MISSING — do not publish"
+  },
+  "todo": {
+    "label": "TODO"
+  }
+}

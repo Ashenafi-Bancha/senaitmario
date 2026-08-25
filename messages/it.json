@@ -1,0 +1,264 @@
+{
+  "_MACHINE_DRAFT": "BOZZA AUTOMATICA — MACHINE DRAFT. Every string in this file is a machine translation and REQUIRES review by a professional human translator before publication. This is the personal biography of a real public figure; do not publish without human sign-off.",
+  "meta": {
+    "siteName": "Dr.ssa Senait Mario",
+    "titleTemplate": "Dr.ssa Senait Mario",
+    "description": "Dr.ssa Senait Mario — stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e CEO del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
+    "pages": {
+      "home": { "title": "Dr.ssa Senait Mario", "description": "Stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite, con base a Roma. Promuove l'Etiopia attraverso i colori delle sue collezioni." },
+      "work": { "title": "Lavori", "description": "Le collezioni della Dr.ssa Senait Mario, presentate sulle passerelle di Milano, Londra e Parigi." },
+      "colour": { "title": "L'Indice dei Colori", "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — per ora un solo verde, e l'indice dove vivranno i colori dei capi." },
+      "story": { "title": "Storia", "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba — l'arco della vita e del lavoro della Dr.ssa Senait Mario." },
+      "peace": { "title": "Pace", "description": "Impegno e lavoro con l'ONU: l'African Fashion Expo, Fashion for Peace e la One Peace Fashion Show." },
+      "institute": { "title": "L'Istituto", "description": "Da Mario's Fashion and Technology Institute, fondato nel 2024 ad Addis Abeba." },
+      "press": { "title": "Stampa", "description": "Press kit, biografia e riconoscimenti della Dr.ssa Senait Mario." },
+      "contact": { "title": "Contatti", "description": "Booking e richieste per la Dr.ssa Senait Mario." }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Lavori",
+    "colour": "Colore",
+    "story": "Storia",
+    "peace": "Pace",
+    "institute": "Istituto",
+    "press": "Stampa",
+    "contact": "Contatti",
+    "menuLabel": "Navigazione principale",
+    "localeLabel": "Lingua"
+  },
+  "a11y": {
+    "skipToContent": "Vai al contenuto"
+  },
+  "footer": {
+    "roles": "Stilista · Modella · Sociologa · Ambasciatrice di Pace ONU",
+    "based": "Roma, Italia",
+    "contactTodo": "TODO — indirizzo email di contatto",
+    "bookingTodo": "TODO — contatto per il booking",
+    "socialTodo": "TODO — profili Instagram / Facebook da fornire dal cliente",
+    "institute": "Da Mario's Fashion and Technology Institute, Addis Abeba",
+    "copyright": "© {year} Dr.ssa Senait Mario. Tutti i diritti riservati."
+  },
+  "home": {
+    "heroName": "Senait Mario",
+    "heroTitlePrefix": "Dr.ssa",
+    "heroRoles": "Stilista, modella, sociologa, Ambasciatrice di Pace ONU",
+    "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni — qui il colore non è decorazione: è la struttura del lavoro.",
+    "heroBased": "Roma, Italia",
+    "heroOrigin": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia",
+    "chaptersHeading": "Capitoli",
+    "chapters": {
+      "story": {
+        "title": "La Storia",
+        "lede": "Da Wolaita Sodo a Roma — e ritorno ad Addis Abeba.",
+        "cta": "Leggi la storia"
+      },
+      "work": {
+        "title": "Il Lavoro",
+        "lede": "Collezioni presentate sulle passerelle di Milano, Londra e Parigi.",
+        "cta": "Vedi le collezioni"
+      },
+      "colour": {
+        "title": "L'Indice dei Colori",
+        "lede": "Un solo verde profondo, raccontato — e l'indice dove vivranno i colori delle collezioni.",
+        "cta": "Apri l'indice"
+      },
+      "peace": {
+        "title": "Pace",
+        "lede": "Ambasciatrice di Pace ONU. La moda come portatrice di pace e unità.",
+        "cta": "L'impegno"
+      },
+      "institute": {
+        "title": "L'Istituto",
+        "lede": "Da Mario's Fashion and Technology Institute — fondato nel 2024 ad Addis Abeba.",
+        "cta": "Visita l'istituto"
+      }
+    }
+  },
+  "story": {
+    "heading": "La Storia",
+    "intro": "Un arco che comincia a Wolaita Sodo, attraversa l'Africa orientale fino a Roma e alle passerelle d'Europa, e si risolve dove è cominciato: in Etiopia.",
+    "chapters": {
+      "sodo": {
+        "place": "Wolaita Sodo",
+        "title": "Dove tutto comincia",
+        "body": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia. Prima della moda c'era un'altra disciplina: si è formata come sociologa — un modo di leggere le persone, l'abito e l'appartenenza che non ha mai abbandonato il lavoro."
+      },
+      "nairobi": {
+        "place": "Nairobi",
+        "title": "La partenza",
+        "body": "Ha lasciato l'Etiopia intorno al 2009. Il Kenya è stata la prima tappa di un lungo percorso verso nord."
+      },
+      "kampala": {
+        "place": "Kampala",
+        "title": "In transito",
+        "body": "Poi l'Uganda — un altro capitolo di un viaggio che avrebbe attraversato un continente."
+      },
+      "rome": {
+        "place": "Roma",
+        "title": "Una seconda casa",
+        "body": "Si è stabilita a Roma ed è diventata cittadina italiana — etiope di nascita, italiana per cittadinanza. Ha continuato a studiare: nel 2019 stava conseguendo un master in Scienze Agrarie."
+      },
+      "stages": {
+        "place": "Milano · Londra · Parigi",
+        "title": "Le passerelle",
+        "body": "Il suo lavoro è stato presentato sulle passerelle di Milano, Londra e Parigi. Il suo racconto di come ci è arrivato è coerente: promuove l'Etiopia attraverso i colori che usa nelle sue collezioni, e attribuisce a questo approccio il merito di aver portato il lavoro su quei palcoscenici."
+      },
+      "addis": {
+        "place": "Addis Abeba",
+        "title": "Il ritorno",
+        "body": "Nel 2024 ha fondato il Da Mario's Fashion and Technology Institute ad Addis Abeba — la risoluzione dell'arco. Il suo obiettivo: promuovere l'Etiopia nell'industria della moda e attrarre investimenti a sostegno dell'emancipazione dei giovani etiopi."
+      }
+    }
+  },
+  "work": {
+    "heading": "Collezioni",
+    "intro": "Corpi di lavoro, ognuno con la propria palette.",
+    "placeholderNote": "TODO — dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
+    "filteredBy": "Pezzi che usano {swatch}",
+    "clearFilter": "Rimuovi filtro",
+    "viewCollection": "Vedi la collezione",
+    "backToIndex": "Tutte le collezioni",
+    "detail": {
+      "imagesHeading": "Immagini",
+      "paletteHeading": "Palette"
+    }
+  },
+  "collections": {
+    "placeholder-01": {
+      "title": "TODO — Collezione uno",
+      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+    },
+    "placeholder-02": {
+      "title": "TODO — Collezione due",
+      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+    },
+    "placeholder-03": {
+      "title": "TODO — Collezione tre",
+      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+    }
+  },
+  "colour": {
+    "heading": "L'Indice dei Colori",
+    "intro": "Il suo metodo dichiarato: promuovere l'Etiopia attraverso i colori delle collezioni. Questa pagina è dove si racconta il colore del sito — e dove ogni colore dei capi sarà indicizzato.",
+    "aboutHeading": "Un solo colore",
+    "aboutBody1": "Per ora questo sito indossa un solo colore: un verde profondo. Non cambia mai tonalità — si muove soltanto attraverso le proprie profondità mentre leggi, dal registro chiaro al fondo primario fino al verde più scuro, come hai appena visto entrando in questa sezione. Nulla compete con il lavoro.",
+    "aboutBody2": "Quando le collezioni saranno fotografate, i loro colori verranno estratti direttamente dai capi e prenderanno il posto di questi fondi — ogni corpo di lavoro avrà la propria palette, e ogni colore sarà indicizzato qui sotto: il nome, la collezione da cui proviene e ciò che porta con sé.",
+    "aboutNoteTodo": "TODO — una nota con le sue parole su questo verde, da scrivere e approvare con il cliente.",
+    "indexHeading": "L'indice",
+    "placeholderNote": "TODO — campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
+    "filterAction": "Vedi i pezzi in questo colore",
+    "fromCollection": "Da {collection}",
+    "carriesLabels": {
+      "region": "Una regione",
+      "fabric": "Un tessuto",
+      "ceremony": "Una cerimonia",
+      "meaning": "Un significato"
+    }
+  },
+  "swatches": {
+    "placeholder-a": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
+    "placeholder-b": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
+    "placeholder-c": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
+    "placeholder-d": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
+    "placeholder-e": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
+    "placeholder-f": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." }
+  },
+  "peace": {
+    "heading": "Pace",
+    "intro": "Nominata Ambasciatrice di Pace delle Nazioni Unite nel 2017, organizza l'African Fashion Expo e la Fashion for Peace / One Peace Fashion Show.",
+    "positionsHeading": "Posizioni",
+    "positions": {
+      "colour": "Promuove l'Etiopia attraverso i colori che usa nelle sue collezioni — e attribuisce a questo approccio il merito di aver portato il suo lavoro sulle grandi passerelle.",
+      "investment": "Il suo obiettivo è promuovere l'Etiopia nell'industria della moda e al tempo stesso attrarre investimenti in Etiopia a sostegno dell'emancipazione giovanile.",
+      "seriousness": "La moda africana, ha sostenuto, merita di essere trattata come una fonte seria di design — non ridotta a un ristretto repertorio di cliché visivi.",
+      "expression": "La moda può portare messaggi di pace e unità; le persone dovrebbero poter esprimere chi sono e da dove vengono attraverso ciò che indossano."
+    },
+    "pullQuoteTodo": "TODO — citazione testuale da approvare con il cliente",
+    "sodoShowHeading": "Peace Fashion Show — Wolaita Sodo, giugno 2019",
+    "sodoShowBody": "Nel giugno 2019 ha organizzato una Peace Fashion Show nella sua città natale, Wolaita Sodo, in concomitanza con il festival culturale annuale dello Stato Regionale delle Nazioni, Nazionalità e Popoli del Sud, dove 56 nazioni dell'Etiopia meridionale hanno messo in mostra la propria diversità culturale. La sfilata ha presentato il lavoro di otto stilisti etiopi.",
+    "sodoShowAttendance": "Erano presenti il Ministro di Stato del Turismo e della Cultura dell'Etiopia, il Vicepresidente dello stato regionale del Sud, la direzione dell'Ufficio per le Donne, i Bambini e i Giovani di Addis Abeba e ospiti di ambasciate e organizzazioni internazionali.",
+    "eventsHeading": "Eventi che organizza",
+    "events": {
+      "expo": "African Fashion Expo",
+      "fashionForPeace": "Fashion for Peace / One Peace Fashion Show"
+    }
+  },
+  "institute": {
+    "heading": "Da Mario's Fashion and Technology Institute",
+    "founded": "Fondato nel 2024 · Bole Sub City, Addis Abeba",
+    "body": "L'istituto insegna fashion design, modeling, cosmetologia, nail technology, informatica e formazione professionale per addetti alla sicurezza. È accreditato dall'Autorità di Regolamentazione della Qualità dell'Istruzione e della Formazione dell'Amministrazione della Città di Addis Abeba ed è partner della Rome Business School.",
+    "bridge": "Questo sito racconta la stilista. L'istituto ha una casa propria.",
+    "ctaTodo": "TODO — link esterno in attesa della pubblicazione del sito dell'istituto",
+    "programmesHeading": "Programmi",
+    "programmes": {
+      "fashionDesign": "Fashion design",
+      "modeling": "Modeling",
+      "cosmetology": "Cosmetologia",
+      "nailTechnology": "Nail technology",
+      "it": "Informatica",
+      "security": "Formazione professionale per addetti alla sicurezza"
+    }
+  },
+  "press": {
+    "heading": "Stampa",
+    "bioHeading": "Biografia breve",
+    "bio": "La Dr.ssa Senait Mario è una stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite con base a Roma. Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia, ha lasciato il paese intorno al 2009, ha vissuto in Kenya e Uganda e si è stabilita in Italia, di cui è cittadina. Il suo lavoro è stato presentato sulle passerelle di Milano, Londra e Parigi; il suo metodo dichiarato è promuovere l'Etiopia attraverso i colori che usa nelle sue collezioni. Nel 2024 ha fondato il Da Mario's Fashion and Technology Institute ad Addis Abeba.",
+    "recognitionHeading": "Riconoscimenti",
+    "recognition": {
+      "mice2016": {
+        "title": "Top 40 Women of Africa — premio MICE, Ghana",
+        "detail": "Riconosciuta nel 2016 tra le Top 40 Women of Africa."
+      },
+      "un2017": {
+        "title": "Ambasciatrice di Pace ONU",
+        "detail": "Nominata Ambasciatrice di Pace delle Nazioni Unite nel 2017."
+      },
+      "doctorate2019": {
+        "title": "Dottorato honoris causa, Nigeria",
+        "detail": "Le è stato conferito un dottorato honoris causa nel 2019 per il lavoro di promozione della cultura africana."
+      }
+    },
+    "confirmationNote": "I dettagli di ciascun riconoscimento sono in fase di conferma per il press kit.",
+    "downloadsHeading": "Press kit e download",
+    "downloadsTodo": "TODO — immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
+    "coverageHeading": "Rassegna stampa",
+    "coverageTodo": "TODO — link alla rassegna stampa da fornire dal cliente."
+  },
+  "contact": {
+    "heading": "Contatti",
+    "intro": "Richieste di booking, stampa e partnership.",
+    "emailTodo": "TODO — indirizzo email diretto in attesa",
+    "form": {
+      "name": "Nome",
+      "organisation": "Organizzazione",
+      "enquiryType": "Tipo di richiesta",
+      "enquiryTypes": {
+        "booking": "Booking",
+        "press": "Stampa",
+        "partnership": "Partnership",
+        "other": "Altro"
+      },
+      "message": "Messaggio",
+      "submit": "Invia la richiesta",
+      "sending": "Invio in corso…",
+      "success": "Grazie — la tua richiesta è stata inviata.",
+      "errorGeneric": "Qualcosa è andato storto. Riprova più tardi.",
+      "errorRateLimited": "Troppe richieste — attendi un momento e riprova.",
+      "errors": {
+        "nameRequired": "Inserisci il tuo nome.",
+        "organisationRequired": "Inserisci la tua organizzazione (oppure “—” se non applicabile).",
+        "enquiryTypeRequired": "Scegli un tipo di richiesta.",
+        "messageRequired": "Inserisci un messaggio.",
+        "messageTooLong": "Il messaggio è troppo lungo (max 5000 caratteri)."
+      }
+    }
+  },
+  "credits": {
+    "photo": "Foto: {credit}",
+    "missing": "CREDITO FOTOGRAFICO MANCANTE — non pubblicare"
+  },
+  "todo": {
+    "label": "TODO"
+  }
+}

@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
+/*
+ * The colour field.
+ *
+ * Each theme token is a registered custom property (syntax "<color>") so the
+ * property VALUE itself interpolates: when ThemeProvider swaps the palette on
+ * <html>, every consumer of var(--ground) etc. — backgrounds, text, borders,
+ * focus rings — moves through one synchronised, eased transition.
+ *
+ * Browsers without @property support skip the animation and change colour
+ * instantly, which is the same behaviour reduced-motion users get by design.
+ */
+@property --ground {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #12352b;
+}
+@property --ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f4f1e8;
+}
+@property --muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #a3c0b2;
+}
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #a9d6c2;
+}
+@property --line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2e5648;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --theme-duration: 800ms;
+  transition:
+    --ground var(--theme-duration) var(--theme-ease),
+    --ink var(--theme-duration) var(--theme-ease),
+    --muted var(--theme-duration) var(--theme-ease),
+    --accent var(--theme-duration) var(--theme-ease),
+    --line var(--theme-duration) var(--theme-ease);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/*
+ * Reduced motion: the colour field still changes — it carries meaning — but
+ * instantly, with no transition. The feature is never disabled.
+ */
+@media (prefers-reduced-motion: reduce) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    transition: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/*
+ * Semantic token layer. The default Tailwind palette is wiped so a stray
+ * text-gray-500 fails to compile — components can only speak in theme tokens.
+ */
+@theme {
+  --color-*: initial;
+}
+
+@theme inline {
+  --color-ground: var(--ground);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+
+  --font-display: var(--font-display-face), "Bodoni MT", Didot, Georgia, serif;
+  --font-body: var(--font-body-face), Seravek, "Gill Sans", Verdana, sans-serif;
+  --font-utility: var(--font-utility-face), ui-monospace, "Cascadia Mono", "Courier New", monospace;
+  --font-ethiopic: var(--font-ethiopic-face), "Nyala", "Abyssinica SIL", var(--font-body-face), sans-serif;
+}
+
+/* Keyboard focus derives from the active theme, everywhere. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Editorial niceties: balanced headlines, no orphan words in ledes. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--ground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/*
+ * Scroll reveals (see components/ui/Reveal.tsx). Gated on scripting being
+ * enabled so content is never hidden without JS, and on motion preference —
+ * reveals are decoration, so reduced-motion users skip them entirely.
+ */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 600ms var(--theme-ease),
+      transform 600ms var(--theme-ease);
+  }
+  [data-reveal][data-revealed="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Amharic runs on its own line-height scale — Ethiopic glyphs sit taller. */
+:lang(am) {
+  line-height: 1.85;
+}
+:lang(am) h1,
+:lang(am) h2,
+:lang(am) h3 {
+  line-height: 1.45;
 }
