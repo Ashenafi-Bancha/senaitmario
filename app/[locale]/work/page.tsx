@@ -41,8 +41,8 @@ export default async function WorkPage({
     : collections;
   const paletteId = activeSwatch
     ? collections.find((c) => c.slug === activeSwatch.collectionSlug)?.paletteId ??
-      'evergreen'
-    : 'evergreen';
+      'ivory'
+    : 'ivory';
 
   return (
     <>

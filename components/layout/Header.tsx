@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
+import { ThemeToggle } from '@/components/theme/ThemeToggle';
 
 const NAV_ITEMS = [
   { href: '/work', key: 'work' },
@@ -47,6 +48,7 @@ export function Header() {
             </ul>
           </nav>
           <LocaleSwitcher />
+          <ThemeToggle />
         </div>
       </div>
     </header>

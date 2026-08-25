@@ -6,7 +6,7 @@
     "pages": {
       "home": { "title": "Dr. Senait Mario", "description": "Fashion designer, model, sociologist and UN Peace Ambassador, based in Rome. She promotes Ethiopia through the colours of her collections." },
       "work": { "title": "Work", "description": "Collections by Dr. Senait Mario, presented on the fashion stages of Milan, London and Paris." },
-      "colour": { "title": "The Colour Index", "description": "How Dr. Senait Mario promotes Ethiopia through the colours of her collections — one evergreen for now, and the index where the garment colours will live." },
+      "colour": { "title": "The Colour Index", "description": "How Dr. Senait Mario promotes Ethiopia through the colours of her collections — and the index where the garment colours will live." },
       "story": { "title": "Story", "description": "From Wolaita Sodo to Rome and back to Addis Ababa — the arc of Dr. Senait Mario's life and work." },
       "peace": { "title": "Peace", "description": "Advocacy and UN work: the African Fashion Expo, Fashion for Peace and the One Peace Fashion Show." },
       "institute": { "title": "The Institute", "description": "Da Mario's Fashion and Technology Institute, founded 2024 in Addis Ababa." },
@@ -24,7 +24,11 @@
     "press": "Press",
     "contact": "Contact",
     "menuLabel": "Main navigation",
-    "localeLabel": "Language"
+    "localeLabel": "Language",
+    "themeNoir": "Black",
+    "themeIvory": "Ivory",
+    "themeToNoir": "Switch to the modern black theme",
+    "themeToIvory": "Switch to the ivory theme"
   },
   "a11y": {
     "skipToContent": "Skip to content"
@@ -59,7 +63,7 @@
       },
       "colour": {
         "title": "The Colour Index",
-        "lede": "One deep green, explained — and the index where the colours of the collections will live.",
+        "lede": "A pale ground, deep brown ink, an optional modern black — and the index where the colours of the collections will live.",
         "cta": "Open the index"
       },
       "peace": {
@@ -140,10 +144,10 @@
   "colour": {
     "heading": "The Colour Index",
     "intro": "Her stated method: Ethiopia, promoted through the colours of the collections. This page is where the site's colour is explained — and where each garment colour will be indexed.",
-    "aboutHeading": "One colour, held",
-    "aboutBody1": "For now, this site wears a single colour: a deep evergreen. It never changes hue — it only moves through its own depths as you read, from the pale register to the primary ground to the deepest green, the way you just watched it do when you entered this section. Nothing competes with the work.",
+    "aboutHeading": "Ivory, brown — and black",
+    "aboutBody1": "The site stands on one pale ground — a green-tinged ivory — written in deep brown, so nothing competes with the work. Prefer it darker? The header switch dresses every page in modern black, and the whole ground crosses over in a single smooth move.",
     "aboutBody2": "When the collections are photographed, their colours will be lifted directly from the garments and take over these grounds — each body of work owning its own palette, with every colour indexed below: its name, the collection it comes from, and what it carries.",
-    "aboutNoteTodo": "TODO — a note in her own words on this green, to be written and approved with the client.",
+    "aboutNoteTodo": "TODO — a note in her own words on the site's colours, to be written and approved with the client.",
     "indexHeading": "The index",
     "placeholderNote": "TODO — swatches pending real collection photography. These placeholders demonstrate the index.",
     "filterAction": "See pieces in this colour",

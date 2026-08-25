@@ -24,7 +24,7 @@ function PeaceContent() {
   return (
     <>
       <ThemeSection
-        paletteId="evergreen-deep"
+        paletteId="ivory"
         labelledBy="peace-heading"
         className="flex min-h-[45svh] items-end"
       >
@@ -42,7 +42,7 @@ function PeaceContent() {
       </ThemeSection>
 
       <ThemeSection
-        paletteId="evergreen"
+        paletteId="ivory"
         labelledBy="peace-positions"
         className="border-t border-line"
       >
@@ -67,7 +67,7 @@ function PeaceContent() {
       </ThemeSection>
 
       <ThemeSection
-        paletteId="evergreen-light"
+        paletteId="ivory"
         labelledBy="peace-sodo"
         className="border-t border-line"
       >

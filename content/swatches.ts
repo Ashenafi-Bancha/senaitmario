@@ -8,11 +8,11 @@ import type { Swatch } from './types';
  * values are provisional.
  */
 export const swatches: Swatch[] = [
-  // Placeholder hexes stay inside the site's single green family until real
-  // garment colours are lifted from photography.
+  // Placeholder hexes stay inside the site's ivory/brown/black family until
+  // real garment colours are lifted from photography.
   {
     id: 'placeholder-a',
-    hex: '#12352B',
+    hex: '#33241A',
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-01',
     carries: 'region',
@@ -20,7 +20,7 @@ export const swatches: Swatch[] = [
   },
   {
     id: 'placeholder-b',
-    hex: '#A9D6C2',
+    hex: '#C89A6A',
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-01',
     carries: 'ceremony',
@@ -28,7 +28,7 @@ export const swatches: Swatch[] = [
   },
   {
     id: 'placeholder-c',
-    hex: '#0B231C',
+    hex: '#101112',
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-02',
     carries: 'fabric',
@@ -36,7 +36,7 @@ export const swatches: Swatch[] = [
   },
   {
     id: 'placeholder-d',
-    hex: '#6B8F7E',
+    hex: '#6B5644',
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-02',
     carries: 'meaning',
@@ -44,7 +44,7 @@ export const swatches: Swatch[] = [
   },
   {
     id: 'placeholder-e',
-    hex: '#2E5648',
+    hex: '#7A4B24',
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-03',
     carries: 'region',
@@ -53,6 +53,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-f',
     hex: '#F0F4EE',
+    // (ivory — matches the default ground)
     name: 'TODO — swatch name',
     collectionSlug: 'placeholder-03',
     carries: 'meaning',

@@ -14,27 +14,27 @@
 @property --ground {
   syntax: "<color>";
   inherits: true;
-  initial-value: #12352b;
+  initial-value: #f0f4ee;
 }
 @property --ink {
   syntax: "<color>";
   inherits: true;
-  initial-value: #f4f1e8;
+  initial-value: #33241a;
 }
 @property --muted {
   syntax: "<color>";
   inherits: true;
-  initial-value: #a3c0b2;
+  initial-value: #6b5644;
 }
 @property --accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: #a9d6c2;
+  initial-value: #7a4b24;
 }
 @property --line {
   syntax: "<color>";
   inherits: true;
-  initial-value: #2e5648;
+  initial-value: #ddd8cb;
 }
 
 :root {

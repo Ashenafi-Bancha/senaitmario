@@ -34,7 +34,7 @@ export default async function PressPage({
 
   return (
     <>
-      <RouteTheme paletteId="evergreen-light" />
+      <RouteTheme paletteId="ivory" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}

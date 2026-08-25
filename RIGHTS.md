@@ -26,8 +26,8 @@ for audit history.
 | `public/images/collections/weaving-fibres.jpg` | /work placeholder-01 | [Commons: Weaving Supplies, Adigrat](https://commons.wikimedia.org/wiki/File:Weaving_Supplies,_Adigrat_(11831170076).jpg) | Rod Waddington | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
 | `public/images/collections/loom-blue-warp.jpg` | /work placeholder-02 | [Commons: Waving in Ethiopia 03](https://commons.wikimedia.org/wiki/File:Waving_in_Ethiopia_03.jpg) | Thomas Fuhrmann | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
 | `public/images/collections/shiro-meda-market.jpg` | /work placeholder-02 | [Commons: Shiro Meda clothing market](https://commons.wikimedia.org/wiki/File:Shiro_Meda_clothing_market.jpg) | Lucy Shaw | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/museum-costume-01.jpg` | /work placeholder-03 (pending download) | [Commons: Traditional Costume, National Museum of Ethiopia 01](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_01_(8743136699).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/museum-costume-03.jpg` | /work placeholder-03 (pending download) | [Commons: Traditional Costume, National Museum of Ethiopia 03](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_03_(8743136173).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
+| `public/images/collections/museum-costume-01.jpg` | /work placeholder-03 | [Commons: Traditional Costume, National Museum of Ethiopia 01](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_01_(8743136699).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
+| `public/images/collections/museum-costume-03.jpg` | /work placeholder-03 | [Commons: Traditional Costume, National Museum of Ethiopia 03](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_03_(8743136173).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
 | `app/[locale]/opengraph-image.tsx` (generated PNG) | OpenGraph/social cards | Typographic, generated at request time (no photograph) | n/a — no photography | n/a | UNCLEARED |
 
 ## Retired
@@ -37,7 +37,7 @@ for audit history.
 | `public/images/placeholders/hero.svg` | Home hero | Generated SVG, replaced by licensed stock placeholder |
 | `public/images/placeholders/collection-01-a/b.svg` | /work placeholder-01 | Generated SVG, replaced |
 | `public/images/placeholders/collection-02-a/b.svg` | /work placeholder-02 | Generated SVG, replaced |
-| `public/images/placeholders/collection-03-a/b.svg` | /work placeholder-03 | Generated SVG — still active until the museum-costume downloads land |
+| `public/images/placeholders/collection-03-a/b.svg` | /work placeholder-03 | Generated SVG, replaced by the museum-costume images |
 
 ## Rules
 

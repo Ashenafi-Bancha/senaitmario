@@ -34,12 +34,15 @@ collections, so colour is the site's structure, not decoration. Each body of
 work / chapter owns a palette; as the visitor scrolls or navigates, the whole
 page ground transitions and text, borders and focus rings re-derive from it.
 
-- **Current direction (client feedback, 2026-08): one colour.** The site wears
-  a single deep evergreen and moves only through its own depths — three
-  registers (`evergreen`, `evergreen-deep`, `evergreen-light`) of the same hue,
-  no yellow or second colour anywhere. The `/colour` page explains this to
-  readers. The multi-palette engine is unchanged underneath, so per-collection
-  palettes extracted from real photography can still take over later.
+- **Current direction (client feedback, 2026-08): ivory default, black
+  optional.** Every page stands on the pale green-tinged ivory ground
+  (`ivory`: `#F0F4EE`) with deep brown ink; the visitor can switch the whole
+  site to the **modern black** theme (`noir`) from the header — persisted in
+  localStorage, crossing over in one eased transition (instant under reduced
+  motion). No yellow anywhere. The `/colour` page explains the scheme to
+  readers. The section-palette engine is unchanged underneath, so
+  per-collection palettes extracted from real photography can still take over
+  later (noir, when active, wins over section palettes).
 - Palettes live in **`content/palettes.ts`** — the single swap point. All
   values are **provisional** until confirmed against real collection
   photography; replacing them is a one-file change.

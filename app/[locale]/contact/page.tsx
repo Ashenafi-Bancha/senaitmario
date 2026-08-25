@@ -25,7 +25,7 @@ export default async function ContactPage({
 
   return (
     <>
-      <RouteTheme paletteId="evergreen" />
+      <RouteTheme paletteId="ivory" />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}

@@ -1,4 +1,4 @@
-import type { Collection } from './types';
+﻿import type { Collection } from './types';
 
 /**
  * TODO — no collection data yet. These three placeholders exist so the
@@ -12,7 +12,7 @@ export const collections: Collection[] = [
     title: 'TODO — Collection one',
     year: 'TODO',
     city: 'TODO',
-    paletteId: 'evergreen',
+    paletteId: 'ivory',
     descriptionKey: 'collections.placeholder-01.description',
     // Licensed stock placeholders (Wikimedia Commons, credited) — NOT her
     // work; to be replaced with real collection photography. See RIGHTS.md.
@@ -40,7 +40,7 @@ export const collections: Collection[] = [
     title: 'TODO — Collection two',
     year: 'TODO',
     city: 'TODO',
-    paletteId: 'evergreen-deep',
+    paletteId: 'ivory',
     descriptionKey: 'collections.placeholder-02.description',
     images: [
       {
@@ -66,22 +66,24 @@ export const collections: Collection[] = [
     title: 'TODO — Collection three',
     year: 'TODO',
     city: 'TODO',
-    paletteId: 'evergreen-light',
+    paletteId: 'ivory',
     descriptionKey: 'collections.placeholder-03.description',
     images: [
       {
-        src: '/images/placeholders/collection-03-a.svg',
-        width: 1200,
-        height: 1600,
-        alt: 'Placeholder — collection photography pending',
-        credit: 'TODO',
+        src: '/images/collections/museum-costume-01.jpg',
+        width: 1280,
+        height: 1707,
+        alt: 'Ceremonial costume with lion-mane cape and decorated shield, National Museum of Ethiopia — placeholder image, not from this collection',
+        credit: 'Adam Jones, CC BY-SA 2.0, via Wikimedia Commons',
+        usageNote: 'Placeholder — not from Senait Mario’s collections',
       },
       {
-        src: '/images/placeholders/collection-03-b.svg',
-        width: 1200,
-        height: 1600,
-        alt: 'Placeholder — collection photography pending',
-        credit: 'TODO',
+        src: '/images/collections/museum-costume-03.jpg',
+        width: 1280,
+        height: 960,
+        alt: 'Beaded leather garment with fringe, National Museum of Ethiopia — placeholder image, not from this collection',
+        credit: 'Adam Jones, CC BY-SA 2.0, via Wikimedia Commons',
+        usageNote: 'Placeholder — not from Senait Mario’s collections',
       },
     ],
   },

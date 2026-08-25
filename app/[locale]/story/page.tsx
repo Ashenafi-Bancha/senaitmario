@@ -20,7 +20,7 @@ function StoryIntro() {
   const t = useTranslations('story');
   return (
     <ThemeSection
-      paletteId="evergreen-light"
+      paletteId="ivory"
       labelledBy="story-heading"
       className="flex min-h-[50svh] items-end"
     >

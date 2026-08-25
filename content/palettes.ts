@@ -1,52 +1,43 @@
 import type { Palette } from './types';
 
 /**
- * ONE COLOUR — the site wears a single deep evergreen (client direction),
- * moving only through its own depths: the primary ground, a deeper night
- * green, and a pale green-tinged ivory. No second hue anywhere; accents are
- * mint/green so nothing reads as yellow.
+ * CLIENT DIRECTION (2026-08): the pale green-tinged ivory is the default
+ * ground on every page, with deep brown text; MODERN BLACK is the optional
+ * theme the visitor can switch to from the header. No yellow anywhere.
  *
- * Still the single swap point: when real collection photography arrives and
- * per-collection palettes are extracted, they are added here (and `provisional`
- * flipped) without touching components. Every palette must keep `ink`, `muted`
- * and `accent` at ≥ 4.5:1 against `ground` — `npm run check:contrast` gates
- * the build.
+ * Still the single swap point: when real collection photography arrives,
+ * per-collection palettes can be added here without touching components.
+ * Every palette must keep `ink`, `muted` and `accent` at ≥ 4.5:1 against
+ * `ground` — `npm run check:contrast` gates the build.
  */
 export const palettes: Palette[] = [
   {
-    id: 'evergreen',
-    name: 'Evergreen — primary (exact value TODO: confirm against collection photography)',
-    provisional: true,
-    ground: '#12352B',
-    ink: '#F4F1E8',
-    muted: '#A3C0B2',
-    accent: '#A9D6C2',
-    line: '#2E5648',
-  },
-  {
-    id: 'evergreen-deep',
-    name: 'Evergreen — deep (exact value TODO: confirm against collection photography)',
-    provisional: true,
-    ground: '#0B231C',
-    ink: '#F1F4EC',
-    muted: '#93B4A5',
-    accent: '#A9D6C2',
-    line: '#23453A',
-  },
-  {
-    id: 'evergreen-light',
-    name: 'Evergreen — pale (exact value TODO: confirm against collection photography)',
+    id: 'ivory',
+    name: 'Ivory — default (pale ground, deep brown ink)',
     provisional: true,
     ground: '#F0F4EE',
-    ink: '#16281F',
-    muted: '#4A6455',
-    accent: '#1E5B41',
-    line: '#D3DFD4',
+    ink: '#33241A',
+    muted: '#6B5644',
+    accent: '#7A4B24',
+    line: '#DDD8CB',
+  },
+  {
+    id: 'noir',
+    name: 'Modern black — optional theme',
+    provisional: true,
+    ground: '#101112',
+    ink: '#F2EFE9',
+    muted: '#AFA89B',
+    accent: '#C89A6A',
+    line: '#2A2B2D',
   },
 ];
 
-/** The palette the site opens on before any section claims the viewport. */
-export const defaultPaletteId = 'evergreen';
+/** The palette the site opens on. */
+export const defaultPaletteId = 'ivory';
+
+/** The optional dark theme the visitor can switch to. */
+export const noirPaletteId = 'noir';
 
 export function getPalette(id: string): Palette {
   const palette = palettes.find((p) => p.id === id);

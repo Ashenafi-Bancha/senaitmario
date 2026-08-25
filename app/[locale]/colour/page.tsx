@@ -29,7 +29,7 @@ export default async function ColourPage({
   return (
     <>
       <ThemeSection
-        paletteId="evergreen-light"
+        paletteId="ivory"
         labelledBy="colour-heading"
         className="flex min-h-[45svh] items-end"
       >
@@ -51,7 +51,7 @@ export default async function ColourPage({
        * shifts the whole ground into the deep register of the one colour.
        */}
       <ThemeSection
-        paletteId="evergreen"
+        paletteId="ivory"
         labelledBy="colour-about"
         className="border-t border-line"
       >
@@ -94,7 +94,7 @@ export default async function ColourPage({
       </ThemeSection>
 
       <ThemeSection
-        paletteId="evergreen-light"
+        paletteId="ivory"
         labelledBy="colour-index"
         className="border-t border-line"
       >

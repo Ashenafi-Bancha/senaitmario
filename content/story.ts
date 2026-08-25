@@ -1,4 +1,4 @@
-import type { StoryChapter } from './types';
+﻿import type { StoryChapter } from './types';
 
 /**
  * The arc: Wolaita Sodo → Nairobi → Kampala → Rome → the stages of Milan,
@@ -13,7 +13,7 @@ export const storyChapters: StoryChapter[] = [
   {
     id: 'sodo',
     place: 'Wolaita Sodo',
-    paletteId: 'evergreen',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.sodo.title',
     bodyKey: 'story.chapters.sodo.body',
     image: {
@@ -27,7 +27,7 @@ export const storyChapters: StoryChapter[] = [
   {
     id: 'nairobi',
     place: 'Nairobi',
-    paletteId: 'evergreen-light',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.nairobi.title',
     bodyKey: 'story.chapters.nairobi.body',
     image: {
@@ -41,7 +41,7 @@ export const storyChapters: StoryChapter[] = [
   {
     id: 'kampala',
     place: 'Kampala',
-    paletteId: 'evergreen-deep',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.kampala.title',
     bodyKey: 'story.chapters.kampala.body',
     image: {
@@ -55,7 +55,7 @@ export const storyChapters: StoryChapter[] = [
   {
     id: 'rome',
     place: 'Rome',
-    paletteId: 'evergreen-light',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.rome.title',
     bodyKey: 'story.chapters.rome.body',
     image: {
@@ -69,7 +69,7 @@ export const storyChapters: StoryChapter[] = [
   {
     id: 'stages',
     place: 'Milan · London · Paris',
-    paletteId: 'evergreen-deep',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.stages.title',
     bodyKey: 'story.chapters.stages.body',
     image: {
@@ -84,7 +84,7 @@ export const storyChapters: StoryChapter[] = [
     // The resolution returns to the primary ground.
     id: 'addis',
     place: 'Addis Ababa',
-    paletteId: 'evergreen',
+    paletteId: 'ivory',
     titleKey: 'story.chapters.addis.title',
     bodyKey: 'story.chapters.addis.body',
     image: {

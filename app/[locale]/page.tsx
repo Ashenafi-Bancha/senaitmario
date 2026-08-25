@@ -15,15 +15,15 @@ export async function generateMetadata({
   return pageMetadata(locale, 'home');
 }
 
-// One colour, moving through its own depths: the ground breathes between the
-// primary evergreen, its deeper night register and the pale register as the
-// visitor scrolls — never a second hue.
+// Client direction: one pale ivory ground with deep brown ink on every page;
+// modern black is the optional theme, toggled from the header. The section
+// machinery stays so per-collection palettes can return with real photography.
 const CHAPTERS = [
-  { key: 'story', href: '/story', paletteId: 'evergreen-deep' },
-  { key: 'work', href: '/work', paletteId: 'evergreen-light' },
-  { key: 'colour', href: '/colour', paletteId: 'evergreen' },
-  { key: 'peace', href: '/peace', paletteId: 'evergreen-deep' },
-  { key: 'institute', href: '/institute', paletteId: 'evergreen-light' },
+  { key: 'story', href: '/story', paletteId: 'ivory' },
+  { key: 'work', href: '/work', paletteId: 'ivory' },
+  { key: 'colour', href: '/colour', paletteId: 'ivory' },
+  { key: 'peace', href: '/peace', paletteId: 'ivory' },
+  { key: 'institute', href: '/institute', paletteId: 'ivory' },
 ] as const;
 
 // TODO — hero photography of Dr. Senait Mario pending; a licensed stock
@@ -43,7 +43,7 @@ function Hero() {
   const t = useTranslations('home');
   return (
     <ThemeSection
-      paletteId="evergreen"
+      paletteId="ivory"
       labelledBy="hero-name"
       className="flex min-h-[85svh] items-center"
     >

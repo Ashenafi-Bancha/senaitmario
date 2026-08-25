@@ -37,7 +37,7 @@ export default async function InstitutePage({
 
   return (
     <>
-      <RouteTheme paletteId="evergreen-deep" />
+      <RouteTheme paletteId="ivory" />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
         <h1 className="font-display text-[clamp(2rem,7vw,4.5rem)] leading-tight tracking-tight">
           {t('heading')}

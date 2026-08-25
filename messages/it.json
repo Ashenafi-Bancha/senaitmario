@@ -7,7 +7,7 @@
     "pages": {
       "home": { "title": "Dr.ssa Senait Mario", "description": "Stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite, con base a Roma. Promuove l'Etiopia attraverso i colori delle sue collezioni." },
       "work": { "title": "Lavori", "description": "Le collezioni della Dr.ssa Senait Mario, presentate sulle passerelle di Milano, Londra e Parigi." },
-      "colour": { "title": "L'Indice dei Colori", "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — per ora un solo verde, e l'indice dove vivranno i colori dei capi." },
+      "colour": { "title": "L'Indice dei Colori", "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — e l'indice dove vivranno i colori dei capi." },
       "story": { "title": "Storia", "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba — l'arco della vita e del lavoro della Dr.ssa Senait Mario." },
       "peace": { "title": "Pace", "description": "Impegno e lavoro con l'ONU: l'African Fashion Expo, Fashion for Peace e la One Peace Fashion Show." },
       "institute": { "title": "L'Istituto", "description": "Da Mario's Fashion and Technology Institute, fondato nel 2024 ad Addis Abeba." },
@@ -25,7 +25,11 @@
     "press": "Stampa",
     "contact": "Contatti",
     "menuLabel": "Navigazione principale",
-    "localeLabel": "Lingua"
+    "localeLabel": "Lingua",
+    "themeNoir": "Nero",
+    "themeIvory": "Avorio",
+    "themeToNoir": "Passa al tema nero moderno",
+    "themeToIvory": "Passa al tema avorio"
   },
   "a11y": {
     "skipToContent": "Vai al contenuto"
@@ -60,7 +64,7 @@
       },
       "colour": {
         "title": "L'Indice dei Colori",
-        "lede": "Un solo verde profondo, raccontato — e l'indice dove vivranno i colori delle collezioni.",
+        "lede": "Un fondo chiaro, inchiostro bruno scuro, un nero moderno opzionale — e l'indice dove vivranno i colori delle collezioni.",
         "cta": "Apri l'indice"
       },
       "peace": {
@@ -141,10 +145,10 @@
   "colour": {
     "heading": "L'Indice dei Colori",
     "intro": "Il suo metodo dichiarato: promuovere l'Etiopia attraverso i colori delle collezioni. Questa pagina è dove si racconta il colore del sito — e dove ogni colore dei capi sarà indicizzato.",
-    "aboutHeading": "Un solo colore",
-    "aboutBody1": "Per ora questo sito indossa un solo colore: un verde profondo. Non cambia mai tonalità — si muove soltanto attraverso le proprie profondità mentre leggi, dal registro chiaro al fondo primario fino al verde più scuro, come hai appena visto entrando in questa sezione. Nulla compete con il lavoro.",
+    "aboutHeading": "Avorio, bruno — e nero",
+    "aboutBody1": "Il sito poggia su un unico fondo chiaro — un avorio dalle sfumature verdi — scritto in bruno profondo, perché nulla competa con il lavoro. Lo preferisci scuro? L'interruttore nell'intestazione veste ogni pagina di nero moderno, e l'intero fondo attraversa il cambio in un solo movimento fluido.",
     "aboutBody2": "Quando le collezioni saranno fotografate, i loro colori verranno estratti direttamente dai capi e prenderanno il posto di questi fondi — ogni corpo di lavoro avrà la propria palette, e ogni colore sarà indicizzato qui sotto: il nome, la collezione da cui proviene e ciò che porta con sé.",
-    "aboutNoteTodo": "TODO — una nota con le sue parole su questo verde, da scrivere e approvare con il cliente.",
+    "aboutNoteTodo": "TODO — una nota con le sue parole sui colori del sito, da scrivere e approvare con il cliente.",
     "indexHeading": "L'indice",
     "placeholderNote": "TODO — campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
     "filterAction": "Vedi i pezzi in questo colore",
