@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RouteTheme } from '@/components/theme/RouteTheme';
 import { TodoMark } from '@/components/ui/TodoMark';
+import { coverage } from '@/content/coverage';
 import { recognitions } from '@/content/recognition';
 import { personJsonLd } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
@@ -102,6 +103,41 @@ export default async function PressPage({
           >
             {t('coverageHeading')}
           </h2>
+          <ul className="mt-6 max-w-2xl divide-y divide-line border-y border-line">
+            {coverage.map((item) => (
+              <li key={item.url} className="py-5">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="lux-link text-lg text-ink no-underline"
+                >
+                  {item.title}
+                </a>
+                <p className="mt-1 font-utility text-xs uppercase tracking-widest text-muted">
+                  {item.outlet} ·{' '}
+                  {new Intl.DateTimeFormat(locale, {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  }).format(new Date(item.date))}
+                  {item.archiveUrl ? (
+                    <>
+                      {' · '}
+                      <a
+                        href={item.archiveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="lux-link text-accent no-underline"
+                      >
+                        {t('coverageArchive')}
+                      </a>
+                    </>
+                  ) : null}
+                </p>
+              </li>
+            ))}
+          </ul>
           <p className="mt-4 max-w-2xl text-sm text-muted">
             <TodoMark /> {t('coverageTodo')}
           </p>

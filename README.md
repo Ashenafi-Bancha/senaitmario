@@ -114,6 +114,50 @@ instead a ~1 KB IntersectionObserver + CSS implementation
 colour-field transitions were already pure CSS. If the budget is relaxed or a
 richer motion language is wanted later, it can return behind `LazyMotion`.
 
+## ⚠ Verification findings (research, Aug 2026) — resolve before launch
+
+A web search for published sources turned up only **three articles** about her
+(all listed in `content/coverage.ts`): Addis Standard (5 Jul 2019), Nigerian
+Tribune (26 Jul 2019) and an Amharic Addis Zemen profile (5 Jul 2021). What
+that research changes:
+
+1. **The three recognitions are not independently verifiable.** All trace to
+   one sentence in the 2019 Addis Standard piece that ends "…she told Addis
+   Standard". The 2017 **UN Peace Ambassador** title is the highest-risk claim
+   on the site — the UN's formal designations are *Messenger of Peace* and
+   *Goodwill Ambassador*, and she is on neither roster; titles worded "UN
+   Peace Ambassador" are often conferred by non-UN bodies. Get the
+   certificates and name the conferring organisation in the copy. Full notes
+   in `content/recognition.ts`; the same warning is on `lib/schema.ts`
+   because JSON-LD is republished by search engines.
+2. **Two source conflicts to settle with her:** whether she settled in **Rome**
+   (Addis Standard, and her LinkedIn) or **Milan** (Tribune) — Rome is better
+   supported and is what the site currently says; and whether the June 2019
+   Wolaita Sodo show featured **eight** designers (Addis Standard) or **six**
+   (Tribune) — the site deliberately states no number.
+3. **`senaitmario.com` is unregistered.** Her own Facebook page lists it as her
+   website but it does not resolve — worth registering for this site.
+4. **The institute's site `damariosfti.edu.et` is dead** (no DNS, no archive),
+   so the `/institute` outbound link stays TODO. Its accreditation and licence
+   numbers exist only as search-engine snippets of that dead site — do not
+   publish them without a document.
+5. **The Rome Business School partnership could not be corroborated** from
+   RBS's own site. Confirm before stating it publicly.
+6. **Social accounts:** two Facebook pages were verified by their own content —
+   "Senait Mario ONE PEACE fashion" (public figure) and "Damarios FTI". The
+   Instagram account `@senaitmario` could **not** be confirmed as hers (no bio,
+   nothing linking it to her work) and the YouTube `@senaitmario1` is
+   definitely someone else. Confirm handles with her before publishing any.
+7. **Not published anywhere:** named collections, a clothing label name,
+   African Fashion Expo edition details, or any specific Milan/London/Paris
+   show (date, venue, season). The Milan/London/Paris line traces to her own
+   statement — do not upgrade it to a Fashion Week appearance.
+8. **New, single-sourced origin story** (Amharic 2021 profile, worth
+   confirming): she wanted to be a doctor or lawyer, taught for several years,
+   was studying philosophy at Addis Ababa University when she won a
+   scholarship to Uganda, and entered fashion after meeting a Kenyan woman
+   there who ran a modelling and fashion school.
+
 ## What the client must supply
 
 Every item below is rendered as a visible `TODO` in the UI or marked in code:

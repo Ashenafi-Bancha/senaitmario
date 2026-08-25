@@ -181,6 +181,7 @@
       "expression": "La moda può portare messaggi di pace e unità; le persone dovrebbero poter esprimere chi sono e da dove vengono attraverso ciò che indossano."
     },
     "pullQuoteTodo": "TODO — citazione testuale da approvare con il cliente",
+    "pullQuoteConfirm": "Confermare il testo con il cliente",
     "sodoShowHeading": "Peace Fashion Show — Wolaita Sodo, giugno 2019",
     "sodoShowBody": "Nel giugno 2019 ha organizzato una Peace Fashion Show nella sua città natale, Wolaita Sodo, in concomitanza con il festival culturale annuale dello Stato Regionale delle Nazioni, Nazionalità e Popoli del Sud, dove 56 nazioni dell'Etiopia meridionale hanno messo in mostra la propria diversità culturale. La sfilata ha presentato il lavoro di otto stilisti etiopi.",
     "sodoShowAttendance": "Erano presenti il Ministro di Stato del Turismo e della Cultura dell'Etiopia, il Vicepresidente dello stato regionale del Sud, la direzione dell'Ufficio per le Donne, i Bambini e i Giovani di Addis Abeba e ospiti di ambasciate e organizzazioni internazionali.",
@@ -229,7 +230,8 @@
     "downloadsHeading": "Press kit e download",
     "downloadsTodo": "TODO — immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
     "coverageHeading": "Rassegna stampa",
-    "coverageTodo": "TODO — link alla rassegna stampa da fornire dal cliente."
+    "coverageArchive": "Copia archiviata",
+    "coverageTodo": "TODO — ulteriore rassegna stampa (stampa italiana, TV/radio etiopi) da fornire dal cliente; sono elencati solo gli articoli reperibili pubblicamente."
   },
   "contact": {
     "heading": "Contatti",

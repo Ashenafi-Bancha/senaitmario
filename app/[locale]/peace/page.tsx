@@ -5,6 +5,7 @@ import { ThemeSection } from '@/components/theme/ThemeSection';
 import { PullQuote } from '@/components/ui/PullQuote';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
+import { quotes } from '@/content/quotes';
 
 export async function generateMetadata({
   params,
@@ -62,7 +63,7 @@ function PeaceContent() {
               </li>
             ))}
           </ul>
-          <PullQuote paraphrase={t('positions.expression')} />
+          <PullQuote quote={quotes.peace} />
         </div>
       </ThemeSection>
 

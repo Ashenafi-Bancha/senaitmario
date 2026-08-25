@@ -180,6 +180,7 @@
       "expression": "Fashion can carry messages of peace and unity; people should be able to express who they are and where they are from through what they wear."
     },
     "pullQuoteTodo": "TODO — verbatim quote to be approved by client",
+    "pullQuoteConfirm": "Confirm wording with client",
     "sodoShowHeading": "Peace Fashion Show — Wolaita Sodo, June 2019",
     "sodoShowBody": "In June 2019 she staged a Peace Fashion Show in her hometown of Wolaita Sodo, alongside the annual cultural festival of the Southern Nations, Nationalities and Peoples' Regional State, where 56 southern Ethiopian nations showcased their cultural diversity. The show featured the work of eight Ethiopian designers.",
     "sodoShowAttendance": "It was attended by Ethiopia's State Minister of Tourism and Culture, the Vice President of the Southern regional state, the head of the Addis Ababa Women, Children and Youth Affairs Bureau, and guests from embassies and international organisations.",
@@ -228,7 +229,8 @@
     "downloadsHeading": "Press kit & downloads",
     "downloadsTodo": "TODO — high-resolution images and press kit PDF pending cleared photography and client sign-off.",
     "coverageHeading": "Coverage",
-    "coverageTodo": "TODO — press coverage links to be supplied by client."
+    "coverageArchive": "Archived copy",
+    "coverageTodo": "TODO — further coverage (Italian-language press, Ethiopian TV/radio) to be supplied by client; only publicly findable articles are listed."
   },
   "contact": {
     "heading": "Contact",

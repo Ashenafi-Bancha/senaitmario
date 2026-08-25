@@ -30,7 +30,13 @@ export function personJsonLd() {
       name: 'Rome, Italy',
     },
     award: [
-      // Exact awarding bodies/titles pending client confirmation — see content/recognition.ts.
+      // ⚠ Structured data is republished by search engines and is far harder
+      // to retract than page copy. None of these three is independently
+      // verifiable online — all trace to her own account in one 2019 article
+      // (see the detailed notes in content/recognition.ts). Obtain the
+      // certificates and name the conferring bodies BEFORE launch; if a
+      // recognition cannot be documented, remove it from this array rather
+      // than shipping it as machine-readable fact.
       'Top 40 Women of Africa, MICE award, Ghana (2016)',
       'UN Peace Ambassador (2017)',
       'Honorary doctorate for work promoting African culture, Nigeria (2019)',

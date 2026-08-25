@@ -5,7 +5,9 @@ import { SwatchCard } from '@/components/colour/SwatchCard';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { Reveal } from '@/components/ui/Reveal';
 import { TiltCard } from '@/components/ui/TiltCard';
+import { PullQuote } from '@/components/ui/PullQuote';
 import { palettes } from '@/content/palettes';
+import { quotes } from '@/content/quotes';
 import { swatches } from '@/content/swatches';
 import { pageMetadata } from '@/lib/metadata';
 
@@ -63,6 +65,8 @@ export default async function ColourPage({
           >
             {t('aboutHeading')}
           </h2>
+          <PullQuote quote={quotes.colour} />
+
           <div className="mt-8 max-w-2xl space-y-6 text-lg leading-relaxed">
             <Reveal>
               <p>{t('aboutBody1')}</p>
