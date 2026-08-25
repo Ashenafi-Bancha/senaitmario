@@ -26,14 +26,17 @@ const CHAPTERS = [
   { key: 'institute', href: '/institute', paletteId: 'evergreen-light' },
 ] as const;
 
-// TODO — hero photography pending; placeholder SVG stands in. The real hero
-// must stay under 400 KB and is the only image on the site allowed `priority`.
+// TODO — hero photography of Dr. Senait Mario pending; a licensed stock
+// garment-detail stands in (deliberately NOT a person — no stranger's face may
+// represent her). The real hero must stay under 400 KB and is the only image
+// on the site allowed `priority`.
 const HERO_IMAGE = {
-  src: '/images/placeholders/hero.svg',
+  src: '/images/portraits/hero-placeholder.jpg',
   width: 1200,
-  height: 1600,
-  alt: 'Placeholder — hero photograph of Dr. Senait Mario pending',
-  credit: 'TODO',
+  height: 793,
+  alt: 'Embroidered detail of a traditional Ethiopian garment — placeholder image',
+  credit: 'A. Davey, CC BY 2.0, via Wikimedia Commons',
+  usageNote: 'Placeholder — to be replaced with her photography',
 } as const;
 
 function Hero() {
