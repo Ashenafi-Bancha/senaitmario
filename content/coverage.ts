@@ -15,12 +15,15 @@
 export interface CoverageItem {
   title: string;
   outlet: string;
-  url: string;
+  /** Omitted for print-only articles that are not online. */
+  url?: string;
   /** Archive copy — the live URLs 403 automated readers. */
   archiveUrl?: string;
   /** ISO date of publication. */
   date: string;
   language: 'en' | 'am' | 'it';
+  /** Page/section reference for a print citation. */
+  printRef?: string;
 }
 
 export const coverage: CoverageItem[] = [
@@ -53,5 +56,21 @@ export const coverage: CoverageItem[] = [
     url: 'https://am.sewasew.com/p/%E1%8B%A8%E1%8D%8B%E1%88%BD%E1%8A%95-%E1%8A%A0%E1%88%9D%E1%89%A3%E1%88%B3%E1%8B%B0%E1%88%AF',
     date: '2021-07-05',
     language: 'am',
+  },
+  {
+    // Print clipping supplied by the client. Verified from the scan: masthead
+    // አዲስ ዘመን, page 10, ኢኮኖሚ/ስኬት section, ቅዳሜ ሐምሌ 26 ቀን 2017 ዓ.ም
+    // (Hamle 26, 2017 EC = Saturday 2 August 2025 — the weekday checks out),
+    // photo caption "ሞዴልና ዲዛይነር ሰናይት ማርዮ".
+    //
+    // TODO — the headline below is a best reading of a low-resolution scan and
+    // MUST be confirmed against the paper before launch, as must the byline.
+    // The body text could not be read reliably at that resolution, so nothing
+    // from it has been used anywhere on this site yet.
+    title: 'አባቷን እንደ አርአያ የተቀበለች',
+    outlet: 'አዲስ ዘመን (Addis Zemen)',
+    date: '2025-08-02',
+    language: 'am',
+    printRef: 'ገጽ 10 · ኢኮኖሚ/ስኬት',
   },
 ];

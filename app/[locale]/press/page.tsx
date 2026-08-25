@@ -105,15 +105,19 @@ export default async function PressPage({
           </h2>
           <ul className="mt-6 max-w-2xl divide-y divide-line border-y border-line">
             {coverage.map((item) => (
-              <li key={item.url} className="py-5">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="lux-link text-lg text-ink no-underline"
-                >
-                  {item.title}
-                </a>
+              <li key={item.title} className="py-5">
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lux-link text-lg text-ink no-underline"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <span className="text-lg text-ink">{item.title}</span>
+                )}
                 <p className="mt-1 font-utility text-xs uppercase tracking-widest text-muted">
                   {item.outlet} ·{' '}
                   {new Intl.DateTimeFormat(locale, {
@@ -121,6 +125,7 @@ export default async function PressPage({
                     month: 'long',
                     day: 'numeric',
                   }).format(new Date(item.date))}
+                  {item.printRef ? <> · {item.printRef}</> : null}
                   {item.archiveUrl ? (
                     <>
                       {' · '}
