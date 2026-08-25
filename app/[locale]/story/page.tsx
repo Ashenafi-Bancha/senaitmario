@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { ThemeSection } from '@/components/theme/ThemeSection';
 import { CreditedImage } from '@/components/media/CreditedImage';
+import { Parallax } from '@/components/ui/Parallax';
 import { Reveal } from '@/components/ui/Reveal';
 import { storyChapters } from '@/content/story';
 import { pageMetadata } from '@/lib/metadata';
@@ -70,12 +71,15 @@ function Chapter({
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">{t(chapter.bodyKey)}</p>
         </div>
         {chapter.image ? (
-          <Reveal>
-            <CreditedImage
-              asset={chapter.image}
-              sizes="(min-width: 1024px) 38vw, 92vw"
-              className="mt-10 max-w-md lg:mt-0 lg:justify-self-end"
-            />
+          <Reveal className="mt-10 max-w-md lg:mt-0 lg:justify-self-end">
+            <Parallax amount={30}>
+              <div className="card-media">
+                <CreditedImage
+                  asset={chapter.image}
+                  sizes="(min-width: 1024px) 38vw, 92vw"
+                />
+              </div>
+            </Parallax>
           </Reveal>
         ) : null}
       </div>

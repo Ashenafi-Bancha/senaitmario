@@ -107,21 +107,118 @@ html {
 }
 
 /*
- * Scroll reveals (see components/ui/Reveal.tsx). Gated on scripting being
- * enabled so content is never hidden without JS, and on motion preference —
- * reveals are decoration, so reduced-motion users skip them entirely.
+ * Scroll reveals (see components/ui/Reveal.tsx).
+ *
+ * The hidden state applies ONLY once the component has armed itself from JS
+ * (`data-reveal-armed`), so content is visible by default and can never be
+ * stranded invisible by absent JS or a failed observer.
  */
-@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
-  [data-reveal] {
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal][data-reveal-armed="true"] {
     opacity: 0;
     transform: translateY(24px);
     transition:
       opacity 600ms var(--theme-ease),
       transform 600ms var(--theme-ease);
   }
-  [data-reveal][data-revealed="true"] {
+  [data-reveal][data-reveal-armed="true"][data-revealed="true"] {
     opacity: 1;
     transform: none;
+  }
+}
+
+/*
+ * Luxury motion layer. Everything here is decoration, so it is gated on
+ * motion preference; the colour system above stays independent of it.
+ */
+
+/* 3D tilt cards (components/ui/TiltCard.tsx). */
+.tilt {
+  transition: transform 350ms var(--theme-ease);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Animated hairline underline for nav and inline links. */
+.lux-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition:
+    background-size 350ms var(--theme-ease),
+    color 350ms var(--theme-ease);
+}
+.lux-link:hover,
+.lux-link:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* Media hover: images breathe inside their frame. */
+.card-media {
+  overflow: hidden;
+}
+.card-media img {
+  transition: transform 900ms var(--theme-ease);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card-media:hover img {
+    transform: scale(1.045);
+  }
+}
+
+/*
+ * Entrance animations.
+ *
+ * Deliberately written with `animation-fill-mode: backwards` and the hidden
+ * state living only inside the keyframes' `from` — never as a base style.
+ * The element's resting state is therefore VISIBLE: if the animation never
+ * runs (reduced motion, a backgrounded tab, an old browser, a CSS failure)
+ * the content simply shows. Never make copy depend on an animation to
+ * become visible.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero entrance: copy rises in sequence, the image unveils. */
+  .rise {
+    animation: rise 750ms var(--theme-ease) backwards;
+  }
+  .rise-2 {
+    animation-delay: 110ms;
+  }
+  .rise-3 {
+    animation-delay: 220ms;
+  }
+  .rise-4 {
+    animation-delay: 330ms;
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(26px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .unveil {
+    animation: unveil 1100ms var(--theme-ease) 250ms backwards;
+  }
+  @keyframes unveil {
+    from {
+      opacity: 0;
+      clip-path: inset(10% 10% 10% 10%);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  /* Mobile menu items cascade in. */
+  .mobile-menu-item {
+    animation: rise 450ms var(--theme-ease) backwards;
   }
 }
 

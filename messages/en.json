@@ -24,6 +24,8 @@
     "press": "Press",
     "contact": "Contact",
     "menuLabel": "Main navigation",
+    "menuOpen": "Menu",
+    "menuClose": "Close",
     "localeLabel": "Language",
     "themeNoir": "Black",
     "themeIvory": "Ivory",

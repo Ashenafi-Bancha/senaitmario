@@ -34,7 +34,7 @@ export function LocaleSwitcher() {
       <select
         value={locale}
         onChange={(event) => onChange(event.target.value)}
-        className="cursor-pointer border border-line bg-ground px-2 py-1 text-xs text-ink"
+        className="min-h-11 cursor-pointer border border-line bg-ground px-3 text-xs text-ink lg:min-h-0 lg:px-2 lg:py-1"
       >
         {routing.locales.map((availableLocale) => (
           <option key={availableLocale} value={availableLocale}>

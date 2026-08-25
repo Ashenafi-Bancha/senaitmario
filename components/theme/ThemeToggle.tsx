@@ -19,7 +19,7 @@ export function ThemeToggle() {
       onClick={toggleMode}
       aria-pressed={noirActive}
       aria-label={noirActive ? t('themeToIvory') : t('themeToNoir')}
-      className="cursor-pointer border border-line bg-ground px-3 py-1 font-utility text-xs uppercase tracking-widest text-ink transition-colors hover:border-accent"
+      className="inline-flex min-h-11 cursor-pointer items-center border border-line bg-ground px-4 font-utility text-xs uppercase tracking-widest text-ink transition-colors hover:border-accent lg:min-h-0 lg:px-3 lg:py-1"
     >
       {noirActive ? t('themeIvory') : t('themeNoir')}
     </button>

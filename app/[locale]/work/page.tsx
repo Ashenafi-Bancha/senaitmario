@@ -5,6 +5,7 @@ import { RouteTheme } from '@/components/theme/RouteTheme';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { Reveal } from '@/components/ui/Reveal';
+import { TiltCard } from '@/components/ui/TiltCard';
 import { collections } from '@/content/collections';
 import { getSwatch } from '@/content/swatches';
 import { pageMetadata } from '@/lib/metadata';
@@ -83,10 +84,12 @@ export default async function WorkPage({
                   href={`/work/${collection.slug}`}
                   className="group block no-underline"
                 >
-                  <CreditedImage
-                    asset={collection.images[0]}
-                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
-                  />
+                  <TiltCard className="card-media">
+                    <CreditedImage
+                      asset={collection.images[0]}
+                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
+                    />
+                  </TiltCard>
                   <h2 className="mt-4 font-display text-2xl tracking-tight text-ink transition-colors group-hover:text-accent">
                     {tAll(`collections.${collection.slug}.title`)}
                   </h2>

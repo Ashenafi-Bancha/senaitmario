@@ -54,8 +54,10 @@ export function ContactForm() {
     }
   }
 
+  // 16px text keeps iOS from zooming on focus; min-height keeps every control
+  // above the 44px touch target.
   const inputClasses =
-    'mt-1 w-full border border-line bg-ground px-3 py-2 text-ink placeholder:text-muted';
+    'mt-1 min-h-11 w-full border border-line bg-ground px-3 py-2.5 text-base text-ink placeholder:text-muted';
   const labelClasses =
     'block font-utility text-xs uppercase tracking-widest text-muted';
 
@@ -139,7 +141,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="border border-ink bg-ink px-6 py-3 font-utility text-xs uppercase tracking-widest text-ground transition-opacity hover:opacity-85 disabled:opacity-50"
+            className="inline-flex min-h-11 cursor-pointer items-center border border-ink bg-ink px-6 font-utility text-xs uppercase tracking-widest text-ground transition-opacity hover:opacity-85 disabled:opacity-50"
           >
             {status === 'sending' ? t('sending') : t('submit')}
           </button>

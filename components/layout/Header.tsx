@@ -1,17 +1,9 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
+import { MobileMenu } from './MobileMenu';
+import { NAV_ITEMS } from './nav-items';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
-
-const NAV_ITEMS = [
-  { href: '/work', key: 'work' },
-  { href: '/colour', key: 'colour' },
-  { href: '/story', key: 'story' },
-  { href: '/peace', key: 'peace' },
-  { href: '/institute', key: 'institute' },
-  { href: '/press', key: 'press' },
-  { href: '/contact', key: 'contact' },
-] as const;
 
 export function Header() {
   const t = useTranslations('nav');
@@ -25,21 +17,23 @@ export function Header() {
       >
         {a11y('skipToContent')}
       </a>
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
         <Link
           href="/"
           className="font-display text-lg tracking-tight text-ink no-underline"
         >
           Senait Mario
         </Link>
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+
+        {/* Desktop row */}
+        <div className="hidden items-center gap-6 lg:flex">
           <nav aria-label={t('menuLabel')}>
-            <ul className="flex flex-wrap gap-x-4 gap-y-1">
+            <ul className="flex gap-5">
               {NAV_ITEMS.map((item) => (
                 <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="font-utility text-xs uppercase tracking-widest text-muted transition-colors hover:text-ink"
+                    className="lux-link font-utility text-xs uppercase tracking-widest text-muted no-underline transition-colors hover:text-ink"
                   >
                     {t(item.key)}
                   </Link>
@@ -50,6 +44,9 @@ export function Header() {
           <LocaleSwitcher />
           <ThemeToggle />
         </div>
+
+        {/* Mobile: full-screen overlay menu */}
+        <MobileMenu />
       </div>
     </header>
   );

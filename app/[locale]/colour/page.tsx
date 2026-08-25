@@ -4,6 +4,7 @@ import { ThemeSection } from '@/components/theme/ThemeSection';
 import { SwatchCard } from '@/components/colour/SwatchCard';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { Reveal } from '@/components/ui/Reveal';
+import { TiltCard } from '@/components/ui/TiltCard';
 import { palettes } from '@/content/palettes';
 import { swatches } from '@/content/swatches';
 import { pageMetadata } from '@/lib/metadata';
@@ -113,7 +114,9 @@ export default async function ColourPage({
             {swatches.map((swatch, index) => (
               <li key={swatch.id}>
                 <Reveal delay={(index % 3) * 0.08}>
-                  <SwatchCard swatch={swatch} />
+                  <TiltCard>
+                    <SwatchCard swatch={swatch} />
+                  </TiltCard>
                 </Reveal>
               </li>
             ))}
