@@ -5,14 +5,38 @@
     "titleTemplate": "Dr.ssa Senait Mario",
     "description": "Dr.ssa Senait Mario — stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e CEO del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
     "pages": {
-      "home": { "title": "Dr.ssa Senait Mario", "description": "Stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite, con base a Roma. Promuove l'Etiopia attraverso i colori delle sue collezioni." },
-      "work": { "title": "Lavori", "description": "Le collezioni della Dr.ssa Senait Mario, presentate sulle passerelle di Milano, Londra e Parigi." },
-      "colour": { "title": "L'Indice dei Colori", "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — e l'indice dove vivranno i colori dei capi." },
-      "story": { "title": "Storia", "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba — l'arco della vita e del lavoro della Dr.ssa Senait Mario." },
-      "peace": { "title": "Pace", "description": "Impegno e lavoro con l'ONU: l'African Fashion Expo, Fashion for Peace e la One Peace Fashion Show." },
-      "institute": { "title": "L'Istituto", "description": "Da Mario's Fashion and Technology Institute, fondato nel 2024 ad Addis Abeba." },
-      "press": { "title": "Stampa", "description": "Press kit, biografia e riconoscimenti della Dr.ssa Senait Mario." },
-      "contact": { "title": "Contatti", "description": "Booking e richieste per la Dr.ssa Senait Mario." }
+      "home": {
+        "title": "Dr.ssa Senait Mario",
+        "description": "Stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite, con base a Roma. Promuove l'Etiopia attraverso i colori delle sue collezioni."
+      },
+      "work": {
+        "title": "Lavori",
+        "description": "Le collezioni della Dr.ssa Senait Mario, presentate sulle passerelle di Milano, Londra e Parigi."
+      },
+      "colour": {
+        "title": "L'Indice dei Colori",
+        "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — e l'indice dove vivranno i colori dei capi."
+      },
+      "story": {
+        "title": "Storia",
+        "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba — l'arco della vita e del lavoro della Dr.ssa Senait Mario."
+      },
+      "peace": {
+        "title": "Pace",
+        "description": "Impegno e lavoro con l'ONU: l'African Fashion Expo, Fashion for Peace e la One Peace Fashion Show."
+      },
+      "institute": {
+        "title": "L'Istituto",
+        "description": "Da Mario's Fashion and Technology Institute, fondato nel 2024 ad Addis Abeba."
+      },
+      "press": {
+        "title": "Stampa",
+        "description": "Press kit, biografia e riconoscimenti della Dr.ssa Senait Mario."
+      },
+      "contact": {
+        "title": "Contatti",
+        "description": "Booking e richieste per la Dr.ssa Senait Mario."
+      }
     }
   },
   "nav": {
@@ -163,12 +187,30 @@
     }
   },
   "swatches": {
-    "placeholder-a": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
-    "placeholder-b": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
-    "placeholder-c": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
-    "placeholder-d": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
-    "placeholder-e": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." },
-    "placeholder-f": { "name": "TODO — nome del campione", "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente." }
+    "placeholder-a": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    },
+    "placeholder-b": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    },
+    "placeholder-c": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    },
+    "placeholder-d": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    },
+    "placeholder-e": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    },
+    "placeholder-f": {
+      "name": "TODO — nome del campione",
+      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+    }
   },
   "peace": {
     "heading": "Pace",
@@ -268,5 +310,15 @@
   },
   "todo": {
     "label": "TODO"
+  },
+  "pending": {
+    "languageName": "Wolayttatto Doonaa",
+    "status": "Translation in progress",
+    "lead": "This site is being translated into Wolayttatto Doonaa — the language of Wolaita Sodo, where Dr. Senait Mario was born and raised.",
+    "body": "Her pages are not ready in this language yet. Rather than publish a hurried translation of her life in her own mother tongue, we would rather take the time to do it properly.",
+    "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው — ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
+    "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
+    "invite": "In the meantime, you are warmly invited to read the site in:",
+    "todo": "TODO — the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
   }
 }

@@ -13,7 +13,7 @@ confirmation.
 ## Stack
 
 - Next.js 15 (App Router, TypeScript strict), Tailwind CSS 4 (custom token
-  layer, default palette disabled), next-intl (`en` / `am` / `it`), Resend,
+  layer, default palette disabled), next-intl (`en` / `am` / `it` / `wal`), Resend,
   Zod. Deploy target: Vercel. **No 3D** — that signature belongs to the
   institute's site; this one is carried by photography and colour.
 
@@ -77,23 +77,40 @@ data files without touching components.
   recognitions must be confirmed before launch (see comment in
   `content/recognition.ts` and `app/[locale]/press/page.tsx`). The 2019
   doctorate is honorary and is always presented as such.
-- **Quotes:** there are no approved verbatim quotes. `PullQuote` renders
-  paraphrased positions unquoted, with a visible `TODO — verbatim quote to be
-  approved by client` marker. Never put invented sentences in quotation marks.
+- **Quotes:** `content/quotes.ts` holds her genuine published words, each with
+  outlet, date and URL, and `PullQuote` renders them in quotation marks WITH
+  the citation visible. Its other mode renders an unquoted paraphrase. Never
+  put an invented sentence in either mode.
 
 ## Internationalisation
 
-next-intl with `/[locale]` prefix routing (`en`, `am`, `it`), cookie-persisted
-choice, `lang` set on `<html>`. `messages/en.json` is complete;
-**`am.json` and `it.json` are machine drafts** (flagged by the
+next-intl with `/[locale]` prefix routing (`en`, `am`, `it`, `wal`),
+cookie-persisted choice, `lang` set on `<html>`. `messages/en.json` is
+complete; **`am.json` and `it.json` are machine drafts** (flagged by the
 `_MACHINE_DRAFT` key at the top of each file) and require professional human
-review before publication. Noto Sans Ethiopic loads only on `/am` routes and
-Amharic runs on its own line-height scale.
+review before publication.
+
+**Wolayttatto Doonaa (`wal`)** — her mother tongue, the language of Wolaita
+Sodo — is offered in the switcher but its pages are **not translated yet**.
+It is listed in `PENDING_LOCALES` (`i18n/routing.ts`), so the locale layout
+renders `PendingLocaleNotice` instead of page content: the language named
+properly, a courteous note that the translation is being made, the same note
+in Amharic, and an invitation to read in English, Amharic or Italian.
+Middleware collapses every `/wal/<path>` onto `/wal` so the notice lives at
+one URL, and the sitemap lists only that root.
+
+**No machine translation will be published for `wal`.** A native Wolaytta
+speaker must write and review both the notice wording and the site
+translation — see the `pending.todo` string. Getting her own mother tongue
+wrong would be worse than not offering it yet.
+
+Noto Sans Ethiopic loads for the Ethiopic-script locales (`am` and `wal`)
+only, and both run on a taller line-height scale.
 
 ## Typography (provisional — pending client/designer sign-off)
 
 Display: Bodoni Moda · Body: Alegreya Sans · Utility (credits/metadata):
-IBM Plex Mono · Amharic: Noto Sans Ethiopic. All self-hosted and subset at
+IBM Plex Mono · Ethiopic script (Amharic, Wolayttatto Doonaa): Noto Sans Ethiopic. All self-hosted and subset at
 build time via `next/font` (no runtime Google requests), `font-display: swap`.
 
 ## Contact form
@@ -163,6 +180,7 @@ that research changes:
 Every item below is rendered as a visible `TODO` in the UI or marked in code:
 
 1. **Contact email** and **booking contact** (`content/identity.ts`, footer, `/contact`).
+1. **A portrait of her for the masthead** — set `brandPortrait` in `content/brand.ts` (square crop, credited, listed in RIGHTS.md). It renders beside her name in the header; it stays `null` until a real photograph exists, because no stock face may stand in for her.
 2. **Instagram / Facebook handles** (footer).
 3. **Real palettes** extracted from collection photography (`content/palettes.ts`).
 4. **Collection data** — titles, years, cities, descriptions (`content/collections.ts`, `messages/*`).
@@ -172,7 +190,7 @@ Every item below is rendered as a visible `TODO` in the UI or marked in code:
 8. **Exact awarding body + full official title** for the 2016 MICE award, the 2017 UN Peace Ambassador naming, and the 2019 honorary doctorate (`content/recognition.ts`).
 9. **Institute site URL** for the `/institute` outbound link.
 10. **Press kit assets** — high-res images, PDF, coverage links (`/press`).
-11. **Human review of `am` and `it` translations** (both files are machine drafts).
+11. **Human review of `am` and `it` translations** (both files are machine drafts), and a **native Wolayttatto Doonaa speaker** to write the `wal` notice wording and, in time, the full translation.
 12. **Typeface sign-off** (current faces are provisional).
 13. **Decision on a reply channel for the contact form** — the specified fields
     (name, organisation, enquiry type, message) include no email/phone, so

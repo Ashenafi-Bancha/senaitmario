@@ -5,14 +5,38 @@
     "titleTemplate": "ዶ/ር ሰናይት ማርዮ",
     "description": "ዶ/ር ሰናይት ማርዮ — የፋሽን ዲዛይነር፣ ሞዴል፣ የሶሺዮሎጂ ባለሙያ እና የተባበሩት መንግሥታት የሰላም አምባሳደር። በአዲስ አበባ የዳ ማርዮስ ፋሽን እና ቴክኖሎጂ ኢንስቲትዩት መስራች እና ዋና ሥራ አስፈጻሚ። መኖሪያዋ ሮም ነው።",
     "pages": {
-      "home": { "title": "ዶ/ር ሰናይት ማርዮ", "description": "የፋሽን ዲዛይነር፣ ሞዴል፣ የሶሺዮሎጂ ባለሙያ እና የተመድ የሰላም አምባሳደር፤ መኖሪያዋ ሮም ነው። ኢትዮጵያን በስብስቦቿ ቀለማት ታስተዋውቃለች።" },
-      "work": { "title": "ሥራዎች", "description": "በሚላን፣ ለንደን እና ፓሪስ የፋሽን መድረኮች የቀረቡ የዶ/ር ሰናይት ማርዮ ስብስቦች።" },
-      "colour": { "title": "የቀለም ማውጫ", "description": "ዶ/ር ሰናይት ማርዮ ኢትዮጵያን በስብስቦቿ ቀለማት እንዴት እንደምታስተዋውቅ — እና የልብሶቹ ቀለማት የሚመዘገቡበት ማውጫ።" },
-      "story": { "title": "ታሪክ", "description": "ከወላይታ ሶዶ እስከ ሮም እና ተመልሶ ወደ አዲስ አበባ — የዶ/ር ሰናይት ማርዮ የሕይወት እና የሥራ ጉዞ።" },
-      "peace": { "title": "ሰላም", "description": "ተሟጋችነት እና ከተመድ ጋር የሚሠራው ሥራ፦ African Fashion Expo፣ Fashion for Peace እና One Peace Fashion Show።" },
-      "institute": { "title": "ኢንስቲትዩቱ", "description": "የዳ ማርዮስ ፋሽን እና ቴክኖሎጂ ኢንስቲትዩት፣ በ2024 (እ.ኤ.አ.) በአዲስ አበባ የተመሠረተ።" },
-      "press": { "title": "ፕሬስ", "description": "የፕሬስ ኪት፣ የሕይወት ታሪክ እና እውቅናዎች — ዶ/ር ሰናይት ማርዮ።" },
-      "contact": { "title": "አግኙን", "description": "ለቀጠሮ እና ለጥያቄዎች — ዶ/ር ሰናይት ማርዮ።" }
+      "home": {
+        "title": "ዶ/ር ሰናይት ማርዮ",
+        "description": "የፋሽን ዲዛይነር፣ ሞዴል፣ የሶሺዮሎጂ ባለሙያ እና የተመድ የሰላም አምባሳደር፤ መኖሪያዋ ሮም ነው። ኢትዮጵያን በስብስቦቿ ቀለማት ታስተዋውቃለች።"
+      },
+      "work": {
+        "title": "ሥራዎች",
+        "description": "በሚላን፣ ለንደን እና ፓሪስ የፋሽን መድረኮች የቀረቡ የዶ/ር ሰናይት ማርዮ ስብስቦች።"
+      },
+      "colour": {
+        "title": "የቀለም ማውጫ",
+        "description": "ዶ/ር ሰናይት ማርዮ ኢትዮጵያን በስብስቦቿ ቀለማት እንዴት እንደምታስተዋውቅ — እና የልብሶቹ ቀለማት የሚመዘገቡበት ማውጫ።"
+      },
+      "story": {
+        "title": "ታሪክ",
+        "description": "ከወላይታ ሶዶ እስከ ሮም እና ተመልሶ ወደ አዲስ አበባ — የዶ/ር ሰናይት ማርዮ የሕይወት እና የሥራ ጉዞ።"
+      },
+      "peace": {
+        "title": "ሰላም",
+        "description": "ተሟጋችነት እና ከተመድ ጋር የሚሠራው ሥራ፦ African Fashion Expo፣ Fashion for Peace እና One Peace Fashion Show።"
+      },
+      "institute": {
+        "title": "ኢንስቲትዩቱ",
+        "description": "የዳ ማርዮስ ፋሽን እና ቴክኖሎጂ ኢንስቲትዩት፣ በ2024 (እ.ኤ.አ.) በአዲስ አበባ የተመሠረተ።"
+      },
+      "press": {
+        "title": "ፕሬስ",
+        "description": "የፕሬስ ኪት፣ የሕይወት ታሪክ እና እውቅናዎች — ዶ/ር ሰናይት ማርዮ።"
+      },
+      "contact": {
+        "title": "አግኙን",
+        "description": "ለቀጠሮ እና ለጥያቄዎች — ዶ/ር ሰናይት ማርዮ።"
+      }
     }
   },
   "nav": {
@@ -163,12 +187,30 @@
     }
   },
   "swatches": {
-    "placeholder-a": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" },
-    "placeholder-b": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" },
-    "placeholder-c": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" },
-    "placeholder-d": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" },
-    "placeholder-e": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" },
-    "placeholder-f": { "name": "TODO — የናሙና ስም", "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።" }
+    "placeholder-a": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    },
+    "placeholder-b": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    },
+    "placeholder-c": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    },
+    "placeholder-d": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    },
+    "placeholder-e": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    },
+    "placeholder-f": {
+      "name": "TODO — የናሙና ስም",
+      "carries": "TODO — ይህ ቀለም የሚሸከመው (ክልል፣ ጨርቅ፣ ሥነ ሥርዓት ወይም ትርጉም)፣ ከደንበኛዋ ጋር ይጻፋል።"
+    }
   },
   "peace": {
     "heading": "ሰላም",
@@ -268,5 +310,15 @@
   },
   "todo": {
     "label": "TODO"
+  },
+  "pending": {
+    "languageName": "Wolayttatto Doonaa",
+    "status": "Translation in progress",
+    "lead": "This site is being translated into Wolayttatto Doonaa — the language of Wolaita Sodo, where Dr. Senait Mario was born and raised.",
+    "body": "Her pages are not ready in this language yet. Rather than publish a hurried translation of her life in her own mother tongue, we would rather take the time to do it properly.",
+    "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው — ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
+    "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
+    "invite": "In the meantime, you are warmly invited to read the site in:",
+    "todo": "TODO — the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
   }
 }

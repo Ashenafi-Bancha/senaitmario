@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { routing } from '@/i18n/routing';
+import { isPendingLocale, routing } from '@/i18n/routing';
 import { collections } from '@/content/collections';
 import { siteUrl } from '@/lib/site';
 
@@ -21,7 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return routing.locales.flatMap((locale) =>
-    paths.map((path) => ({
+    // A pending locale serves the same notice on every route, so only its
+    // root is listed — the rest would be duplicate content.
+    (isPendingLocale(locale) ? [''] : paths).map((path) => ({
       url: `${siteUrl}/${locale}${path}`,
       lastModified: new Date(),
       alternates: {

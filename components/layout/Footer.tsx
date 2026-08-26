@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { TodoMark } from '@/components/ui/TodoMark';
+import { brandName } from '@/content/brand';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -9,7 +10,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-display text-xl tracking-tight">Dr. Senait Mario</p>
+          <p className="font-display text-xl tracking-tight">{brandName}</p>
           <p className="mt-2 text-sm text-muted">{t('roles')}</p>
           <p className="mt-1 font-utility text-xs uppercase tracking-widest text-muted">
             {t('based')}

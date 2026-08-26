@@ -2,14 +2,18 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
+import { isPendingLocale, routing } from '@/i18n/routing';
 import { bodyFace, displayFace, ethiopicFace, utilityFace } from '@/app/fonts';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { PendingLocaleNotice } from '@/components/layout/PendingLocaleNotice';
 import { defaultPaletteId, getPalette } from '@/content/palettes';
 import { siteUrl } from '@/lib/site';
 import '../globals.css';
+
+/** Locales written in the Ethiopic script — they get Noto Sans Ethiopic. */
+const ETHIOPIC_SCRIPT_LOCALES: string[] = ['am', 'wal'];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -50,15 +54,18 @@ export default async function LocaleLayout({
   }
   setRequestLocale(locale);
 
-  // Noto Sans Ethiopic is loaded only on /am routes; other locales never pay
-  // for it. The base palette is inlined server-side so first paint is already
+  // Noto Sans Ethiopic is loaded for the Ethiopic-script locales only —
+  // Amharic, and Wolayttatto Doonaa, which is also written in Ethiopic (its
+  // notice carries Amharic text today, and its translations will be in
+  // Ethiopic tomorrow). Latin-script locales never pay for the font.
+  // The base palette is inlined server-side so first paint is already
   // themed — no flash, and no transition on load.
   const base = getPalette(defaultPaletteId);
   const fontVariables = [
     displayFace.variable,
     bodyFace.variable,
     utilityFace.variable,
-    locale === 'am' ? ethiopicFace.variable : null,
+    ETHIOPIC_SCRIPT_LOCALES.includes(locale) ? ethiopicFace.variable : null,
   ]
     .filter(Boolean)
     .join(' ');
@@ -79,13 +86,20 @@ export default async function LocaleLayout({
     >
       <body
         className={`bg-ground text-ink antialiased ${
-          locale === 'am' ? 'font-ethiopic' : 'font-body'
+          ETHIOPIC_SCRIPT_LOCALES.includes(locale) ? 'font-ethiopic' : 'font-body'
         }`}
       >
         <NextIntlClientProvider>
           <ThemeProvider initialPaletteId={defaultPaletteId}>
             <Header />
-            <main id="content">{children}</main>
+            <main id="content">
+              {/*
+                * A pending locale is offered in the switcher but has no
+                * translated pages yet, so it shows a courteous notice instead
+                * of serving her biography in a language it was not written in.
+                */}
+              {isPendingLocale(locale) ? <PendingLocaleNotice /> : children}
+            </main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>

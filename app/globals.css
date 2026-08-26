@@ -238,12 +238,17 @@ html {
   }
 }
 
-/* Amharic runs on its own line-height scale — Ethiopic glyphs sit taller. */
-:lang(am) {
+/* Ethiopic-script locales run on their own line-height scale — the glyphs
+   sit taller than Latin. Applies to Amharic and Wolayttatto Doonaa. */
+:lang(am),
+:lang(wal) {
   line-height: 1.85;
 }
 :lang(am) h1,
 :lang(am) h2,
-:lang(am) h3 {
+:lang(am) h3,
+:lang(wal) h1,
+:lang(wal) h2,
+:lang(wal) h3 {
   line-height: 1.45;
 }

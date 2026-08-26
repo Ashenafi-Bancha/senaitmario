@@ -4,6 +4,7 @@ import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileMenu } from './MobileMenu';
 import { NAV_ITEMS } from './nav-items';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
+import { Wordmark } from './Wordmark';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -18,12 +19,7 @@ export function Header() {
         {a11y('skipToContent')}
       </a>
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
-        <Link
-          href="/"
-          className="font-display text-lg tracking-tight text-ink no-underline"
-        >
-          Senait Mario
-        </Link>
+        <Wordmark />
 
         {/* Desktop row */}
         <div className="hidden items-center gap-6 lg:flex">

@@ -9,6 +9,9 @@ const LOCALE_LABELS: Record<Locale, string> = {
   en: 'English',
   am: 'አማርኛ',
   it: 'Italiano',
+  // Her mother tongue. Offered here even though its pages are not translated
+  // yet — selecting it shows the "translation in progress" notice.
+  wal: 'Wolayttatto Doonaa',
 };
 
 export function LocaleSwitcher() {
