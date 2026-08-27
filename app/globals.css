@@ -72,6 +72,8 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-line: var(--line);
+  /* Type over photography, where the theme ink would be unreadable. */
+  --color-onphoto: #ffffff;
 
   --font-display: var(--font-display-face), "Bodoni MT", Didot, Georgia, serif;
   --font-body: var(--font-body-face), Seravek, "Gill Sans", Verdana, sans-serif;
@@ -235,6 +237,94 @@ html {
   /* Mobile menu items cascade in. */
   .mobile-menu-item {
     animation: rise 450ms var(--theme-ease) backwards;
+  }
+}
+
+/*
+ * Full-bleed hero (app/[locale]/page.tsx).
+ *
+ * --header-h lets the hero pull itself up behind the sticky header so the
+ * photograph runs to the top of the screen, and lets the overlaid type pad
+ * itself back down so it stays clear of the navigation.
+ */
+:root {
+  --header-h: 68px;
+}
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 58px;
+  }
+}
+
+/*
+ * Readability scrims. Type over an arbitrary photograph is a contrast gamble;
+ * these guarantee the headline stays legible whichever image is dropped in.
+ * Angled from the type side so the photograph stays clean on the other.
+ */
+/*
+ * The strong end of each gradient is held across the whole width the text
+ * occupies, not faded out early. Against a black photograph the light scrim
+ * still leaves the headline near 6:1, so the hero stays legible whatever
+ * photograph is dropped in - which the placeholder cannot predict.
+ */
+.hero-scrim-light {
+  background: linear-gradient(
+    100deg,
+    rgb(240 244 238 / 0.9) 0%,
+    rgb(240 244 238 / 0.82) 38%,
+    rgb(240 244 238 / 0.6) 56%,
+    rgb(240 244 238 / 0.2) 74%,
+    rgb(240 244 238 / 0) 90%
+  );
+}
+.hero-scrim-dark {
+  background: linear-gradient(
+    100deg,
+    rgb(16 17 18 / 0.88) 0%,
+    rgb(16 17 18 / 0.8) 40%,
+    rgb(16 17 18 / 0.68) 60%,
+    rgb(16 17 18 / 0.28) 78%,
+    rgb(16 17 18 / 0) 92%
+  );
+}
+
+.hero-cta {
+  transition:
+    transform 300ms var(--theme-ease),
+    opacity 300ms var(--theme-ease);
+}
+.hero-cta:hover {
+  opacity: 0.88;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-cta:hover {
+    transform: translateY(-2px);
+  }
+  .hero-cue {
+    animation: cue 2.4s var(--theme-ease) infinite;
+  }
+  @keyframes cue {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+}
+
+/*
+ * The hero photograph fills the screen, so its credit is placed over the
+ * image rather than beneath it - bottom left, inside the scrim, where
+ * contrast is guaranteed. Everywhere else on the site credits sit under
+ * their frame; this is the one exception the layout forces.
+ */
+.hero-credit figcaption {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.6rem;
+  margin: 0;
+  max-width: 22rem;
+}
+@media (min-width: 640px) {
+  .hero-credit figcaption {
+    left: 2rem;
   }
 }
 

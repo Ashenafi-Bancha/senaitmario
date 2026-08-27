@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { ThemeSection } from '@/components/theme/ThemeSection';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { Parallax } from '@/components/ui/Parallax';
+import { ScrollCue } from '@/components/ui/ScrollCue';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
 import type { ImageAsset } from '@/content/types';
@@ -26,6 +27,13 @@ export async function generateMetadata({
  * credited, logged in RIGHTS.md) — none of it is her work and none of it
  * depicts her. It is here so the layout can be judged; it all gets replaced.
  */
+/**
+ * Whether the hero photograph is light enough for dark type ('light') or
+ * needs pale type over a darkened scrim ('dark'). Flip this one value when
+ * her real hero photograph goes in.
+ */
+const HERO_TONE: 'light' | 'dark' = 'light';
+
 const HERO_IMAGE: ImageAsset = {
   src: '/images/collections/weaver-pit-loom.jpg',
   width: 1280,
@@ -101,41 +109,73 @@ function Hero() {
   const t = useTranslations('home');
   return (
     <ThemeSection paletteId="ivory" labelledBy="hero-name">
-      <div className="grid min-h-[92svh] grid-cols-1 items-center gap-y-10 lg:grid-cols-[1fr_46vw]">
-        {/* Type column, optically aligned to the site container. */}
-        <div className="px-4 pt-28 sm:px-6 lg:pl-[max(1.5rem,calc((100vw-72rem)/2))] lg:pr-12 lg:pt-0">
-          <p className="rise font-utility text-xs uppercase tracking-[0.3em] text-muted">
-            {t('heroTitlePrefix')}
-          </p>
-          <h1
-            id="hero-name"
-            className="rise rise-2 mt-4 font-display text-[clamp(3rem,7.5vw,7.5rem)] leading-[0.86] tracking-[-0.02em]"
-          >
-            {t('heroName')}
-          </h1>
-          <div className="rise rise-3 mt-8 h-px w-24 bg-line" />
-          <p className="rise rise-3 mt-8 max-w-md text-lg leading-relaxed text-ink">
-            {t('heroRoles')}
-          </p>
-          <p className="rise rise-3 mt-4 max-w-md text-base leading-relaxed text-muted">
-            {t('heroLede')}
-          </p>
-          <dl className="rise rise-4 mt-10 flex flex-wrap gap-x-8 gap-y-2 font-utility text-[0.65rem] uppercase tracking-[0.22em] text-muted">
-            <dd>{t('heroBased')}</dd>
-            <dd className="hidden sm:block">·</dd>
-            <dd>{t('heroOrigin')}</dd>
-          </dl>
+      {/*
+        * Full-bleed hero: the photograph fills the viewport and the type sits
+        * over it. The image is pulled up behind the sticky header so it runs
+        * to the very top of the screen.
+        */}
+      <div className="relative -mt-[var(--header-h)] h-[100svh] w-full overflow-hidden">
+        <CreditedImage
+          asset={HERO_IMAGE}
+          variant="cover"
+          sizes="100vw"
+          priority
+          className="hero-credit absolute inset-0 h-full w-full"
+        />
+
+        {/*
+          * Readability scrim. Text over an arbitrary photograph is a contrast
+          * gamble, so a gradient guarantees the headline stays legible
+          * whatever image is dropped in. HERO_TONE picks the pairing.
+          */}
+        <div
+          aria-hidden="true"
+          className={`absolute inset-0 ${
+            HERO_TONE === 'light' ? 'hero-scrim-light' : 'hero-scrim-dark'
+          }`}
+        />
+
+        <div className="relative z-10 flex h-full items-center pt-[var(--header-h)]">
+          <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8">
+            <p
+              className={`rise font-utility text-[0.7rem] uppercase tracking-[0.35em] ${
+                HERO_TONE === 'light' ? 'text-ink/70' : 'text-onphoto/75'
+              }`}
+            >
+              {t('heroTitlePrefix')}
+            </p>
+
+            <h1
+              id="hero-name"
+              className={`rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
+                HERO_TONE === 'light' ? 'text-ink' : 'text-onphoto'
+              }`}
+            >
+              {t('heroName')}
+            </h1>
+
+            <p
+              className={`rise rise-3 mt-6 max-w-md text-base leading-relaxed sm:text-lg ${
+                HERO_TONE === 'light' ? 'text-ink/80' : 'text-onphoto/85'
+              }`}
+            >
+              {t('heroRoles')}
+            </p>
+
+            <p className="rise rise-4 mt-9">
+              <Link
+                href="/work"
+                className="hero-cta inline-flex min-h-12 items-center gap-3 rounded-full bg-ink px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
+              >
+                {t('heroCta')}
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </p>
+          </div>
         </div>
 
-        {/* Image column: bleeds to the right edge of the viewport. */}
-        <div className="unveil relative h-[62svh] w-full lg:h-[92svh]">
-          <CreditedImage
-            asset={HERO_IMAGE}
-            variant="cover"
-            sizes="(min-width: 1024px) 46vw, 100vw"
-            priority
-            className="h-full w-full"
-          />
+        <div className="absolute inset-x-0 bottom-8 z-10 flex justify-center">
+          <ScrollCue targetId="chapter-story" />
         </div>
       </div>
     </ThemeSection>

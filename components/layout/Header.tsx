@@ -18,7 +18,9 @@ export function Header() {
       >
         {a11y('skipToContent')}
       </a>
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
+      {/* Height is pinned to --header-h so the full-bleed hero can pull itself
+          up behind the header by exactly the right amount. */}
+      <div className="mx-auto flex h-[var(--header-h)] max-w-6xl items-center justify-between gap-6 px-4 sm:px-6">
         <Wordmark />
 
         {/* Desktop row */}

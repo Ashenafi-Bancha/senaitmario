@@ -1,5 +1,5 @@
 {
-  "_MACHINE_DRAFT": "BOZZA AUTOMATICA, MACHINE DRAFT. Every string in this file is a machine translation and REQUIRES review by a professional human translator before publication. This is the personal biography of a real public figure; do not publish without human sign-off.",
+  "_MACHINE_DRAFT": "BOZZA AUTOMATICA / MACHINE DRAFT. Every string in this file is a machine translation and REQUIRES review by a professional human translator before publication. This is the personal biography of a real public figure; do not publish without human sign-off.",
   "meta": {
     "siteName": "Dr.ssa Senait Mario",
     "titleTemplate": "Dr.ssa Senait Mario",
@@ -72,9 +72,11 @@
     "heroName": "Senait Mario",
     "heroTitlePrefix": "Dr.ssa",
     "heroRoles": "Stilista e modella internazionale, sociologa, Ambasciatrice di Pace ONU",
-    "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni, qui il colore non è decorazione: è la struttura del lavoro.",
+    "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni. Qui il colore non è decorazione: è la struttura del lavoro.",
     "heroBased": "Roma, Italia",
     "heroOrigin": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia",
+    "heroCta": "Vedi i lavori",
+    "scrollCue": "Scorri ai capitoli",
     "chaptersHeading": "Capitoli",
     "chapters": {
       "story": {
