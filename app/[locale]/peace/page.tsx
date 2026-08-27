@@ -6,6 +6,8 @@ import { PullQuote } from '@/components/ui/PullQuote';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
 import { quotes } from '@/content/quotes';
+import { eventPlatforms } from '@/content/events';
+import { TodoMark } from '@/components/ui/TodoMark';
 
 export async function generateMetadata({
   params,
@@ -19,7 +21,7 @@ export async function generateMetadata({
 // Her stated positions, rendered as paraphrase — never as fabricated quotes.
 const POSITION_KEYS = ['colour', 'investment', 'seriousness', 'expression'] as const;
 
-function PeaceContent() {
+function PeaceContent({ locale }: { locale: string }) {
   const t = useTranslations('peace');
 
   return (
@@ -69,34 +71,68 @@ function PeaceContent() {
 
       <ThemeSection
         paletteId="ivory"
-        labelledBy="peace-sodo"
+        labelledBy="peace-platforms"
         className="border-t border-line"
       >
         <div className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
           <h2
-            id="peace-sodo"
-            className="font-display text-[clamp(1.75rem,5vw,3.5rem)] leading-tight tracking-tight"
+            id="peace-platforms"
+            className="font-utility text-xs uppercase tracking-[0.25em] text-muted"
           >
-            {t('sodoShowHeading')}
+            {t('platformsHeading')}
           </h2>
-          <div className="mt-8 max-w-2xl space-y-6 text-lg leading-relaxed">
-            <p>{t('sodoShowBody')}</p>
-            <p className="text-muted">{t('sodoShowAttendance')}</p>
-          </div>
 
-          <h3 className="mt-16 font-utility text-xs uppercase tracking-widest text-muted">
-            {t('eventsHeading')}
-          </h3>
-          <ul className="mt-4 flex flex-wrap gap-3">
-            {(['expo', 'fashionForPeace'] as const).map((key) => (
-              <li
-                key={key}
-                className="border border-line px-4 py-2 font-utility text-xs uppercase tracking-widest"
-              >
-                {t(`events.${key}`)}
-              </li>
+          <div className="mt-10 space-y-20">
+            {eventPlatforms.map((platform, index) => (
+              <article key={platform.id}>
+                <p className="font-utility text-[0.65rem] uppercase tracking-[0.3em] text-muted">
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <h3 className="mt-4 font-display text-[clamp(2rem,6vw,4rem)] leading-[0.95] tracking-[-0.015em]">
+                  {platform.name}
+                </h3>
+                <p className="mt-6 max-w-2xl text-lg leading-relaxed">
+                  {t(platform.descriptionKey.replace('peace.', ''))}
+                </p>
+
+                {platform.editions.length > 0 ? (
+                  <>
+                    <h4 className="mt-12 font-utility text-[0.65rem] uppercase tracking-[0.25em] text-muted">
+                      {t('editionsHeading')}
+                    </h4>
+                    <ul className="mt-5 max-w-2xl divide-y divide-line border-y border-line">
+                      {platform.editions.map((edition) => (
+                        <li key={edition.id} className="py-6">
+                          <p className="font-utility text-[0.65rem] uppercase tracking-[0.22em] text-accent">
+                            {edition.city}, {edition.country} ·{' '}
+                            {new Intl.DateTimeFormat(locale, {
+                              year: 'numeric',
+                              month: 'long',
+                            }).format(new Date(`${edition.date}-01`))}
+                          </p>
+                          <p className="mt-3 leading-relaxed">
+                            {t(edition.bodyKey.replace('peace.', ''))}
+                          </p>
+                          {edition.attendanceKey ? (
+                            <p className="mt-3 text-sm leading-relaxed text-muted">
+                              {t(edition.attendanceKey.replace('peace.', ''))}
+                            </p>
+                          ) : null}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-5 max-w-2xl text-sm text-muted">
+                      <TodoMark /> {t('editionsTodo')}
+                    </p>
+                  </>
+                ) : (
+                  <p className="mt-6 max-w-2xl text-sm text-muted">
+                    <TodoMark /> {t('expoTodo')}
+                  </p>
+                )}
+              </article>
             ))}
-          </ul>
+          </div>
         </div>
       </ThemeSection>
     </>
@@ -110,5 +146,5 @@ export default async function PeacePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <PeaceContent />;
+  return <PeaceContent locale={locale} />;
 }

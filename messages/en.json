@@ -229,6 +229,18 @@
     "events": {
       "expo": "African Fashion Expo",
       "fashionForPeace": "Fashion for Peace / One Peace Fashion Show"
+    },
+    "platformsHeading": "The platforms she built",
+    "editionsHeading": "Documented editions",
+    "editionsTodo": "TODO - only the June 2019 Wolaita Sodo edition is documented in reachable press. Edition history, dates, cities and any upcoming show to be supplied by the client.",
+    "expoTodo": "TODO - no edition, date or city for the African Fashion Expo is published anywhere. Details to be supplied by the client.",
+    "platforms": {
+      "onePeace": {
+        "description": "One Peace Fashion is the show platform she founded and still runs under her own name. The Nigerian Tribune, covering it in 2019, described it as an annual showcase of ready-to-wear from across Africa; she has been presenting work under the name since at least 2014. Its purpose, in her framing, is to let people express who they are and where they are from through what they wear."
+      },
+      "expo": {
+        "description": "The African Fashion Expo is the second platform she names as her own. She has spoken of it as an annual event she organises to promote Ethiopia in fashion while drawing investment toward youth empowerment."
+      }
     }
   },
   "institute": {

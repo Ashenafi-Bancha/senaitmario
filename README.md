@@ -178,6 +178,29 @@ that research changes:
    scholarship to Uganda, and entered fashion after meeting a Kenyan woman
    there who ran a modelling and fashion school.
 
+### One Peace Fashion — what the research established
+
+"One Peace Fashion" is confirmed as her standing event brand, not a one-off
+title: the Nigerian Tribune names the June 2019 Wolaita Sodo event that way,
+her own public Facebook page is titled "Senait Mario ONE PEACE fashion" and
+has been running since at least April 2014, and a 2019 third-party post calls
+her its founder. Addis Standard's "Peace Fashion Show" is that paper's
+rendering of the same event, not a second brand.
+
+**Only the June 2019 edition is documented anywhere reachable.** The Tribune
+calls the platform "an annual showcase of ready-to-wear from across Africa",
+but no other edition — earlier or later — appears in any source, and there is
+nothing at all after 2019. `/peace` therefore names the platform, documents
+that one edition, and asks for the rest, rather than implying a run of shows
+that cannot be evidenced. Edition history is the single most valuable thing
+the client can add to that page.
+
+The Ethiopian Press Agency piece (`press.et/herald/?p=6603`) would likely add
+detail but now 404s with no Wayback capture — unrecoverable. "African Fashion
+Expo" is named by her once, in the 2019 Addis Standard interview, with no
+edition, date or city published anywhere, so it is listed as a named platform
+with no claims attached. Details in `content/events.ts`.
+
 ## What the client must supply
 
 Every item below is rendered as a visible `TODO` in the UI or marked in code:
