@@ -206,7 +206,14 @@ with no claims attached. Details in `content/events.ts`.
 Every item below is rendered as a visible `TODO` in the UI or marked in code:
 
 1. **Contact email** and **booking contact** (`content/identity.ts`, footer, `/contact`).
-1. **A portrait of her for the masthead** — set `brandPortrait` in `content/brand.ts` (square crop, credited, listed in RIGHTS.md). It renders beside her name in the header; it stays `null` until a real photograph exists, because no stock face may stand in for her.
+1. **Her logo** and **a portrait for the masthead** — both are slots in
+   `content/brand.ts`, both currently `null`. Save logo files in
+   `public/images/brand/` and the tab icon as `app/icon.svg`; full instructions
+   in [`public/images/brand/README.md`](public/images/brand/README.md). Until a
+   logo is set the header shows her name in the display face, which is a valid
+   wordmark. No stock mark or stock face is ever substituted.
+   Note: `app/favicon.ico` is still the project template's default and must be
+   deleted once a real `app/icon.svg` is added.
 2. ~~Social handles~~ — **done.** Facebook and Instagram are both live (`content/social.ts`). Ask her whether the "Senait Mario ONE PEACE fashion" and "Damarios FTI" pages should also be linked.
 3. **Real palettes** extracted from collection photography (`content/palettes.ts`).
 4. **Collection data** — titles, years, cities, descriptions (`content/collections.ts`, `messages/*`).

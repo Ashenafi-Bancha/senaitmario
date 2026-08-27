@@ -238,6 +238,27 @@ html {
   }
 }
 
+/*
+ * Logo theme swap (see content/brand.ts and components/layout/Wordmark.tsx).
+ *
+ * Only used when a separate dark-theme logo is supplied. Both files are in
+ * the DOM and CSS picks one, so there is no flash of the wrong logo on load
+ * the way a JS-side theme check would produce. A single SVG that uses
+ * currentColor needs none of this.
+ */
+.brand-logo {
+  display: block;
+}
+.brand-logo--noir {
+  display: none;
+}
+[data-theme-mode="noir"] .brand-logo--noir {
+  display: block;
+}
+[data-theme-mode="noir"] .brand-logo--default {
+  display: none;
+}
+
 /* Ethiopic-script locales run on their own line-height scale — the glyphs
    sit taller than Latin. Applies to Amharic and Wolayttatto Doonaa. */
 :lang(am),

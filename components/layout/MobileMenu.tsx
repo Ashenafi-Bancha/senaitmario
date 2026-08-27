@@ -7,7 +7,7 @@ import { Link } from '@/i18n/navigation';
 import { NAV_ITEMS } from './nav-items';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
-import { brandName } from '@/content/brand';
+import { Wordmark } from './Wordmark';
 
 /**
  * Mobile navigation: a full-screen overlay in the display face — the small
@@ -45,7 +45,7 @@ export function MobileMenu() {
       className="fixed inset-0 z-50 flex h-[100dvh] flex-col bg-ground"
     >
       <div className="flex items-center justify-between border-b border-line px-4 py-3 sm:px-6">
-        <span className="font-display text-lg tracking-tight">{brandName}</span>
+        <Wordmark />
         <button
           type="button"
           onClick={() => setOpen(false)}
