@@ -30,10 +30,13 @@ export const socialAccounts: SocialAccount[] = [
   {
     platform: 'instagram',
     label: 'Instagram',
-    // TODO — an account named @senaitmario exists but carries no bio or any
-    // other detail tying it to her work, so it is NOT published here. Confirm
-    // the handle with her, then fill this in.
-    url: null,
+    // Confirmed by the client. Research could not tie this account to her
+    // from public signals alone (it carries no bio), so it is published on
+    // the client's confirmation rather than on inference.
+    // Stored without the ?igsi= share token the Instagram app appends —
+    // that is a per-share tracking identifier, not part of the profile URL.
+    url: 'https://www.instagram.com/senaitmario',
+    handle: '@senaitmario',
   },
 ];
 
