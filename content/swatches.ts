@@ -13,7 +13,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-a',
     hex: '#33241A',
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-01',
     carries: 'region',
     carriesKey: 'swatches.placeholder-a.carries',
@@ -21,7 +21,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-b',
     hex: '#C89A6A',
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-01',
     carries: 'ceremony',
     carriesKey: 'swatches.placeholder-b.carries',
@@ -29,7 +29,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-c',
     hex: '#101112',
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-02',
     carries: 'fabric',
     carriesKey: 'swatches.placeholder-c.carries',
@@ -37,7 +37,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-d',
     hex: '#6B5644',
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-02',
     carries: 'meaning',
     carriesKey: 'swatches.placeholder-d.carries',
@@ -45,7 +45,7 @@ export const swatches: Swatch[] = [
   {
     id: 'placeholder-e',
     hex: '#7A4B24',
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-03',
     carries: 'region',
     carriesKey: 'swatches.placeholder-e.carries',
@@ -54,7 +54,7 @@ export const swatches: Swatch[] = [
     id: 'placeholder-f',
     hex: '#F0F4EE',
     // (ivory — matches the default ground)
-    name: 'TODO — swatch name',
+    name: 'TODO: swatch name',
     collectionSlug: 'placeholder-03',
     carries: 'meaning',
     carriesKey: 'swatches.placeholder-f.carries',

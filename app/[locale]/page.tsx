@@ -30,7 +30,7 @@ const HERO_IMAGE: ImageAsset = {
   src: '/images/collections/weaver-pit-loom.jpg',
   width: 1280,
   height: 1811,
-  alt: 'Weaver at a traditional Ethiopian pit loom — placeholder image',
+  alt: 'Weaver at a traditional Ethiopian pit loom, placeholder image',
   credit: 'Thomas Fuhrmann, CC BY-SA 4.0, via Wikimedia Commons',
 };
 
@@ -43,7 +43,7 @@ const CHAPTERS = [
       src: '/images/story/sodo.jpg',
       width: 1600,
       height: 1115,
-      alt: 'Street view of Wolaita Sodo, southern Ethiopia — placeholder image',
+      alt: 'Street view of Wolaita Sodo, southern Ethiopia, placeholder image',
       credit: 'Bernard Gagnon, CC BY-SA 3.0, via Wikimedia Commons',
     },
   },
@@ -55,7 +55,7 @@ const CHAPTERS = [
       src: '/images/collections/museum-costume-01.jpg',
       width: 1280,
       height: 1707,
-      alt: 'Ceremonial Ethiopian costume, National Museum of Ethiopia — placeholder image',
+      alt: 'Ceremonial Ethiopian costume, National Museum of Ethiopia, placeholder image',
       credit: 'Adam Jones, CC BY-SA 2.0, via Wikimedia Commons',
     },
   },
@@ -67,7 +67,7 @@ const CHAPTERS = [
       src: '/images/collections/loom-blue-warp.jpg',
       width: 1280,
       height: 853,
-      alt: 'Loom threaded with blue and white warp, Ethiopia — placeholder image',
+      alt: 'Loom threaded with blue and white warp, Ethiopia, placeholder image',
       credit: 'Thomas Fuhrmann, CC BY-SA 4.0, via Wikimedia Commons',
     },
   },
@@ -79,7 +79,7 @@ const CHAPTERS = [
       src: '/images/story/addis.jpg',
       width: 1600,
       height: 900,
-      alt: 'Sunset over Addis Ababa — placeholder image',
+      alt: 'Sunset over Addis Ababa, placeholder image',
       credit: 'Jean Rebiffé, CC BY 2.0, via Wikimedia Commons',
     },
   },
@@ -91,7 +91,7 @@ const CHAPTERS = [
       src: '/images/collections/shiro-meda-market.jpg',
       width: 1600,
       height: 900,
-      alt: 'Ethiopian textiles at market — placeholder image',
+      alt: 'Ethiopian textiles at market, placeholder image',
       credit: 'Rod Waddington, CC BY-SA 2.0, via Wikimedia Commons',
     },
   },
@@ -122,7 +122,7 @@ function Hero() {
           </p>
           <dl className="rise rise-4 mt-10 flex flex-wrap gap-x-8 gap-y-2 font-utility text-[0.65rem] uppercase tracking-[0.22em] text-muted">
             <dd>{t('heroBased')}</dd>
-            <dd className="hidden sm:block">—</dd>
+            <dd className="hidden sm:block">·</dd>
             <dd>{t('heroOrigin')}</dd>
           </dl>
         </div>

@@ -113,7 +113,7 @@ export function ContactForm() {
             className={inputClasses}
           >
             <option value="" disabled>
-              —
+              {t('enquiryTypePlaceholder')}
             </option>
             {ENQUIRY_TYPES.map((type) => (
               <option key={type} value={type}>

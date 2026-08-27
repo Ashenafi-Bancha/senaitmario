@@ -1,9 +1,9 @@
 {
-  "_MACHINE_DRAFT": "BOZZA AUTOMATICA — MACHINE DRAFT. Every string in this file is a machine translation and REQUIRES review by a professional human translator before publication. This is the personal biography of a real public figure; do not publish without human sign-off.",
+  "_MACHINE_DRAFT": "BOZZA AUTOMATICA, MACHINE DRAFT. Every string in this file is a machine translation and REQUIRES review by a professional human translator before publication. This is the personal biography of a real public figure; do not publish without human sign-off.",
   "meta": {
     "siteName": "Dr.ssa Senait Mario",
     "titleTemplate": "Dr.ssa Senait Mario",
-    "description": "Dr.ssa Senait Mario — stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e CEO del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
+    "description": "Dr.ssa Senait Mario, stilista, modella, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e CEO del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
     "pages": {
       "home": {
         "title": "Dr.ssa Senait Mario",
@@ -15,11 +15,11 @@
       },
       "colour": {
         "title": "L'Indice dei Colori",
-        "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni — e l'indice dove vivranno i colori dei capi."
+        "description": "Come la Dr.ssa Senait Mario promuove l'Etiopia attraverso i colori delle sue collezioni, e l'indice dove vivranno i colori dei capi."
       },
       "story": {
         "title": "Storia",
-        "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba — l'arco della vita e del lavoro della Dr.ssa Senait Mario."
+        "description": "Da Wolaita Sodo a Roma e ritorno ad Addis Abeba, l'arco della vita e del lavoro della Dr.ssa Senait Mario."
       },
       "peace": {
         "title": "Pace",
@@ -63,8 +63,8 @@
   "footer": {
     "roles": "Stilista · Modella · Sociologa · Ambasciatrice di Pace ONU",
     "based": "Roma, Italia",
-    "contactTodo": "TODO — indirizzo email di contatto",
-    "bookingTodo": "TODO — contatto per il booking",
+    "contactTodo": "TODO: indirizzo email di contatto",
+    "bookingTodo": "TODO: contatto per il booking",
     "institute": "Da Mario's Fashion and Technology Institute, Addis Abeba",
     "copyright": "© {year} Dr.ssa Senait Mario. Tutti i diritti riservati."
   },
@@ -72,14 +72,14 @@
     "heroName": "Senait Mario",
     "heroTitlePrefix": "Dr.ssa",
     "heroRoles": "Stilista, modella, sociologa, Ambasciatrice di Pace ONU",
-    "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni — qui il colore non è decorazione: è la struttura del lavoro.",
+    "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni, qui il colore non è decorazione: è la struttura del lavoro.",
     "heroBased": "Roma, Italia",
     "heroOrigin": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia",
     "chaptersHeading": "Capitoli",
     "chapters": {
       "story": {
         "title": "La Storia",
-        "lede": "Da Wolaita Sodo a Roma — e ritorno ad Addis Abeba.",
+        "lede": "Da Wolaita Sodo a Roma, e ritorno ad Addis Abeba.",
         "cta": "Leggi la storia"
       },
       "work": {
@@ -89,7 +89,7 @@
       },
       "colour": {
         "title": "L'Indice dei Colori",
-        "lede": "Un fondo chiaro, inchiostro bruno scuro, un nero moderno opzionale — e l'indice dove vivranno i colori delle collezioni.",
+        "lede": "Un fondo chiaro, inchiostro bruno scuro, un nero moderno opzionale, e l'indice dove vivranno i colori delle collezioni.",
         "cta": "Apri l'indice"
       },
       "peace": {
@@ -99,7 +99,7 @@
       },
       "institute": {
         "title": "L'Istituto",
-        "lede": "Da Mario's Fashion and Technology Institute — fondato nel 2024 ad Addis Abeba.",
+        "lede": "Da Mario's Fashion and Technology Institute, fondato nel 2024 ad Addis Abeba.",
         "cta": "Visita l'istituto"
       }
     }
@@ -111,7 +111,7 @@
       "sodo": {
         "place": "Wolaita Sodo",
         "title": "Dove tutto comincia",
-        "body": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia. Prima della moda c'era un'altra disciplina: si è formata come sociologa — un modo di leggere le persone, l'abito e l'appartenenza che non ha mai abbandonato il lavoro."
+        "body": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia. Prima della moda c'era un'altra disciplina: si è formata come sociologa, un modo di leggere le persone, l'abito e l'appartenenza che non ha mai abbandonato il lavoro."
       },
       "nairobi": {
         "place": "Nairobi",
@@ -121,12 +121,12 @@
       "kampala": {
         "place": "Kampala",
         "title": "In transito",
-        "body": "Poi l'Uganda — un altro capitolo di un viaggio che avrebbe attraversato un continente."
+        "body": "Poi l'Uganda, un altro capitolo di un viaggio che avrebbe attraversato un continente."
       },
       "rome": {
         "place": "Roma",
         "title": "Una seconda casa",
-        "body": "Si è stabilita a Roma ed è diventata cittadina italiana — etiope di nascita, italiana per cittadinanza. Ha continuato a studiare: nel 2019 stava conseguendo un master in Scienze Agrarie."
+        "body": "Si è stabilita a Roma ed è diventata cittadina italiana, etiope di nascita, italiana per cittadinanza. Ha continuato a studiare: nel 2019 stava conseguendo un master in Scienze Agrarie."
       },
       "stages": {
         "place": "Milano · Londra · Parigi",
@@ -136,14 +136,14 @@
       "addis": {
         "place": "Addis Abeba",
         "title": "Il ritorno",
-        "body": "Nel 2024 ha fondato il Da Mario's Fashion and Technology Institute ad Addis Abeba — la risoluzione dell'arco. Il suo obiettivo: promuovere l'Etiopia nell'industria della moda e attrarre investimenti a sostegno dell'emancipazione dei giovani etiopi."
+        "body": "Nel 2024 ha fondato il Da Mario's Fashion and Technology Institute ad Addis Abeba, la risoluzione dell'arco. Il suo obiettivo: promuovere l'Etiopia nell'industria della moda e attrarre investimenti a sostegno dell'emancipazione dei giovani etiopi."
       }
     }
   },
   "work": {
     "heading": "Collezioni",
     "intro": "Corpi di lavoro, ognuno con la propria palette.",
-    "placeholderNote": "TODO — dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
+    "placeholderNote": "TODO: dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
     "filteredBy": "Pezzi che usano {swatch}",
     "clearFilter": "Rimuovi filtro",
     "viewCollection": "Vedi la collezione",
@@ -155,27 +155,27 @@
   },
   "collections": {
     "placeholder-01": {
-      "title": "TODO — Collezione uno",
-      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+      "title": "TODO: Collezione uno",
+      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
     },
     "placeholder-02": {
-      "title": "TODO — Collezione due",
-      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+      "title": "TODO: Collezione due",
+      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
     },
     "placeholder-03": {
-      "title": "TODO — Collezione tre",
-      "description": "TODO — descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+      "title": "TODO: Collezione tre",
+      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
     }
   },
   "colour": {
     "heading": "L'Indice dei Colori",
-    "intro": "Il suo metodo dichiarato: promuovere l'Etiopia attraverso i colori delle collezioni. Questa pagina è dove si racconta il colore del sito — e dove ogni colore dei capi sarà indicizzato.",
-    "aboutHeading": "Avorio, bruno — e nero",
-    "aboutBody1": "Il sito poggia su un unico fondo chiaro — un avorio dalle sfumature verdi — scritto in bruno profondo, perché nulla competa con il lavoro. Lo preferisci scuro? L'interruttore nell'intestazione veste ogni pagina di nero moderno, e l'intero fondo attraversa il cambio in un solo movimento fluido.",
-    "aboutBody2": "Quando le collezioni saranno fotografate, i loro colori verranno estratti direttamente dai capi e prenderanno il posto di questi fondi — ogni corpo di lavoro avrà la propria palette, e ogni colore sarà indicizzato qui sotto: il nome, la collezione da cui proviene e ciò che porta con sé.",
-    "aboutNoteTodo": "TODO — una nota con le sue parole sui colori del sito, da scrivere e approvare con il cliente.",
+    "intro": "Il suo metodo dichiarato: promuovere l'Etiopia attraverso i colori delle collezioni. Questa pagina è dove si racconta il colore del sito, e dove ogni colore dei capi sarà indicizzato.",
+    "aboutHeading": "Avorio, bruno e nero",
+    "aboutBody1": "Il sito poggia su un unico fondo chiaro, un avorio dalle sfumature verdi, scritto in bruno profondo, perché nulla competa con il lavoro. Lo preferisci scuro? L'interruttore nell'intestazione veste ogni pagina di nero moderno, e l'intero fondo attraversa il cambio in un solo movimento fluido.",
+    "aboutBody2": "Quando le collezioni saranno fotografate, i loro colori verranno estratti direttamente dai capi e prenderanno il posto di questi fondi, ogni corpo di lavoro avrà la propria palette, e ogni colore sarà indicizzato qui sotto: il nome, la collezione da cui proviene e ciò che porta con sé.",
+    "aboutNoteTodo": "TODO: una nota con le sue parole sui colori del sito, da scrivere e approvare con il cliente.",
     "indexHeading": "L'indice",
-    "placeholderNote": "TODO — campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
+    "placeholderNote": "TODO: campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
     "filterAction": "Vedi i pezzi in questo colore",
     "fromCollection": "Da {collection}",
     "carriesLabels": {
@@ -187,28 +187,28 @@
   },
   "swatches": {
     "placeholder-a": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     },
     "placeholder-b": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     },
     "placeholder-c": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     },
     "placeholder-d": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     },
     "placeholder-e": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     },
     "placeholder-f": {
-      "name": "TODO — nome del campione",
-      "carries": "TODO — ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
+      "name": "TODO: nome del campione",
+      "carries": "TODO: ciò che questo colore porta con sé (una regione, un tessuto, una cerimonia, un significato), da scrivere con il cliente."
     }
   },
   "peace": {
@@ -216,14 +216,14 @@
     "intro": "Nominata Ambasciatrice di Pace delle Nazioni Unite nel 2017, organizza l'African Fashion Expo e la Fashion for Peace / One Peace Fashion Show.",
     "positionsHeading": "Posizioni",
     "positions": {
-      "colour": "Promuove l'Etiopia attraverso i colori che usa nelle sue collezioni — e attribuisce a questo approccio il merito di aver portato il suo lavoro sulle grandi passerelle.",
+      "colour": "Promuove l'Etiopia attraverso i colori che usa nelle sue collezioni, e attribuisce a questo approccio il merito di aver portato il suo lavoro sulle grandi passerelle.",
       "investment": "Il suo obiettivo è promuovere l'Etiopia nell'industria della moda e al tempo stesso attrarre investimenti in Etiopia a sostegno dell'emancipazione giovanile.",
-      "seriousness": "La moda africana, ha sostenuto, merita di essere trattata come una fonte seria di design — non ridotta a un ristretto repertorio di cliché visivi.",
+      "seriousness": "La moda africana, ha sostenuto, merita di essere trattata come una fonte seria di design, non ridotta a un ristretto repertorio di cliché visivi.",
       "expression": "La moda può portare messaggi di pace e unità; le persone dovrebbero poter esprimere chi sono e da dove vengono attraverso ciò che indossano."
     },
-    "pullQuoteTodo": "TODO — citazione testuale da approvare con il cliente",
+    "pullQuoteTodo": "TODO: citazione testuale da approvare con il cliente",
     "pullQuoteConfirm": "Confermare il testo con il cliente",
-    "sodoShowHeading": "Peace Fashion Show — Wolaita Sodo, giugno 2019",
+    "sodoShowHeading": "Peace Fashion Show, Wolaita Sodo, giugno 2019",
     "sodoShowBody": "Nel giugno 2019 ha organizzato una Peace Fashion Show nella sua città natale, Wolaita Sodo, in concomitanza con il festival culturale annuale dello Stato Regionale delle Nazioni, Nazionalità e Popoli del Sud, dove 56 nazioni dell'Etiopia meridionale hanno messo in mostra la propria diversità culturale. La sfilata ha presentato il lavoro di otto stilisti etiopi.",
     "sodoShowAttendance": "Erano presenti il Ministro di Stato del Turismo e della Cultura dell'Etiopia, il Vicepresidente dello stato regionale del Sud, la direzione dell'Ufficio per le Donne, i Bambini e i Giovani di Addis Abeba e ospiti di ambasciate e organizzazioni internazionali.",
     "eventsHeading": "Eventi che organizza",
@@ -249,7 +249,7 @@
     "founded": "Fondato nel 2024 · Bole Sub City, Addis Abeba",
     "body": "L'istituto insegna fashion design, modeling, cosmetologia, nail technology, informatica e formazione professionale per addetti alla sicurezza. È accreditato dall'Autorità di Regolamentazione della Qualità dell'Istruzione e della Formazione dell'Amministrazione della Città di Addis Abeba ed è partner della Rome Business School.",
     "bridge": "Questo sito racconta la stilista. L'istituto ha una casa propria.",
-    "ctaTodo": "TODO — link esterno in attesa della pubblicazione del sito dell'istituto",
+    "ctaTodo": "TODO: link esterno in attesa della pubblicazione del sito dell'istituto",
     "programmesHeading": "Programmi",
     "programmes": {
       "fashionDesign": "Fashion design",
@@ -267,7 +267,7 @@
     "recognitionHeading": "Riconoscimenti",
     "recognition": {
       "mice2016": {
-        "title": "Top 40 Women of Africa — premio MICE, Ghana",
+        "title": "Top 40 Women of Africa, premio MICE, Ghana",
         "detail": "Riconosciuta nel 2016 tra le Top 40 Women of Africa."
       },
       "un2017": {
@@ -281,19 +281,20 @@
     },
     "confirmationNote": "I dettagli di ciascun riconoscimento sono in fase di conferma per il press kit.",
     "downloadsHeading": "Press kit e download",
-    "downloadsTodo": "TODO — immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
+    "downloadsTodo": "TODO: immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
     "coverageHeading": "Rassegna stampa",
     "coverageArchive": "Copia archiviata",
-    "coverageTodo": "TODO — ulteriore rassegna stampa (stampa italiana, TV/radio etiopi) da fornire dal cliente; sono elencati solo gli articoli reperibili pubblicamente."
+    "coverageTodo": "TODO: ulteriore rassegna stampa (stampa italiana, TV/radio etiopi) da fornire dal cliente; sono elencati solo gli articoli reperibili pubblicamente."
   },
   "contact": {
     "heading": "Contatti",
     "intro": "Richieste di booking, stampa e partnership.",
-    "emailTodo": "TODO — indirizzo email diretto in attesa",
+    "emailTodo": "TODO: indirizzo email diretto in attesa",
     "form": {
       "name": "Nome",
       "organisation": "Organizzazione",
       "enquiryType": "Tipo di richiesta",
+      "enquiryTypePlaceholder": "Seleziona",
       "enquiryTypes": {
         "booking": "Booking",
         "press": "Stampa",
@@ -303,12 +304,12 @@
       "message": "Messaggio",
       "submit": "Invia la richiesta",
       "sending": "Invio in corso…",
-      "success": "Grazie — la tua richiesta è stata inviata.",
+      "success": "Grazie, la tua richiesta è stata inviata.",
       "errorGeneric": "Qualcosa è andato storto. Riprova più tardi.",
-      "errorRateLimited": "Troppe richieste — attendi un momento e riprova.",
+      "errorRateLimited": "Troppe richieste, attendi un momento e riprova.",
       "errors": {
         "nameRequired": "Inserisci il tuo nome.",
-        "organisationRequired": "Inserisci la tua organizzazione (oppure “—” se non applicabile).",
+        "organisationRequired": "Inserisci la tua organizzazione (oppure “,” se non applicabile).",
         "enquiryTypeRequired": "Scegli un tipo di richiesta.",
         "messageRequired": "Inserisci un messaggio.",
         "messageTooLong": "Il messaggio è troppo lungo (max 5000 caratteri)."
@@ -317,7 +318,7 @@
   },
   "credits": {
     "photo": "Foto: {credit}",
-    "missing": "CREDITO FOTOGRAFICO MANCANTE — non pubblicare"
+    "missing": "CREDITO FOTOGRAFICO MANCANTE, non pubblicare"
   },
   "todo": {
     "label": "TODO"
@@ -325,12 +326,12 @@
   "pending": {
     "languageName": "Wolayttatto Doonaa",
     "status": "Translation in progress",
-    "lead": "This site is being translated into Wolayttatto Doonaa — the language of Wolaita Sodo, where Dr. Senait Mario was born and raised.",
+    "lead": "This site is being translated into Wolayttatto Doonaa, the language of Wolaita Sodo, where Dr. Senait Mario was born and raised.",
     "body": "Her pages are not ready in this language yet. Rather than publish a hurried translation of her life in her own mother tongue, we would rather take the time to do it properly.",
-    "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው — ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
+    "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው, ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
     "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
     "invite": "In the meantime, you are warmly invited to read the site in:",
-    "todo": "TODO — the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
+    "todo": "TODO: the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
   },
   "social": {
     "heading": "Seguila",

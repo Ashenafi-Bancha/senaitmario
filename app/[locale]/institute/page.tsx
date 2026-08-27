@@ -65,7 +65,7 @@ export default async function InstitutePage({
           {t('bridge')}
         </p>
         <p className="mt-4 text-sm text-muted">
-          {/* TODO — outbound link pending the institute site going live. */}
+          {/* TODO: outbound link pending the institute site going live. */}
           <TodoMark /> {t('ctaTodo')}
         </p>
       </div>

@@ -13,7 +13,7 @@ import type { Palette } from './types';
 export const palettes: Palette[] = [
   {
     id: 'ivory',
-    name: 'Ivory — default (pale ground, deep brown ink)',
+    name: 'Ivory, default (pale ground, deep brown ink)',
     provisional: true,
     ground: '#F0F4EE',
     ink: '#33241A',
@@ -23,7 +23,7 @@ export const palettes: Palette[] = [
   },
   {
     id: 'noir',
-    name: 'Modern black — optional theme',
+    name: 'Modern black, optional theme',
     provisional: true,
     ground: '#101112',
     ink: '#F2EFE9',

@@ -3,7 +3,7 @@ import { defaultPaletteId, getPalette } from '@/content/palettes';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Dr. Senait Mario — fashion designer, model, sociologist, UN Peace Ambassador';
+export const alt = 'Dr. Senait Mario: fashion designer, model, sociologist, UN Peace Ambassador';
 
 /**
  * Placeholder OpenGraph image shared by all pages under a locale — typographic

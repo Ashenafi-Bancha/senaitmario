@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
   // honestly instead of pretending the enquiry went somewhere.
   if (!apiKey || !to || to === 'TODO') {
     console.warn(
-      '[contact] RESEND_API_KEY / CONTACT_TO_EMAIL not configured — enquiry not delivered.',
+      '[contact] RESEND_API_KEY / CONTACT_TO_EMAIL not configured: enquiry not delivered.',
     );
     return NextResponse.json({ error: 'not_configured' }, { status: 503 });
   }
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
   const { error } = await resend.emails.send({
     from: process.env.CONTACT_FROM_EMAIL ?? 'Website <onboarding@resend.dev>',
     to,
-    subject: `Website enquiry (${enquiryType}) — ${name}`,
+    subject: `Website enquiry (${enquiryType}): ${name}`,
     text: [
       `Name: ${name}`,
       `Organisation: ${organisation}`,
