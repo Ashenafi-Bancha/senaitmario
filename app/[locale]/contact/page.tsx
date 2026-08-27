@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RouteTheme } from '@/components/theme/RouteTheme';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { TodoMark } from '@/components/ui/TodoMark';
+import { SocialLinks } from '@/components/layout/SocialLinks';
 import { pageMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({
@@ -22,6 +23,7 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('contact');
+  const tSocial = await getTranslations('social');
 
   return (
     <>
@@ -37,6 +39,16 @@ export default async function ContactPage({
         <div className="mt-12">
           <ContactForm />
         </div>
+
+        <section aria-labelledby="contact-social" className="mt-20 border-t border-line pt-10">
+          <h2
+            id="contact-social"
+            className="font-utility text-xs uppercase tracking-[0.25em] text-muted"
+          >
+            {tSocial('heading')}
+          </h2>
+          <SocialLinks className="mt-6" showHandles />
+        </section>
       </div>
     </>
   );

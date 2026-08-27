@@ -64,7 +64,6 @@
     "based": "Rome, Italy",
     "contactTodo": "TODO — contact email",
     "bookingTodo": "TODO — booking contact",
-    "socialTodo": "TODO — Instagram / Facebook handles to be supplied by client",
     "institute": "Da Mario's Fashion and Technology Institute, Addis Ababa",
     "copyright": "© {year} Dr. Senait Mario. All rights reserved."
   },
@@ -319,5 +318,10 @@
     "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
     "invite": "In the meantime, you are warmly invited to read the site in:",
     "todo": "TODO — the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
+  },
+  "social": {
+    "heading": "Follow",
+    "visitOn": "Dr. Senait Mario on {platform}",
+    "unconfirmedTodo": "TODO - Instagram and any other handles to be confirmed by the client before they are linked."
   }
 }

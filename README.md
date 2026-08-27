@@ -160,11 +160,13 @@ that research changes:
    publish them without a document.
 5. **The Rome Business School partnership could not be corroborated** from
    RBS's own site. Confirm before stating it publicly.
-6. **Social accounts:** two Facebook pages were verified by their own content —
-   "Senait Mario ONE PEACE fashion" (public figure) and "Damarios FTI". The
-   Instagram account `@senaitmario` could **not** be confirmed as hers (no bio,
-   nothing linking it to her work) and the YouTube `@senaitmario1` is
-   definitely someone else. Confirm handles with her before publishing any.
+6. **Social accounts:** her Facebook is live on the site —
+   `www.facebook.com/senait.mario`, supplied by the client and stored in
+   `content/social.ts`. Research also found a "Senait Mario ONE PEACE fashion"
+   page and a "Damarios FTI" page; check with her whether any of these should
+   also be linked. The Instagram account `@senaitmario` could **not** be
+   confirmed as hers (no bio, nothing linking it to her work) so it is NOT
+   linked, and the YouTube `@senaitmario1` is definitely someone else.
 7. **Not published anywhere:** named collections, a clothing label name,
    African Fashion Expo edition details, or any specific Milan/London/Paris
    show (date, venue, season). The Milan/London/Paris line traces to her own
@@ -181,7 +183,7 @@ Every item below is rendered as a visible `TODO` in the UI or marked in code:
 
 1. **Contact email** and **booking contact** (`content/identity.ts`, footer, `/contact`).
 1. **A portrait of her for the masthead** — set `brandPortrait` in `content/brand.ts` (square crop, credited, listed in RIGHTS.md). It renders beside her name in the header; it stays `null` until a real photograph exists, because no stock face may stand in for her.
-2. **Instagram / Facebook handles** (footer).
+2. **Instagram handle** — Facebook is live; Instagram stays unlinked until she confirms it (`content/social.ts`).
 3. **Real palettes** extracted from collection photography (`content/palettes.ts`).
 4. **Collection data** — titles, years, cities, descriptions (`content/collections.ts`, `messages/*`).
 5. **Photography** with photographer credits and written clearances (`RIGHTS.md` — all entries `UNCLEARED`; hero ≤ 400 KB).

@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { brandName } from '@/content/brand';
+import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -23,11 +24,9 @@ export function Footer() {
           <p>
             <TodoMark /> {t('bookingTodo')}
           </p>
-          <p>
-            <TodoMark /> {t('socialTodo')}
-          </p>
         </div>
         <div className="space-y-2 text-sm text-muted">
+          <SocialLinks className="mb-6" />
           <p>{t('institute')}</p>
           <p className="font-utility text-xs">{t('copyright', { year })}</p>
         </div>
