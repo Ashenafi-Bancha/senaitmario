@@ -3,7 +3,7 @@ import { defaultPaletteId, getPalette } from '@/content/palettes';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Dr. Senait Mario: fashion designer, model, sociologist, UN Peace Ambassador';
+export const alt = 'Dr. Senait Mario: international fashion designer and model, sociologist, UN Peace Ambassador';
 
 /**
  * Placeholder OpenGraph image shared by all pages under a locale — typographic
@@ -35,7 +35,7 @@ export default function OpenGraphImage() {
           Senait Mario
         </div>
         <div style={{ marginTop: 28, fontSize: 30, color: palette.muted }}>
-          Fashion designer · Model · Sociologist · UN Peace Ambassador
+          International fashion designer · Model · Sociologist · UN Peace Ambassador
         </div>
         <div style={{ marginTop: 10, fontSize: 24, color: palette.accent }}>
           Rome · Addis Ababa

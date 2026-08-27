@@ -5,7 +5,7 @@
 export const identity = {
   name: 'Dr. Senait Mario',
   roles: [
-    'fashion designer',
+    'international fashion designer',
     'model',
     'sociologist',
     'UN Peace Ambassador',

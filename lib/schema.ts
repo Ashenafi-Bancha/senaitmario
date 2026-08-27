@@ -12,7 +12,7 @@ export function personJsonLd() {
     name: 'Dr. Senait Mario',
     honorificPrefix: 'Dr.',
     jobTitle: [
-      'Fashion designer',
+      'International fashion designer',
       'Model',
       'Sociologist',
       'UN Peace Ambassador',

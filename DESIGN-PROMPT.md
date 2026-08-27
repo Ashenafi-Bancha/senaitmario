@@ -11,8 +11,8 @@ on screen.
 ## 1. THE MAIN PROMPT — paste this into Figma AI
 
 Design a premium editorial portfolio website for **Dr. Senait Mario**, an
-Ethiopian-Italian fashion designer, model, sociologist and UN Peace
-Ambassador based in Rome, founder of Da Mario's Fashion and Technology
+Ethiopian-Italian **international fashion designer and model**, sociologist and
+UN Peace Ambassador based in Rome, founder of Da Mario's Fashion and Technology
 Institute in Addis Ababa. The audience is international fashion press,
 galleries, event organisers and collaborators.
 
@@ -222,8 +222,10 @@ award titles, statistics, client lists or quotes. Invented credentials on a
 public figure's own website are the worst possible failure for this project.
 Where a layout needs filler, label it visibly as placeholder.
 
-**Identity.** Dr. Senait Mario. Fashion designer, model, sociologist, UN Peace
-Ambassador. Founder and CEO of Da Mario's Fashion and Technology Institute.
+**Identity.** Dr. Senait Mario. International fashion designer and model,
+sociologist, UN Peace Ambassador. Always describe her as international: her
+work has been presented in Milan, London and Paris, and she has shown and been
+recognised across Africa and Europe. Founder and CEO of Da Mario's Fashion and Technology Institute.
 Based in Rome, Italy. Born and raised in Wolaita Sodo, southern Ethiopia.
 Italian citizen, Ethiopian by birth.
 

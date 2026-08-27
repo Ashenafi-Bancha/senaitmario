@@ -3,11 +3,11 @@
   "meta": {
     "siteName": "Dr. Senait Mario",
     "titleTemplate": "Dr. Senait Mario",
-    "description": "Dr. Senait Mario: fashion designer, model, sociologist and UN Peace Ambassador. Founder and CEO of Da Mario's Fashion and Technology Institute, Addis Ababa. Based in Rome.",
+    "description": "Dr. Senait Mario: international fashion designer and model, sociologist and UN Peace Ambassador. Founder and CEO of Da Mario's Fashion and Technology Institute, Addis Ababa. Based in Rome.",
     "pages": {
       "home": {
         "title": "Dr. Senait Mario",
-        "description": "Fashion designer, model, sociologist and UN Peace Ambassador, based in Rome. She promotes Ethiopia through the colours of her collections."
+        "description": "International fashion designer and model, sociologist and UN Peace Ambassador, based in Rome. She promotes Ethiopia through the colours of her collections."
       },
       "work": {
         "title": "Work",
@@ -61,7 +61,7 @@
     "skipToContent": "Skip to content"
   },
   "footer": {
-    "roles": "Fashion designer · Model · Sociologist · UN Peace Ambassador",
+    "roles": "International fashion designer · Model · Sociologist · UN Peace Ambassador",
     "based": "Rome, Italy",
     "contactTodo": "TODO: contact email",
     "bookingTodo": "TODO: booking contact",
@@ -71,7 +71,7 @@
   "home": {
     "heroName": "Senait Mario",
     "heroTitlePrefix": "Dr.",
-    "heroRoles": "Fashion designer, model, sociologist, UN Peace Ambassador",
+    "heroRoles": "International fashion designer and model, sociologist, UN Peace Ambassador",
     "heroLede": "She promotes Ethiopia through the colours of her collections. Colour is not decoration here; it is the structure of the work.",
     "heroBased": "Rome, Italy",
     "heroOrigin": "Born and raised in Wolaita Sodo, southern Ethiopia",
@@ -263,7 +263,7 @@
   "press": {
     "heading": "Press",
     "bioHeading": "Short biography",
-    "bio": "Dr. Senait Mario is a fashion designer, model, sociologist and UN Peace Ambassador based in Rome. Born and raised in Wolaita Sodo in southern Ethiopia, she left the country around 2009, lived in Kenya and Uganda, and settled in Italy, where she is a citizen. Her work has been presented on the fashion stages of Milan, London and Paris; her stated method is to promote Ethiopia through the colours she uses in her collections. In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa.",
+    "bio": "Dr. Senait Mario is an international fashion designer and model, a sociologist and a UN Peace Ambassador, based in Rome. Born and raised in Wolaita Sodo in southern Ethiopia, she left the country around 2009, lived in Kenya and Uganda, and settled in Italy, where she is a citizen. Her work has been presented on the fashion stages of Milan, London and Paris; her stated method is to promote Ethiopia through the colours she uses in her collections. In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa.",
     "recognitionHeading": "Recognition",
     "recognition": {
       "mice2016": {
