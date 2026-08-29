@@ -125,6 +125,14 @@ function Hero() {
           }`}
         />
 
+        {/* Dissolves the far edge and foot of the photograph into the ground. */}
+        <div
+          aria-hidden="true"
+          className={`absolute inset-0 ${
+            heroTone === 'light' ? 'hero-edge-light' : 'hero-edge-dark'
+          }`}
+        />
+
         {/* Readability scrim, over the imagery and under the type. */}
         <div
           aria-hidden="true"

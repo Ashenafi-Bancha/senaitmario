@@ -319,40 +319,84 @@ html {
 }
 
 /*
- * Desktop scrim.
+ * A soft veil across the header band.
  *
- * The photograph now covers the full width at every size, so the type sits
- * on it. The scrim is angled from the type side and finishes before the
- * right of the frame, so the headline stays readable without veiling her.
+ * The header is transparent while the page is at the top, so its links sit
+ * directly on the photograph. This keeps them legible wherever they land,
+ * and eases the top edge in rather than the image starting abruptly. Kept
+ * light so the crown of her hat still reads.
+ *
+ * (This was lost in an earlier edit that replaced a neighbouring block; the
+ * class was still applied in the markup with no rule behind it, which left
+ * the navigation sitting unprotected on the photograph.)
+ */
+.hero-topscrim-light {
+  background: linear-gradient(
+    to bottom,
+    rgb(240 244 238 / 0.72) 0%,
+    rgb(240 244 238 / 0.4) 55%,
+    rgb(240 244 238 / 0) 100%
+  );
+}
+.hero-topscrim-dark {
+  background: linear-gradient(
+    to bottom,
+    rgb(16 17 18 / 0.75) 0%,
+    rgb(16 17 18 / 0.42) 55%,
+    rgb(16 17 18 / 0) 100%
+  );
+}
+
+/*
+ * Right-edge and lower fade, desktop only.
+ *
+ * With the photograph covering the full width, its right edge ran to the
+ * frame showing the warm lace backdrop of the shoot, which fought the ivory
+ * palette and made the hero read as a photograph pasted on the page. These
+ * dissolve the far edge and the foot of the image back into the ground, so
+ * the photograph behaves like a background: pale at both sides, her figure
+ * carrying the middle.
+ *
+ * Stops are placed off the photograph itself, not guessed: sampling the
+ * image column by column shows her hair running to about 84% of the frame
+ * and the pale lace backdrop of the shoot from 86% on. The fade therefore
+ * stays at zero until 78%, so her hair keeps its depth, and does its work
+ * across the lace.
  */
 @media (min-width: 1024px) {
-  /*
-   * Held at 0.8 or better across the full width the type occupies (0-42vw),
-   * because with the photograph covering the whole frame the headline now
-   * sits over her hair, which is dark. Below about 0.65 the ink drops under
-   * AA against a dark subject.
-   */
-  .hero-scrim-light {
-    background: linear-gradient(
-      100deg,
-      rgb(240 244 238 / 0.93) 0%,
-      rgb(240 244 238 / 0.88) 30%,
-      rgb(240 244 238 / 0.8) 44%,
-      rgb(240 244 238 / 0.6) 53%,
-      rgb(240 244 238 / 0.22) 64%,
-      rgb(240 244 238 / 0) 78%
-    );
+  .hero-edge-light {
+    background:
+      linear-gradient(
+        to right,
+        rgb(240 244 238 / 0) 78%,
+        rgb(240 244 238 / 0.12) 84%,
+        rgb(240 244 238 / 0.62) 88%,
+        rgb(240 244 238 / 0.88) 94%,
+        rgb(240 244 238 / 0.95) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        rgb(240 244 238 / 0) 68%,
+        rgb(240 244 238 / 0.22) 88%,
+        rgb(240 244 238 / 0.6) 100%
+      );
   }
-  .hero-scrim-dark {
-    background: linear-gradient(
-      100deg,
-      rgb(16 17 18 / 0.92) 0%,
-      rgb(16 17 18 / 0.86) 30%,
-      rgb(16 17 18 / 0.78) 44%,
-      rgb(16 17 18 / 0.6) 53%,
-      rgb(16 17 18 / 0.24) 64%,
-      rgb(16 17 18 / 0) 78%
-    );
+  .hero-edge-dark {
+    background:
+      linear-gradient(
+        to right,
+        rgb(16 17 18 / 0) 78%,
+        rgb(16 17 18 / 0.14) 84%,
+        rgb(16 17 18 / 0.64) 88%,
+        rgb(16 17 18 / 0.88) 94%,
+        rgb(16 17 18 / 0.95) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        rgb(16 17 18 / 0) 68%,
+        rgb(16 17 18 / 0.24) 88%,
+        rgb(16 17 18 / 0.62) 100%
+      );
   }
 }
 
