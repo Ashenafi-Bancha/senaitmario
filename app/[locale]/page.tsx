@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import { ThemeSection } from '@/components/theme/ThemeSection';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { Parallax } from '@/components/ui/Parallax';
@@ -100,20 +101,43 @@ function Hero() {
         * to the very top of the screen.
         */}
       <div className="relative -mt-[var(--header-h)] h-[100svh] w-full overflow-hidden">
+        {/*
+          * Her hero is a tall portrait and this frame is a wide landscape, so
+          * a plain object-cover crops roughly two thirds of it away and the
+          * garment is lost. Two layers solve that on desktop: the same
+          * photograph blurred right back as an ambient wash so the screen
+          * still fills edge to edge, and the complete portrait sitting sharp
+          * and uncropped on top of it. On phones the frame is already tall
+          * enough to show the whole photograph, so one covering layer does.
+          */}
+        <div aria-hidden="true" className="absolute inset-0 hidden lg:block">
+          <Image
+            src={heroImage.src}
+            alt=""
+            fill
+            sizes="100vw"
+            priority
+            className="scale-110 object-cover blur-3xl"
+            style={{ objectPosition: heroFocalPoint }}
+          />
+          <div className="absolute inset-0 bg-ground/55" />
+        </div>
+
+        {/*
+          * One image, one download. It covers on a phone, where the frame is
+          * already tall enough to show the whole portrait, and switches to
+          * contain on desktop, pinned right, so the garment is never cropped.
+          */}
         <CreditedImage
           asset={heroImage}
           variant="cover"
-          objectPosition={heroFocalPoint}
           sizes="100vw"
           priority
-          className="hero-credit absolute inset-0 h-full w-full"
+          imgClassName="object-cover object-[50%_12%] lg:object-contain lg:object-[100%_50%]"
+          className="hero-credit hero-portrait absolute inset-0 h-full w-full"
         />
 
-        {/*
-          * Readability scrim. Text over an arbitrary photograph is a contrast
-          * gamble, so a gradient guarantees the headline stays legible
-          * whatever image is dropped in. heroTone picks the pairing.
-          */}
+        {/* Readability scrim, over the imagery and under the type. */}
         <div
           aria-hidden="true"
           className={`absolute inset-0 ${
@@ -122,7 +146,7 @@ function Hero() {
         />
 
         <div className="relative z-10 flex h-full items-center pt-[var(--header-h)]">
-          <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8">
+          <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 lg:pb-0">
             <p
               className={`rise font-utility text-[0.7rem] uppercase tracking-[0.35em] ${
                 heroTone === 'light' ? 'text-ink/70' : 'text-onphoto/75'
@@ -133,7 +157,7 @@ function Hero() {
 
             <h1
               id="hero-name"
-              className={`rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
+              className={`rise rise-2 mt-5 max-w-2xl font-display lg:max-w-[42vw] text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
                 heroTone === 'light' ? 'text-ink' : 'text-onphoto'
               }`}
             >
@@ -148,15 +172,31 @@ function Hero() {
               {t('heroRoles')}
             </p>
 
-            <p className="rise rise-4 mt-9">
+            <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-3">
+              <Link
+                href="/story"
+                className={`hero-cta inline-flex min-h-12 items-center gap-3 rounded-full px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] no-underline ${
+                  heroTone === 'light'
+                    ? 'bg-ink text-ground'
+                    : 'bg-onphoto text-ink'
+                }`}
+              >
+                {t('heroCtaStory')}
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+
               <Link
                 href="/work"
-                className="hero-cta inline-flex min-h-12 items-center gap-3 rounded-full bg-ink px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
+                className={`hero-cta hero-cta-ghost inline-flex min-h-12 items-center gap-3 rounded-full border px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] no-underline ${
+                  heroTone === 'light'
+                    ? 'border-ink/35 text-ink'
+                    : 'border-onphoto/50 text-onphoto'
+                }`}
               >
                 {t('heroCta')}
                 <span aria-hidden="true">&rarr;</span>
               </Link>
-            </p>
+            </div>
           </div>
         </div>
 

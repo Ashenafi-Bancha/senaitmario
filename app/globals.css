@@ -288,6 +288,57 @@ html {
   );
 }
 
+/*
+ * Desktop hero blend.
+ *
+ * The portrait is contained on the right, so without help it meets the page
+ * on a hard vertical edge. A mask feathers its left side into the blurred
+ * wash behind it, and the readability scrim is pulled back to finish before
+ * the photograph starts, so she stays crisp instead of sitting under a veil.
+ *
+ * The portrait lands at roughly 65% across at every desktop shape (its width
+ * is driven by the viewport height, not the width), so the feather is placed
+ * just inside that.
+ */
+@media (min-width: 1024px) {
+  .hero-portrait img {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 52%,
+      rgb(0 0 0 / 0.35) 62%,
+      #000 76%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 52%,
+      rgb(0 0 0 / 0.35) 62%,
+      #000 76%
+    );
+  }
+
+  /* Finish the scrim before the photograph, not across it. */
+  .hero-scrim-light {
+    background: linear-gradient(
+      100deg,
+      rgb(240 244 238 / 0.92) 0%,
+      rgb(240 244 238 / 0.86) 30%,
+      rgb(240 244 238 / 0.62) 46%,
+      rgb(240 244 238 / 0.22) 57%,
+      rgb(240 244 238 / 0) 66%
+    );
+  }
+  .hero-scrim-dark {
+    background: linear-gradient(
+      100deg,
+      rgb(16 17 18 / 0.9) 0%,
+      rgb(16 17 18 / 0.84) 30%,
+      rgb(16 17 18 / 0.66) 46%,
+      rgb(16 17 18 / 0.26) 57%,
+      rgb(16 17 18 / 0) 66%
+    );
+  }
+}
+
 .hero-cta {
   transition:
     transform 300ms var(--theme-ease),
@@ -295,6 +346,19 @@ html {
 }
 .hero-cta:hover {
   opacity: 0.88;
+}
+/* The secondary action reads as an outline until touched, then fills in. */
+.hero-cta-ghost {
+  background-color: transparent;
+  transition:
+    background-color 300ms var(--theme-ease),
+    border-color 300ms var(--theme-ease),
+    transform 300ms var(--theme-ease);
+}
+.hero-cta-ghost:hover {
+  opacity: 1;
+  background-color: color-mix(in srgb, currentColor 10%, transparent);
+  border-color: currentColor;
 }
 @media (prefers-reduced-motion: no-preference) {
   .hero-cta:hover {

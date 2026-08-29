@@ -21,6 +21,8 @@ export function CreditedImage({
   className,
   variant = 'block',
   objectPosition,
+  fit = 'cover',
+  imgClassName,
 }: {
   asset: ImageAsset;
   /** Responsive sizes attribute — required so nothing ships at full width by accident. */
@@ -35,6 +37,18 @@ export function CreditedImage({
    * entirely; this pins the part that must survive.
    */
   objectPosition?: string;
+  /**
+   * `cover` fills the frame and crops; `contain` shows the whole photograph
+   * and leaves space around it. A tall portrait in a wide hero needs
+   * `contain`, or two thirds of the garment is cropped away.
+   */
+  fit?: 'cover' | 'contain';
+  /**
+   * Extra classes on the <img> itself, for cases where the fit has to change
+   * with the viewport - a tall portrait can cover on a phone and contain on
+   * a desktop. Supplying this overrides `fit`.
+   */
+  imgClassName?: string;
 }) {
   const t = useTranslations('credits');
   const creditMissing = !asset.credit || asset.credit === 'TODO';
@@ -56,7 +70,9 @@ export function CreditedImage({
             fill
             sizes={sizes}
             priority={priority}
-            className="object-cover"
+            className={
+              imgClassName ?? (fit === 'contain' ? 'object-contain' : 'object-cover')
+            }
             style={objectPosition ? { objectPosition } : undefined}
           />
         </div>
