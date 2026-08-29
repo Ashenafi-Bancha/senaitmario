@@ -9,7 +9,7 @@ import { ScrollCue } from '@/components/ui/ScrollCue';
 import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
-import { heroFocalPoint, heroImage, heroTone } from '@/content/hero';
+import { heroFocalPoint, heroImage } from '@/content/hero';
 
 export async function generateMetadata({
   params,
@@ -120,50 +120,38 @@ function Hero() {
         {/* Keeps the header links legible where they sit on the photograph. */}
         <div
           aria-hidden="true"
-          className={`absolute inset-x-0 top-0 h-[calc(var(--header-h)+56px)] ${
-            heroTone === 'light' ? 'hero-topscrim-light' : 'hero-topscrim-dark'
-          }`}
+          className="hero-topscrim absolute inset-x-0 top-0 h-[calc(var(--header-h)+56px)]"
         />
 
         {/* Dissolves the far edge and foot of the photograph into the ground. */}
         <div
           aria-hidden="true"
-          className={`absolute inset-0 ${
-            heroTone === 'light' ? 'hero-edge-light' : 'hero-edge-dark'
-          }`}
+          className="hero-edge absolute inset-0"
         />
 
         {/* Readability scrim, over the imagery and under the type. */}
         <div
           aria-hidden="true"
-          className={`absolute inset-0 ${
-            heroTone === 'light' ? 'hero-scrim-light' : 'hero-scrim-dark'
-          }`}
+          className="hero-scrim absolute inset-0"
         />
 
         <div className="relative z-10 flex h-full items-center pt-[var(--header-h)]">
           <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 lg:pb-0">
             <p
-              className={`rise font-utility text-[0.7rem] uppercase tracking-[0.35em] ${
-                heroTone === 'light' ? 'text-ink/70' : 'text-onphoto/75'
-              }`}
+              className="rise font-utility text-[0.7rem] uppercase tracking-[0.35em] text-muted"
             >
               {t('heroTitlePrefix')}
             </p>
 
             <h1
               id="hero-name"
-              className={`rise rise-2 mt-5 max-w-2xl font-display lg:max-w-[40vw] text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
-                heroTone === 'light' ? 'text-ink' : 'text-onphoto'
-              }`}
+              className="rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] font-medium uppercase leading-[1.04] tracking-[0.08em] text-ink lg:max-w-[40vw]"
             >
               {t('heroName')}
             </h1>
 
             <p
-              className={`rise rise-3 mt-6 max-w-md text-base leading-relaxed sm:text-lg ${
-                heroTone === 'light' ? 'text-ink/80' : 'text-onphoto/85'
-              }`}
+              className="rise rise-3 mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg"
             >
               {t('heroRoles')}
             </p>
@@ -171,11 +159,7 @@ function Hero() {
             <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-3">
               <Link
                 href="/story"
-                className={`hero-cta inline-flex min-h-12 items-center gap-3 rounded-full px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] no-underline ${
-                  heroTone === 'light'
-                    ? 'bg-ink text-ground'
-                    : 'bg-onphoto text-ink'
-                }`}
+                className="hero-cta inline-flex min-h-12 items-center gap-3 rounded-full bg-ink px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
               >
                 {t('heroCtaStory')}
                 <span aria-hidden="true">&rarr;</span>
@@ -183,11 +167,7 @@ function Hero() {
 
               <Link
                 href="/work"
-                className={`hero-cta hero-cta-ghost inline-flex min-h-12 items-center gap-3 rounded-full border px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] no-underline ${
-                  heroTone === 'light'
-                    ? 'border-ink/35 text-ink'
-                    : 'border-onphoto/50 text-onphoto'
-                }`}
+                className="hero-cta hero-cta-ghost inline-flex min-h-12 items-center gap-3 rounded-full border border-ink/45 px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ink no-underline"
               >
                 {t('heroCta')}
                 <span aria-hidden="true">&rarr;</span>

@@ -43,9 +43,10 @@ rejected it. Colour here is structure, not decoration: the entire page
 ground changes between sections, never just an accent.
 
 **Typography — three roles, strictly separated.**
-- Display: **Bodoni Moda**, a high-contrast Didone. Used very large, tight
-  tracking (about -0.02em), tight leading (0.86–0.95). Carries her name and
-  every page title.
+- Display: **Jost**, a geometric sans in the Futura line. Used very large, in
+  CAPITALS with wide tracking (about 0.08em) and leading near 1.0. Carries her
+  name and every page title. (Replaced Bodoni Moda: a Didone's hairline
+  strokes went faint at hero size over a photograph.)
 - Body: **Alegreya Sans**, warm humanist sans, generous leading (1.6–1.75),
   line length capped around 60–70 characters.
 - Utility: **IBM Plex Mono**, uppercase, very wide tracking (0.2–0.3em), tiny
@@ -109,29 +110,29 @@ rings in the accent colour.
 > A hero filling about 90% of viewport height, split into a text column on the
 > left and a photograph on the right that bleeds off the right edge of the
 > screen at full height. In the left column, stacked: "DR." in mono caps, then
-> "Senait Mario" in Bodoni Moda at roughly 7.5vw with leading tight enough
-> that the two words stack closely, then a short hairline rule, then one line
+> "SENAIT MARIO" in Jost, medium weight, at roughly 8.5vw in capitals with
+> wide tracking, the two words stacked, then a short hairline rule, then one line
 > of roles, then two lines of description, then "ROME, ITALY" and "BORN AND
 > RAISED IN WOLAITA SODO, SOUTHERN ETHIOPIA" in mono caps.
 > Below the hero, five chapter spreads separated by hairline rules. Each is a
 > two-column row: a tall photograph on one side; on the other a mono-caps
-> number, a large Bodoni title, two lines of description, and a mono-caps
+> number, a large Jost title, two lines of description, and a mono-caps
 > link. Alternate the image side each time.
 
 **The Colour Index (the signature page)**
 
 > A page explaining that she promotes Ethiopia through the colours of her
-> collections. Open with the page title, then a large pull-quote in Bodoni
+> collections. Open with the page title, then a large pull-quote in Jost
 > with its citation beneath. Then a three-column grid of colour swatches. Each
 > swatch is a square block of flat colour with a hairline border; beneath it
-> the colour name in Bodoni, then the hex value and source collection in mono
+> the colour name in Jost, then the hex value and source collection in mono
 > caps, then a category label, then one sentence on what the colour carries —
 > a region, a fabric, a ceremony, a meaning.
 
 **Work — index and detail**
 
 > Index: page title, short intro, then a three-column grid of collection
-> cards. Each card is a tall photograph, then the collection title in Bodoni,
+> cards. Each card is a tall photograph, then the collection title in Jost,
 > then year and city in mono caps.
 > Detail: a back link in mono caps, the collection title very large, year and
 > city, a paragraph of description, then a two-column gallery of large
@@ -142,12 +143,12 @@ rings in the accent colour.
 
 > Six full-height chapter spreads, one per place: Wolaita Sodo, Nairobi,
 > Kampala, Rome, "Milan · London · Paris", Addis Ababa. Each has a mono-caps
-> number and place name, a Bodoni chapter title, a paragraph, and a large
+> number and place name, a Jost chapter title, a paragraph, and a large
 > photograph of that place beside it. Alternate image sides.
 
 **Press**
 
-> A short biography, then recognitions as rows: the year set large in Bodoni
+> A short biography, then recognitions as rows: the year set large in Jost
 > on the left, the award title and a line of detail on the right, separated by
 > hairline rules. Then press coverage: article title as a link, with outlet
 > and date beneath in mono caps.

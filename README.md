@@ -109,7 +109,7 @@ only, and both run on a taller line-height scale.
 
 ## Typography (provisional — pending client/designer sign-off)
 
-Display: Bodoni Moda · Body: Alegreya Sans · Utility (credits/metadata):
+Display: Jost · Body: Alegreya Sans · Utility (credits/metadata):
 IBM Plex Mono · Ethiopic script (Amharic, Wolayttatto Doonaa): Noto Sans Ethiopic. All self-hosted and subset at
 build time via `next/font` (no runtime Google requests), `font-display: swap`.
 

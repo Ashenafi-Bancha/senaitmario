@@ -75,7 +75,7 @@
   /* Type over photography, where the theme ink would be unreadable. */
   --color-onphoto: #ffffff;
 
-  --font-display: var(--font-display-face), "Bodoni MT", Didot, Georgia, serif;
+  --font-display: var(--font-display-face), Futura, "Century Gothic", "Trebuchet MS", sans-serif;
   --font-body: var(--font-body-face), Seravek, "Gill Sans", Verdana, sans-serif;
   --font-utility: var(--font-utility-face), ui-monospace, "Cascadia Mono", "Courier New", monospace;
   --font-ethiopic: var(--font-ethiopic-face), "Nyala", "Abyssinica SIL", var(--font-body-face), sans-serif;
@@ -257,34 +257,35 @@ html {
 }
 
 /*
- * Readability scrims. Type over an arbitrary photograph is a contrast gamble;
- * these guarantee the headline stays legible whichever image is dropped in.
- * Angled from the type side so the photograph stays clean on the other.
+ * Readability scrims.
+ *
+ * Type over an arbitrary photograph is a contrast gamble; these guarantee the
+ * headline stays legible whichever image is dropped in. Angled from the type
+ * side so the photograph stays clean on the other. The strong end of each
+ * gradient is held across the whole width the text occupies, not faded out
+ * early, so the headline keeps roughly 6:1 even over a black photograph.
+ *
+ * Every stop is mixed from the LIVE --ground token rather than a hard-coded
+ * ivory or black, and that is the whole point of this block. The hero type is
+ * set in --ink, so the only surface it is guaranteed to read against is the
+ * matching --ground. These scrims used to be painted a fixed ivory, chosen at
+ * build time from `heroTone`; switching to the black theme then put the
+ * near-white noir ink on a pale ivory wash and the name, the lede and both
+ * buttons all but vanished. Mixing from the token means every palette carries
+ * its own scrim for free, and because --ground is a registered custom
+ * property the scrim eases across with the rest of the colour field.
+ *
+ * color-mix interpolates with premultiplied alpha, so `var(--ground) N%`
+ * against `transparent` is the ground colour at N% opacity, with no darkening.
  */
-/*
- * The strong end of each gradient is held across the whole width the text
- * occupies, not faded out early. Against a black photograph the light scrim
- * still leaves the headline near 6:1, so the hero stays legible whatever
- * photograph is dropped in - which the placeholder cannot predict.
- */
-.hero-scrim-light {
+.hero-scrim {
   background: linear-gradient(
     100deg,
-    rgb(240 244 238 / 0.9) 0%,
-    rgb(240 244 238 / 0.82) 38%,
-    rgb(240 244 238 / 0.6) 56%,
-    rgb(240 244 238 / 0.2) 74%,
-    rgb(240 244 238 / 0) 90%
-  );
-}
-.hero-scrim-dark {
-  background: linear-gradient(
-    100deg,
-    rgb(16 17 18 / 0.88) 0%,
-    rgb(16 17 18 / 0.8) 40%,
-    rgb(16 17 18 / 0.68) 60%,
-    rgb(16 17 18 / 0.28) 78%,
-    rgb(16 17 18 / 0) 92%
+    color-mix(in srgb, var(--ground) 92%, transparent) 0%,
+    color-mix(in srgb, var(--ground) 86%, transparent) 38%,
+    color-mix(in srgb, var(--ground) 64%, transparent) 56%,
+    color-mix(in srgb, var(--ground) 22%, transparent) 74%,
+    transparent 90%
   );
 }
 
@@ -323,27 +324,20 @@ html {
  *
  * The header is transparent while the page is at the top, so its links sit
  * directly on the photograph. This keeps them legible wherever they land,
- * and eases the top edge in rather than the image starting abruptly. Kept
- * light so the crown of her hat still reads.
+ * and eases the top edge in rather than the image starting abruptly.
  *
- * (This was lost in an earlier edit that replaced a neighbouring block; the
- * class was still applied in the markup with no rule behind it, which left
- * the navigation sitting unprotected on the photograph.)
+ * Mixed from --ground for the same reason as the main scrim: under the black
+ * theme this was painting ivory behind near-white nav links. The head of the
+ * gradient is also heavier than it was - the nav is small, wide-tracked type,
+ * the size at which contrast is least forgiving - but it still clears well
+ * before the crown of her hat.
  */
-.hero-topscrim-light {
+.hero-topscrim {
   background: linear-gradient(
     to bottom,
-    rgb(240 244 238 / 0.72) 0%,
-    rgb(240 244 238 / 0.4) 55%,
-    rgb(240 244 238 / 0) 100%
-  );
-}
-.hero-topscrim-dark {
-  background: linear-gradient(
-    to bottom,
-    rgb(16 17 18 / 0.75) 0%,
-    rgb(16 17 18 / 0.42) 55%,
-    rgb(16 17 18 / 0) 100%
+    color-mix(in srgb, var(--ground) 84%, transparent) 0%,
+    color-mix(in srgb, var(--ground) 52%, transparent) 55%,
+    transparent 100%
   );
 }
 
@@ -364,38 +358,21 @@ html {
  * across the lace.
  */
 @media (min-width: 1024px) {
-  .hero-edge-light {
+  .hero-edge {
     background:
       linear-gradient(
         to right,
-        rgb(240 244 238 / 0) 78%,
-        rgb(240 244 238 / 0.12) 84%,
-        rgb(240 244 238 / 0.62) 88%,
-        rgb(240 244 238 / 0.88) 94%,
-        rgb(240 244 238 / 0.95) 100%
+        transparent 78%,
+        color-mix(in srgb, var(--ground) 12%, transparent) 84%,
+        color-mix(in srgb, var(--ground) 62%, transparent) 88%,
+        color-mix(in srgb, var(--ground) 88%, transparent) 94%,
+        color-mix(in srgb, var(--ground) 95%, transparent) 100%
       ),
       linear-gradient(
         to bottom,
-        rgb(240 244 238 / 0) 68%,
-        rgb(240 244 238 / 0.22) 88%,
-        rgb(240 244 238 / 0.6) 100%
-      );
-  }
-  .hero-edge-dark {
-    background:
-      linear-gradient(
-        to right,
-        rgb(16 17 18 / 0) 78%,
-        rgb(16 17 18 / 0.14) 84%,
-        rgb(16 17 18 / 0.64) 88%,
-        rgb(16 17 18 / 0.88) 94%,
-        rgb(16 17 18 / 0.95) 100%
-      ),
-      linear-gradient(
-        to bottom,
-        rgb(16 17 18 / 0) 68%,
-        rgb(16 17 18 / 0.24) 88%,
-        rgb(16 17 18 / 0.62) 100%
+        transparent 68%,
+        color-mix(in srgb, var(--ground) 22%, transparent) 88%,
+        color-mix(in srgb, var(--ground) 60%, transparent) 100%
       );
   }
 }

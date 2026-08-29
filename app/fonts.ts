@@ -4,22 +4,25 @@
  * no runtime requests to Google). `font-display: swap` throughout.
  *
  * Faces are PROVISIONAL pending client/designer sign-off — see README.
- *  - Display: Bodoni Moda (high-authority Didone, tight tracking at scale)
+ *  - Display: Jost (geometric sans in the Futura line). Replaced Bodoni Moda:
+ *    a Didone's hairline strokes went faint at hero size over a photograph,
+ *    and the client asked for a different face. Jost holds an even stroke at
+ *    any size, which is what large tracked capitals need.
  *  - Body: Alegreya Sans (warm humanist)
  *  - Utility: IBM Plex Mono (captions, credits, dates, cities, attribution)
  *  - Amharic: Noto Sans Ethiopic, applied only on /am routes
  */
 import {
   Alegreya_Sans,
-  Bodoni_Moda,
+  Jost,
   IBM_Plex_Mono,
   Noto_Sans_Ethiopic,
 } from 'next/font/google';
 
-export const displayFace = Bodoni_Moda({
+export const displayFace = Jost({
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
   display: 'swap',
-  axes: ['opsz'],
   variable: '--font-display-face',
 });
 

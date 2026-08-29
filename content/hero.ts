@@ -11,8 +11,13 @@ import type { ImageAsset } from './types';
  *   2. Point `heroImage.src` at '/images/portraits/hero.jpg'
  *   3. Set `width` and `height` to the file's real pixel dimensions
  *   4. Write a real `alt` and the photographer's name in `credit`
- *   5. If the photograph is DARK, change `heroTone` to 'dark'
- *   6. Add a row for it in RIGHTS.md
+ *   5. Add a row for it in RIGHTS.md
+ *
+ * There is no light/dark switch to set. The scrims behind the type are mixed
+ * from the live --ground token, so they are ivory under the ivory theme and
+ * near-black under the black one, and the type is always --ink against them.
+ * A per-photograph tone constant used to exist and was a trap: it was chosen
+ * at build time, so switching theme left pale ink on a pale wash.
  *
  * The path starts at '/images/...', not '/public/images/...' - that is how
  * files inside public/ are addressed.
@@ -26,19 +31,6 @@ import type { ImageAsset } from './types';
  *    the site converts and resizes it for every device automatically.
  *  - Aim under 400 KB.
  */
-
-/**
- * Is the left side of the photograph light or dark?
- *
- *  'light' - a bright photograph: her name is set in deep brown over a pale
- *            scrim. This is the current setting.
- *  'dark'  - a dark or moody photograph: her name flips to near-white over a
- *            darkened scrim.
- *
- * The scrim behind the type is deliberately strong enough that either
- * setting stays readable, so if you are unsure, try one and look at it.
- */
-export const heroTone: 'light' | 'dark' = 'light';
 
 /**
  * Her hero portrait, supplied by the client.
