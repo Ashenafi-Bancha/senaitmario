@@ -56,8 +56,8 @@ export function LocaleSwitcher({
 
   if (variant === 'icon') {
     return (
-      <div className="relative inline-flex h-11 w-11 items-center justify-center border border-line text-ink transition-colors focus-within:border-accent hover:border-accent hover:text-accent">
-        <GlobeIcon className="pointer-events-none h-[1.15rem] w-[1.15rem]" />
+      <div className="relative inline-flex h-11 w-11 items-center justify-center text-ink transition-colors focus-within:text-accent hover:text-accent lg:h-10 lg:w-10">
+        <GlobeIcon className="pointer-events-none h-5 w-5" />
         <select
           value={locale}
           onChange={(event) => onChange(event.target.value)}

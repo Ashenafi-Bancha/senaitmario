@@ -38,6 +38,15 @@ export function SunIcon({ className }: { className?: string }) {
   );
 }
 
+/** Close. */
+export function CloseIcon({ className }: { className?: string }) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M6 6l12 12M18 6L6 18" />
+    </svg>
+  );
+}
+
 /** The modern black theme. */
 export function MoonIcon({ className }: { className?: string }) {
   return (

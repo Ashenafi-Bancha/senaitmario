@@ -26,12 +26,12 @@ export function ThemeToggle() {
       aria-pressed={noirActive}
       aria-label={noirActive ? t('themeToIvory') : t('themeToNoir')}
       title={noirActive ? t('themeToIvory') : t('themeToNoir')}
-      className="inline-flex h-11 w-11 cursor-pointer items-center justify-center border border-line bg-ground/0 text-ink transition-colors hover:border-accent hover:text-accent lg:h-9 lg:w-9"
+      className="inline-flex h-11 w-11 cursor-pointer items-center justify-center text-ink transition-colors hover:text-accent lg:h-10 lg:w-10"
     >
       {noirActive ? (
-        <MoonIcon className="h-[1.15rem] w-[1.15rem]" />
+        <MoonIcon className="h-5 w-5" />
       ) : (
-        <SunIcon className="h-[1.15rem] w-[1.15rem]" />
+        <SunIcon className="h-5 w-5" />
       )}
     </button>
   );

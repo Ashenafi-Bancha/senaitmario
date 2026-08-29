@@ -24,7 +24,7 @@ export function Header() {
         <Wordmark />
 
         {/* Desktop row */}
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex">
           <nav aria-label={t('menuLabel')}>
             <ul className="flex gap-5">
               {NAV_ITEMS.map((item) => (
@@ -39,7 +39,7 @@ export function Header() {
               ))}
             </ul>
           </nav>
-          <LocaleSwitcher />
+          <LocaleSwitcher variant="icon" />
           <ThemeToggle />
         </div>
 

@@ -135,8 +135,8 @@ function Hero() {
           className="hero-scrim absolute inset-0"
         />
 
-        <div className="relative z-10 flex h-full items-center pt-[var(--header-h)]">
-          <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 lg:pb-0">
+        <div className="relative z-10 flex h-full items-end pt-[var(--header-h)] lg:items-center">
+          <div className="mx-auto w-full max-w-6xl px-6 pb-28 sm:px-8 lg:pb-0">
             <p
               className="rise font-utility text-[0.7rem] uppercase tracking-[0.35em] text-muted"
             >
@@ -150,16 +150,14 @@ function Hero() {
               {t('heroName')}
             </h1>
 
-            <p
-              className="rise rise-3 mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg"
-            >
+            <p className="rise rise-3 mt-7 max-w-xl text-[clamp(1.15rem,1.9vw,1.5rem)] font-medium leading-relaxed text-ink">
               {t('heroRoles')}
             </p>
 
-            <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-3">
+            <div className="rise rise-4 mt-9 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-start">
               <Link
                 href="/story"
-                className="hero-cta inline-flex min-h-12 items-center gap-3 rounded-full bg-ink px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
+                className="hero-cta inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full bg-ink px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
               >
                 {t('heroCtaStory')}
                 <span aria-hidden="true">&rarr;</span>
@@ -167,7 +165,7 @@ function Hero() {
 
               <Link
                 href="/work"
-                className="hero-cta hero-cta-ghost inline-flex min-h-12 items-center gap-3 rounded-full border border-ink/45 px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ink no-underline"
+                className="hero-cta hero-cta-ghost inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full border border-ink/45 px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ink no-underline"
               >
                 {t('heroCta')}
                 <span aria-hidden="true">&rarr;</span>

@@ -3,7 +3,7 @@
   "meta": {
     "siteName": "Dr.ssa Senait Mario",
     "titleTemplate": "Dr.ssa Senait Mario",
-    "description": "Dr.ssa Senait Mario: stilista e modella internazionale, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e CEO del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
+    "description": "Dr.ssa Senait Mario: stilista e modella internazionale, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e General Manager del Da Mario's Fashion and Technology Institute di Addis Abeba. Vive a Roma.",
     "pages": {
       "home": {
         "title": "Dr.ssa Senait Mario",
@@ -66,12 +66,16 @@
     "contactTodo": "TODO: indirizzo email di contatto",
     "bookingTodo": "TODO: contatto per il booking",
     "institute": "Da Mario's Fashion and Technology Institute, Addis Abeba",
-    "copyright": "© {year} Dr.ssa Senait Mario. Tutti i diritti riservati."
+    "copyright": "© {year} Dr.ssa Senait Mario. Tutti i diritti riservati.",
+    "navHeading": "Esplora",
+    "contactHeading": "Richieste",
+    "followHeading": "Seguila",
+    "backToTop": "Torna su"
   },
   "home": {
     "heroName": "Senait Mario",
     "heroTitlePrefix": "Dr.ssa",
-    "heroRoles": "Stilista e modella internazionale, sociologa, Ambasciatrice di Pace ONU",
+    "heroRoles": "Stilista e modella internazionale, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e General Manager del Da Mario’s Fashion and Technology Institute.",
     "heroLede": "Promuove l'Etiopia attraverso i colori delle sue collezioni. Qui il colore non è decorazione: è la struttura del lavoro.",
     "heroBased": "Roma, Italia",
     "heroOrigin": "Nata e cresciuta a Wolaita Sodo, nel sud dell'Etiopia",

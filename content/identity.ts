@@ -9,7 +9,15 @@ export const identity = {
     'model',
     'sociologist',
     'UN Peace Ambassador',
-    "founder and CEO of Da Mario's Fashion and Technology Institute",
+    /*
+     * TITLE CONFLICT - CONFIRM WITH DR. MARIO BEFORE LAUNCH.
+     * The original brief supplied "founder and CEO"; the client later
+     * asked for "founder and general manager". The client's later wording
+     * is used here and in every locale's meta description and hero. If CEO
+     * is the correct title, change it here and in messages/*.json
+     * (meta.description and home.heroRoles).
+     */
+    "founder and General Manager of Da Mario's Fashion and Technology Institute",
   ],
   based: 'Rome, Italy',
   origin: 'Born and raised in Wolaita Sodo, southern Ethiopia',

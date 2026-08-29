@@ -5,9 +5,8 @@ import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { NAV_ITEMS } from './nav-items';
-import { LocaleSwitcher } from './LocaleSwitcher';
-import { ThemeToggle } from '@/components/theme/ThemeToggle';
 import { Wordmark } from './Wordmark';
+import { CloseIcon } from '@/components/ui/Icons';
 
 /**
  * Mobile navigation: a full-screen overlay in the display face — the small
@@ -50,9 +49,10 @@ export function MobileMenu() {
           type="button"
           onClick={() => setOpen(false)}
           autoFocus
-          className="inline-flex min-h-11 cursor-pointer items-center border border-line px-4 font-utility text-xs uppercase tracking-widest text-ink"
+          aria-label={t('menuClose')}
+          className="-mr-2 inline-flex h-11 w-11 cursor-pointer items-center justify-center text-ink transition-colors hover:text-accent"
         >
-          {t('menuClose')}
+          <CloseIcon className="h-6 w-6" />
         </button>
       </div>
 
@@ -76,10 +76,6 @@ export function MobileMenu() {
         </ul>
       </nav>
 
-      <div className="flex items-center gap-4 border-t border-line px-4 py-4 sm:px-6">
-        <LocaleSwitcher />
-        <ThemeToggle />
-      </div>
     </div>
   );
 
@@ -90,7 +86,7 @@ export function MobileMenu() {
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-controls="mobile-menu"
-        className="inline-flex min-h-11 cursor-pointer items-center border border-line px-4 font-utility text-xs uppercase tracking-widest text-ink"
+        className="-mr-1 inline-flex min-h-11 cursor-pointer items-center px-2 font-utility text-xs uppercase tracking-[0.2em] text-ink transition-colors hover:text-accent"
       >
         {t('menuOpen')}
       </button>
