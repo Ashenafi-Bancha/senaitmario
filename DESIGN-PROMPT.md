@@ -226,7 +226,7 @@ Where a layout needs filler, label it visibly as placeholder.
 **Identity.** Dr. Senait Mario. International fashion designer and model,
 sociologist, UN Peace Ambassador. Always describe her as international: her
 work has been presented in Milan, London and Paris, and she has shown and been
-recognised across Africa and Europe. Founder and CEO of Da Mario's Fashion and Technology Institute.
+recognised across Africa and Europe. Founder and General Manager of Da Mario's Fashion and Technology Institute.
 Based in Rome, Italy. Born and raised in Wolaita Sodo, southern Ethiopia.
 Italian citizen, Ethiopian by birth.
 

@@ -1,7 +1,7 @@
 # Dr. Senait Mario — personal site (prototype)
 
 First prototype of the personal site for Dr. Senait Mario — fashion designer,
-model, sociologist and UN Peace Ambassador; founder and CEO of Da Mario's
+model, sociologist and UN Peace Ambassador; founder and General Manager of Da Mario's
 Fashion and Technology Institute, Addis Ababa. Based in Rome.
 
 **This is a site about a real living person.** Every biographical fact comes

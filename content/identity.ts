@@ -10,12 +10,11 @@ export const identity = {
     'sociologist',
     'UN Peace Ambassador',
     /*
-     * TITLE CONFLICT - CONFIRM WITH DR. MARIO BEFORE LAUNCH.
-     * The original brief supplied "founder and CEO"; the client later
-     * asked for "founder and general manager". The client's later wording
-     * is used here and in every locale's meta description and hero. If CEO
-     * is the correct title, change it here and in messages/*.json
-     * (meta.description and home.heroRoles).
+     * General Manager, not CEO. The original brief said "founder and CEO";
+     * the client corrected it and then confirmed the correction. The same
+     * wording is used in every locale's meta.description and home.heroRoles,
+     * and it feeds the jobTitle in the Person structured data, so change all
+     * three together if it ever moves again.
      */
     "founder and General Manager of Da Mario’s Fashion and Technology Institute",
   ],
