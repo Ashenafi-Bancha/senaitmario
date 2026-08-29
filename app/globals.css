@@ -72,8 +72,19 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-line: var(--line);
-  /* Type over photography, where the theme ink would be unreadable. */
+  /*
+   * Type over photography, where the theme ink would be unreadable.
+   *
+   * These three are deliberately fixed rather than themed. On phones the hero
+   * type sits directly on her portrait, and the treatment has to hold in both
+   * the ivory and the black theme, so it answers to the photograph rather
+   * than to the palette.
+   */
   --color-onphoto: #ffffff;
+  /* Text inside the white pill on the darkened photograph. */
+  --color-onphoto-ink: #1b1512;
+  /* Warm gold for the honorific; the palette accent is too dark on the photo. */
+  --color-onphoto-accent: #e6bf94;
 
   --font-display: var(--font-display-face), Futura, "Century Gothic", "Trebuchet MS", sans-serif;
   --font-body: var(--font-body-face), Seravek, "Gill Sans", Verdana, sans-serif;
@@ -279,22 +290,52 @@ html {
  * against `transparent` is the ground colour at N% opacity, with no darkening.
  */
 /*
- * Phones: the type spans the full width, so an angled left-to-right veil ran
- * out before the text did and the line ends were lost against the bright
- * sequins. Here the veil is vertical and bottom-weighted instead - her face
- * stays clear in the upper third and the type sits in the protected band
- * below, which is also where the hero content is aligned on small screens.
+ * Phones: the type spans the full width, so it cannot be tucked to one side
+ * the way it is on desktop - it sits directly on her portrait.
+ *
+ * An earlier version veiled that band with the ivory ground, which made the
+ * type legible but bleached her figure away below the chest. Darkening does
+ * the same job while keeping the photograph readable: the sequins keep their
+ * sparkle and her dress keeps its shape, because the highlights stay bright
+ * relative to everything around them. So the veil is a fixed black rather
+ * than the palette ground, the hero type over it is set in white, and her
+ * face and shoulders are left completely untouched above 38%.
+ *
+ * The stops are measured, not judged by eye. The type band begins at 40.3%
+ * of the hero and the photograph behind every line of it peaks at 247-254 of
+ * 255 - blown sequin highlights - so the veil has to reach about 0.55 by 40%
+ * for the gold honorific and stay above it. It ramps to 0.66 there and holds,
+ * which leaves her face and hat under 0.2.
  */
 .hero-scrim {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    color-mix(in srgb, var(--ground) 8%, transparent) 22%,
-    color-mix(in srgb, var(--ground) 60%, transparent) 31%,
-    color-mix(in srgb, var(--ground) 90%, transparent) 39%,
-    color-mix(in srgb, var(--ground) 95%, transparent) 55%,
-    color-mix(in srgb, var(--ground) 96%, transparent) 100%
+    rgb(0 0 0 / 0.03) 24%,
+    rgb(0 0 0 / 0.26) 32%,
+    rgb(0 0 0 / 0.66) 40%,
+    rgb(0 0 0 / 0.76) 50%,
+    rgb(0 0 0 / 0.82) 62%,
+    rgb(0 0 0 / 0.88) 100%
   );
+}
+
+/*
+ * Lifts the white hero type off the busiest parts of the sequins. The close
+ * shadow does the work on the glyph edges; the wide one sits the whole line
+ * on the photograph rather than letting it float.
+ */
+.hero-onphoto {
+  text-shadow:
+    0 1px 2px rgb(0 0 0 / 0.4),
+    0 6px 28px rgb(0 0 0 / 0.35);
+}
+
+@media (min-width: 1024px) {
+  /* Desktop keeps the type on the ground at the left, so neither applies. */
+  .hero-onphoto {
+    text-shadow: none;
+  }
 }
 
 

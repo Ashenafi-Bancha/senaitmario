@@ -137,29 +137,29 @@ function Hero() {
 
         <div className="relative z-10 flex h-full items-end pt-[var(--header-h)] lg:items-center">
           <div className="mx-auto w-full max-w-6xl px-6 pb-28 sm:px-8 lg:pb-0">
-            <p className="rise flex items-center gap-4 font-display text-[clamp(1.2rem,1.8vw,1.5rem)] font-semibold uppercase leading-none tracking-[0.4em] text-accent">
+            <p className="hero-onphoto rise flex items-center gap-4 font-display text-[clamp(1.2rem,1.8vw,1.5rem)] font-semibold uppercase leading-none tracking-[0.4em] text-onphoto-accent lg:text-accent">
               {t('heroTitlePrefix')}
               <span
                 aria-hidden="true"
-                className="h-px w-10 shrink-0 bg-accent/55 sm:w-14"
+                className="h-px w-10 shrink-0 bg-onphoto-accent/60 sm:w-14 lg:bg-accent/55"
               />
             </p>
 
             <h1
               id="hero-name"
-              className="rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] font-medium uppercase leading-[1.04] tracking-[0.08em] text-ink lg:max-w-[40vw]"
+              className="hero-onphoto rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] font-medium uppercase leading-[1.04] tracking-[0.08em] text-onphoto lg:max-w-[40vw] lg:text-ink"
             >
               {t('heroName')}
             </h1>
 
-            <p className="rise rise-3 mt-7 max-w-xl text-[clamp(1.15rem,1.9vw,1.5rem)] font-medium leading-relaxed text-ink">
+            <p className="hero-onphoto rise rise-3 mt-7 max-w-xl text-[clamp(1.15rem,1.9vw,1.5rem)] font-medium leading-relaxed text-onphoto lg:text-ink">
               {t('heroRoles')}
             </p>
 
             <div className="rise rise-4 mt-9 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-start">
               <Link
                 href="/story"
-                className="hero-cta inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full bg-ink px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ground no-underline"
+                className="hero-cta inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full bg-onphoto px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-onphoto-ink no-underline lg:bg-ink lg:text-ground"
               >
                 {t('heroCtaStory')}
                 <span aria-hidden="true">&rarr;</span>
@@ -167,7 +167,7 @@ function Hero() {
 
               <Link
                 href="/work"
-                className="hero-cta hero-cta-ghost inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full border border-ink/45 px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ink no-underline"
+                className="hero-cta hero-cta-ghost inline-flex min-h-12 w-full max-w-[19rem] items-center justify-center gap-3 rounded-full border border-onphoto/65 px-7 sm:w-auto sm:max-w-none sm:justify-start font-utility text-[0.7rem] uppercase tracking-[0.25em] text-onphoto no-underline lg:border-ink/45 lg:text-ink"
               >
                 {t('heroCta')}
                 <span aria-hidden="true">&rarr;</span>

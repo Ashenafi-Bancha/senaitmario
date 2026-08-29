@@ -21,7 +21,7 @@ export function ScrollCue({ targetId }: { targetId: string }) {
       type="button"
       onClick={onClick}
       aria-label={t('scrollCue')}
-      className="hero-cue inline-flex h-12 w-12 items-center justify-center rounded-full border border-ink/25 bg-ground/70 text-ink backdrop-blur-sm transition-colors hover:bg-ground"
+      className="hero-cue inline-flex h-12 w-12 items-center justify-center rounded-full border border-onphoto/40 bg-onphoto/10 text-onphoto backdrop-blur-sm transition-colors hover:bg-onphoto/20 lg:border-ink/25 lg:bg-ground/70 lg:text-ink lg:hover:bg-ground"
     >
       <svg
         viewBox="0 0 24 24"
