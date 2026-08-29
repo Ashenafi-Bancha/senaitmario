@@ -61,14 +61,10 @@
     "skipToContent": "Vai al contenuto"
   },
   "footer": {
-    "roles": "Stilista internazionale · Modella · Sociologa · Ambasciatrice di Pace ONU",
-    "based": "Roma, Italia",
-    "contactTodo": "TODO: indirizzo email di contatto",
-    "bookingTodo": "TODO: contatto per il booking",
+    "roles": "Stilista e modella internazionale, sociologa e Ambasciatrice di Pace delle Nazioni Unite. Fondatrice e General Manager del Da Mario’s Fashion and Technology Institute.",
     "institute": "Da Mario's Fashion and Technology Institute, Addis Abeba",
     "copyright": "© {year} Dr.ssa Senait Mario. Tutti i diritti riservati.",
     "navHeading": "Esplora",
-    "contactHeading": "Richieste",
     "followHeading": "Seguila",
     "backToTop": "Torna su"
   },
@@ -150,7 +146,7 @@
   "work": {
     "heading": "Collezioni",
     "intro": "Corpi di lavoro, ognuno con la propria palette.",
-    "placeholderNote": "TODO: dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
+    "placeholderNote": "Dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
     "filteredBy": "Pezzi che usano {swatch}",
     "clearFilter": "Rimuovi filtro",
     "viewCollection": "Vedi la collezione",
@@ -180,9 +176,9 @@
     "aboutHeading": "Avorio, bruno e nero",
     "aboutBody1": "Il sito poggia su un unico fondo chiaro, un avorio dalle sfumature verdi, scritto in bruno profondo, perché nulla competa con il lavoro. Lo preferisci scuro? L'interruttore nell'intestazione veste ogni pagina di nero moderno, e l'intero fondo attraversa il cambio in un solo movimento fluido.",
     "aboutBody2": "Quando le collezioni saranno fotografate, i loro colori verranno estratti direttamente dai capi e prenderanno il posto di questi fondi, ogni corpo di lavoro avrà la propria palette, e ogni colore sarà indicizzato qui sotto: il nome, la collezione da cui proviene e ciò che porta con sé.",
-    "aboutNoteTodo": "TODO: una nota con le sue parole sui colori del sito, da scrivere e approvare con il cliente.",
+    "aboutNoteTodo": "Una nota con le sue parole sui colori del sito, da scrivere e approvare con il cliente.",
     "indexHeading": "L'indice",
-    "placeholderNote": "TODO: campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
+    "placeholderNote": "Campioni in attesa della fotografia reale delle collezioni. Questi segnaposto dimostrano l'indice.",
     "filterAction": "Vedi i pezzi in questo colore",
     "fromCollection": "Da {collection}",
     "carriesLabels": {
@@ -228,7 +224,7 @@
       "seriousness": "La moda africana, ha sostenuto, merita di essere trattata come una fonte seria di design, non ridotta a un ristretto repertorio di cliché visivi.",
       "expression": "La moda può portare messaggi di pace e unità; le persone dovrebbero poter esprimere chi sono e da dove vengono attraverso ciò che indossano."
     },
-    "pullQuoteTodo": "TODO: citazione testuale da approvare con il cliente",
+    "pullQuoteTodo": "Citazione testuale da approvare con il cliente",
     "pullQuoteConfirm": "Confermare il testo con il cliente",
     "sodoShowHeading": "Peace Fashion Show, Wolaita Sodo, giugno 2019",
     "sodoShowBody": "Nel giugno 2019 ha organizzato una Peace Fashion Show nella sua città natale, Wolaita Sodo, in concomitanza con il festival culturale annuale dello Stato Regionale delle Nazioni, Nazionalità e Popoli del Sud, dove 56 nazioni dell'Etiopia meridionale hanno messo in mostra la propria diversità culturale. La sfilata ha presentato il lavoro di otto stilisti etiopi.",
@@ -240,8 +236,8 @@
     },
     "platformsHeading": "Le piattaforme che ha creato",
     "editionsHeading": "Edizioni documentate",
-    "editionsTodo": "TODO - nella stampa reperibile è documentata solo l'edizione di Wolaita Sodo del giugno 2019. Storico delle edizioni, date, città ed eventuali prossime sfilate da fornire dal cliente.",
-    "expoTodo": "TODO - non è pubblicata da nessuna parte alcuna edizione, data o città dell'African Fashion Expo. Dettagli da fornire dal cliente.",
+    "editionsTodo": "Nella stampa reperibile è documentata solo l'edizione di Wolaita Sodo del giugno 2019. Storico delle edizioni, date, città ed eventuali prossime sfilate da fornire dal cliente.",
+    "expoTodo": "Non è pubblicata da nessuna parte alcuna edizione, data o città dell'African Fashion Expo. Dettagli da fornire dal cliente.",
     "platforms": {
       "onePeace": {
         "description": "One Peace Fashion è la piattaforma di sfilate che ha fondato e che porta ancora il suo nome. Il Nigerian Tribune, raccontandola nel 2019, l'ha descritta come una rassegna annuale di prêt-à-porter da tutta l'Africa; presenta il suo lavoro sotto questo nome almeno dal 2014. Il suo scopo, nelle sue parole, è permettere alle persone di esprimere chi sono e da dove vengono attraverso ciò che indossano."
@@ -256,7 +252,7 @@
     "founded": "Fondato nel 2024 · Bole Sub City, Addis Abeba",
     "body": "L'istituto insegna fashion design, modeling, cosmetologia, nail technology, informatica e formazione professionale per addetti alla sicurezza. È accreditato dall'Autorità di Regolamentazione della Qualità dell'Istruzione e della Formazione dell'Amministrazione della Città di Addis Abeba ed è partner della Rome Business School.",
     "bridge": "Questo sito racconta la stilista. L'istituto ha una casa propria.",
-    "ctaTodo": "TODO: link esterno in attesa della pubblicazione del sito dell'istituto",
+    "ctaTodo": "Link esterno in attesa della pubblicazione del sito dell'istituto",
     "programmesHeading": "Programmi",
     "programmes": {
       "fashionDesign": "Fashion design",
@@ -288,15 +284,15 @@
     },
     "confirmationNote": "I dettagli di ciascun riconoscimento sono in fase di conferma per il press kit.",
     "downloadsHeading": "Press kit e download",
-    "downloadsTodo": "TODO: immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
+    "downloadsTodo": "Immagini ad alta risoluzione e press kit PDF in attesa di fotografie autorizzate e approvazione del cliente.",
     "coverageHeading": "Rassegna stampa",
     "coverageArchive": "Copia archiviata",
-    "coverageTodo": "TODO: ulteriore rassegna stampa (stampa italiana, TV/radio etiopi) da fornire dal cliente; sono elencati solo gli articoli reperibili pubblicamente."
+    "coverageTodo": "Ulteriore rassegna stampa (stampa italiana, TV/radio etiopi) da fornire dal cliente; sono elencati solo gli articoli reperibili pubblicamente."
   },
   "contact": {
     "heading": "Contatti",
     "intro": "Richieste di booking, stampa e partnership.",
-    "emailTodo": "TODO: indirizzo email diretto in attesa",
+    "emailTodo": "Indirizzo email diretto in attesa",
     "form": {
       "name": "Nome",
       "organisation": "Organizzazione",
@@ -321,7 +317,8 @@
         "messageRequired": "Inserisci un messaggio.",
         "messageTooLong": "Il messaggio è troppo lungo (max 5000 caratteri)."
       }
-    }
+    },
+    "bookingTodo": "Contatto per le prenotazioni in attesa"
   },
   "credits": {
     "photo": "Foto: {credit}",
@@ -338,11 +335,12 @@
     "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው, ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
     "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
     "invite": "In the meantime, you are warmly invited to read the site in:",
-    "todo": "TODO: the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
+    "todo": "The Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
   },
   "social": {
     "heading": "Seguila",
     "visitOn": "Dr.ssa Senait Mario su {platform}",
-    "unconfirmedTodo": "TODO - Instagram e altri profili da confermare con il cliente prima di essere collegati."
+    "unconfirmedTodo": "I dati di {platforms} devono essere forniti dalla cliente prima di attivare il collegamento.",
+    "pending": "Dr.ssa Senait Mario su {platform} – collegamento in attesa"
   }
 }

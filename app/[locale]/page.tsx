@@ -137,10 +137,12 @@ function Hero() {
 
         <div className="relative z-10 flex h-full items-end pt-[var(--header-h)] lg:items-center">
           <div className="mx-auto w-full max-w-6xl px-6 pb-28 sm:px-8 lg:pb-0">
-            <p
-              className="rise font-utility text-[0.7rem] uppercase tracking-[0.35em] text-muted"
-            >
+            <p className="rise flex items-center gap-4 font-display text-[clamp(1.2rem,1.8vw,1.5rem)] font-semibold uppercase leading-none tracking-[0.4em] text-accent">
               {t('heroTitlePrefix')}
+              <span
+                aria-hidden="true"
+                className="h-px w-10 shrink-0 bg-accent/55 sm:w-14"
+              />
             </p>
 
             <h1

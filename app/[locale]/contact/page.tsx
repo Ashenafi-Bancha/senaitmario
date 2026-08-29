@@ -36,6 +36,9 @@ export default async function ContactPage({
         <p className="mt-3 text-sm text-muted">
           <TodoMark /> {t('emailTodo')}
         </p>
+        <p className="mt-2 text-sm text-muted">
+          <TodoMark /> {t('bookingTodo')}
+        </p>
         <div className="mt-12">
           <ContactForm />
         </div>

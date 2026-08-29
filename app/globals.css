@@ -289,11 +289,11 @@ html {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    color-mix(in srgb, var(--ground) 8%, transparent) 24%,
-    color-mix(in srgb, var(--ground) 55%, transparent) 33%,
-    color-mix(in srgb, var(--ground) 88%, transparent) 41%,
-    color-mix(in srgb, var(--ground) 94%, transparent) 55%,
-    color-mix(in srgb, var(--ground) 95%, transparent) 100%
+    color-mix(in srgb, var(--ground) 8%, transparent) 22%,
+    color-mix(in srgb, var(--ground) 60%, transparent) 31%,
+    color-mix(in srgb, var(--ground) 90%, transparent) 39%,
+    color-mix(in srgb, var(--ground) 95%, transparent) 55%,
+    color-mix(in srgb, var(--ground) 96%, transparent) 100%
   );
 }
 

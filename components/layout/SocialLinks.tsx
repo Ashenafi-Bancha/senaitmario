@@ -2,16 +2,19 @@ import { useTranslations } from 'next-intl';
 import { BRAND_ICONS } from '@/components/ui/BrandIcons';
 import { TodoMark } from '@/components/ui/TodoMark';
 import {
-  confirmedSocialAccounts,
-  hasUnconfirmedSocialAccounts,
+  socialAccounts,
+  pendingSocialAccounts,
 } from '@/content/social';
 
 /**
  * Her social profiles, shown as the platforms' own brand marks.
  *
- * Only confirmed accounts render as links. Anything still unconfirmed is
- * surfaced as an outstanding item instead — linking a profile that turns out
- * not to be hers would send her audience to a stranger.
+ * The marks are set bare rather than in outlined boxes, so the only colour in
+ * the row is each platform's own. Confirmed accounts are links; an account
+ * still waiting on a detail from her keeps its mark in place, held back and
+ * not clickable, and is named in the outstanding note underneath. Linking a
+ * profile or a number that turns out not to be hers would send her audience
+ * to a stranger, so the mark waits rather than guesses.
  */
 export function SocialLinks({
   size = 'default',
@@ -19,20 +22,40 @@ export function SocialLinks({
   className,
 }: {
   size?: 'default' | 'large';
-  /** Print the handle beside the mark, where the layout has room. */
+  /** Print the handle beside the mark. Off in the footer, on where there is room. */
   showHandles?: boolean;
   className?: string;
 }) {
   const t = useTranslations('social');
 
   const box = size === 'large' ? 'h-12 w-12' : 'h-11 w-11';
-  const glyph = size === 'large' ? 'h-6 w-6' : 'h-5 w-5';
+  const glyph = size === 'large' ? 'h-7 w-7' : 'h-6 w-6';
 
   return (
     <div className={className}>
-      <ul className="flex flex-wrap items-center gap-3">
-        {confirmedSocialAccounts.map((account) => {
+      <ul
+        className={
+          showHandles
+            ? 'flex flex-col gap-2'
+            : 'flex flex-wrap items-center gap-1'
+        }
+      >
+        {socialAccounts.map((account) => {
           const Icon = BRAND_ICONS[account.platform];
+
+          if (!account.url) {
+            return (
+              <li key={account.platform}>
+                <span className={`inline-flex ${box} items-center justify-center opacity-40`}>
+                  <Icon className={glyph} />
+                  <span className="sr-only">
+                    {t('pending', { platform: account.label })}
+                  </span>
+                </span>
+              </li>
+            );
+          }
+
           return (
             <li key={account.platform}>
               <a
@@ -40,10 +63,10 @@ export function SocialLinks({
                 target="_blank"
                 rel="me noopener noreferrer"
                 aria-label={t('visitOn', { platform: account.label })}
-                className="group inline-flex items-center gap-3 no-underline"
+                className="social-mark group inline-flex items-center gap-3 no-underline"
               >
                 <span
-                  className={`inline-flex ${box} shrink-0 items-center justify-center border border-line transition-colors group-hover:border-accent`}
+                  className={`inline-flex ${box} shrink-0 items-center justify-center transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5 motion-safe:group-hover:scale-110`}
                 >
                   <Icon className={glyph} />
                 </span>
@@ -58,9 +81,12 @@ export function SocialLinks({
         })}
       </ul>
 
-      {hasUnconfirmedSocialAccounts ? (
-        <p className="mt-4 text-sm text-muted">
-          <TodoMark /> {t('unconfirmedTodo')}
+      {pendingSocialAccounts.length > 0 ? (
+        <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
+          <TodoMark />{' '}
+          {t('unconfirmedTodo', {
+            platforms: pendingSocialAccounts.map((a) => a.label).join(', '),
+          })}
         </p>
       ) : null}
     </div>

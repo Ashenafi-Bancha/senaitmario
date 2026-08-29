@@ -61,14 +61,10 @@
     "skipToContent": "Skip to content"
   },
   "footer": {
-    "roles": "International fashion designer · Model · Sociologist · UN Peace Ambassador",
-    "based": "Rome, Italy",
-    "contactTodo": "TODO: contact email",
-    "bookingTodo": "TODO: booking contact",
+    "roles": "International fashion designer and model, sociologist and UN Peace Ambassador. Founder and General Manager of Da Mario’s Fashion and Technology Institute.",
     "institute": "Da Mario's Fashion and Technology Institute, Addis Ababa",
     "copyright": "© {year} Dr. Senait Mario. All rights reserved.",
     "navHeading": "Explore",
-    "contactHeading": "Enquiries",
     "followHeading": "Follow",
     "backToTop": "Back to top"
   },
@@ -150,7 +146,7 @@
   "work": {
     "heading": "Collections",
     "intro": "Bodies of work, each owning its own palette.",
-    "placeholderNote": "TODO: collection data pending. These three entries are layout placeholders.",
+    "placeholderNote": "Collection data pending. These three entries are layout placeholders.",
     "filteredBy": "Showing pieces using {swatch}",
     "clearFilter": "Clear filter",
     "viewCollection": "View collection",
@@ -180,9 +176,9 @@
     "aboutHeading": "Ivory, brown and black",
     "aboutBody1": "The site stands on one pale ground of green-tinged ivory, written in deep brown, so nothing competes with the work. Prefer it darker? The header switch dresses every page in modern black, and the whole ground crosses over in a single smooth move.",
     "aboutBody2": "When the collections are photographed, their colours will be lifted directly from the garments and take over these grounds, each body of work owning its own palette, with every colour indexed below: its name, the collection it comes from, and what it carries.",
-    "aboutNoteTodo": "TODO: a note in her own words on the site's colours, to be written and approved with the client.",
+    "aboutNoteTodo": "A note in her own words on the site's colours, to be written and approved with the client.",
     "indexHeading": "The index",
-    "placeholderNote": "TODO: swatches pending real collection photography. These placeholders demonstrate the index.",
+    "placeholderNote": "Swatches pending real collection photography. These placeholders demonstrate the index.",
     "filterAction": "See pieces in this colour",
     "fromCollection": "From {collection}",
     "carriesLabels": {
@@ -228,7 +224,7 @@
       "seriousness": "African fashion, she has argued, deserves to be treated as a serious source of design, not reduced to a narrow set of visual clichés.",
       "expression": "Fashion can carry messages of peace and unity; people should be able to express who they are and where they are from through what they wear."
     },
-    "pullQuoteTodo": "TODO: verbatim quote to be approved by client",
+    "pullQuoteTodo": "Verbatim quote to be approved by client",
     "pullQuoteConfirm": "Confirm wording with client",
     "sodoShowHeading": "Peace Fashion Show · Wolaita Sodo, June 2019",
     "sodoShowBody": "In June 2019 she staged a Peace Fashion Show in her hometown of Wolaita Sodo, alongside the annual cultural festival of the Southern Nations, Nationalities and Peoples' Regional State, where 56 southern Ethiopian nations showcased their cultural diversity. The show featured the work of eight Ethiopian designers.",
@@ -240,8 +236,8 @@
     },
     "platformsHeading": "The platforms she built",
     "editionsHeading": "Documented editions",
-    "editionsTodo": "TODO - only the June 2019 Wolaita Sodo edition is documented in reachable press. Edition history, dates, cities and any upcoming show to be supplied by the client.",
-    "expoTodo": "TODO - no edition, date or city for the African Fashion Expo is published anywhere. Details to be supplied by the client.",
+    "editionsTodo": "Only the June 2019 Wolaita Sodo edition is documented in reachable press. Edition history, dates, cities and any upcoming show to be supplied by the client.",
+    "expoTodo": "No edition, date or city for the African Fashion Expo is published anywhere. Details to be supplied by the client.",
     "platforms": {
       "onePeace": {
         "description": "One Peace Fashion is the show platform she founded and still runs under her own name. The Nigerian Tribune, covering it in 2019, described it as an annual showcase of ready-to-wear from across Africa; she has been presenting work under the name since at least 2014. Its purpose, in her framing, is to let people express who they are and where they are from through what they wear."
@@ -256,7 +252,7 @@
     "founded": "Founded 2024 · Bole Sub City, Addis Ababa",
     "body": "The institute teaches fashion design, modeling, cosmetology, nail technology, information technology and professional security officer training. It is accredited by the Addis Ababa City Administration Education and Training Quality Regulatory Authority and partnered with the Rome Business School.",
     "bridge": "This site is about the designer. The institute has its own home.",
-    "ctaTodo": "TODO: outbound link pending the institute site going live",
+    "ctaTodo": "Outbound link pending the institute site going live",
     "programmesHeading": "Programmes",
     "programmes": {
       "fashionDesign": "Fashion design",
@@ -288,15 +284,15 @@
     },
     "confirmationNote": "Details of each recognition are being confirmed for the press kit.",
     "downloadsHeading": "Press kit & downloads",
-    "downloadsTodo": "TODO: high-resolution images and press kit PDF pending cleared photography and client sign-off.",
+    "downloadsTodo": "High-resolution images and press kit PDF pending cleared photography and client sign-off.",
     "coverageHeading": "Coverage",
     "coverageArchive": "Archived copy",
-    "coverageTodo": "TODO: further coverage (Italian-language press, Ethiopian TV/radio) to be supplied by client; only publicly findable articles are listed."
+    "coverageTodo": "Further coverage (Italian-language press, Ethiopian TV/radio) to be supplied by client; only publicly findable articles are listed."
   },
   "contact": {
     "heading": "Contact",
     "intro": "Booking, press and partnership enquiries.",
-    "emailTodo": "TODO: direct contact email pending",
+    "emailTodo": "Direct contact email pending",
     "form": {
       "name": "Name",
       "organisation": "Organisation",
@@ -321,7 +317,8 @@
         "messageRequired": "Please enter a message.",
         "messageTooLong": "Message is too long (max 5000 characters)."
       }
-    }
+    },
+    "bookingTodo": "Booking contact pending"
   },
   "credits": {
     "photo": "Photo: {credit}",
@@ -338,11 +335,12 @@
     "leadAm": "ይህ ድረ-ገጽ ወደ ወላይትኛ (ወላይታቶ ዶናአ) እየተተረጎመ ነው፦ ዶ/ር ሰናይት ማርዮ የተወለደችበትና ያደገችበት የወላይታ ሶዶ ቋንቋ።",
     "bodyAm": "ገጾቹ ገና በዚህ ቋንቋ አልተዘጋጁም። የሕይወት ታሪኳን በእናት ቋንቋዋ በችኮላ ከመተርጎም ይልቅ ጊዜ ወስደን በአግባቡ መስራትን መርጠናል።",
     "invite": "In the meantime, you are warmly invited to read the site in:",
-    "todo": "TODO: the Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
+    "todo": "The Wolayttatto Doonaa wording for this page, and the site translation itself, must be written and reviewed by a native speaker. No machine translation of her biography will be published in her mother tongue."
   },
   "social": {
     "heading": "Follow",
     "visitOn": "Dr. Senait Mario on {platform}",
-    "unconfirmedTodo": "TODO - Instagram and any other handles to be confirmed by the client before they are linked."
+    "unconfirmedTodo": "{platforms} details to be supplied by the client before the mark is linked.",
+    "pending": "Dr. Senait Mario on {platform} – link pending"
   }
 }
