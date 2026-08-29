@@ -20,7 +20,7 @@ export function Header() {
       </a>
       {/* Height is pinned to --header-h so the full-bleed hero can pull itself
           up behind the header by exactly the right amount. */}
-      <div className="mx-auto flex h-[var(--header-h)] max-w-6xl items-center justify-between gap-6 px-4 sm:px-6">
+      <div className="mx-auto flex h-[var(--header-h)] max-w-6xl items-center justify-between gap-3 px-4 sm:gap-6 sm:px-6">
         <Wordmark />
 
         {/* Desktop row */}
@@ -43,8 +43,13 @@ export function Header() {
           <ThemeToggle />
         </div>
 
-        {/* Mobile: full-screen overlay menu */}
-        <MobileMenu />
+        {/* Mobile: language and theme sit in the bar; navigation opens a
+            full-screen overlay. */}
+        <div className="flex items-center gap-2 lg:hidden">
+          <LocaleSwitcher variant="icon" />
+          <ThemeToggle />
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );
