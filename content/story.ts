@@ -62,7 +62,7 @@ export const storyChapters: StoryChapter[] = [
       src: '/images/story/rome.jpg',
       width: 1600,
       height: 805,
-      alt: "St. Peter's Basilica and Ponte Sant'Angelo over the Tiber at dusk, Rome, placeholder image",
+      alt: "St. Peter’s Basilica and Ponte Sant’Angelo over the Tiber at dusk, Rome, placeholder image",
       credit: 'Jebulon, CC0, via Wikimedia Commons',
     },
   },

@@ -17,7 +17,7 @@ export const identity = {
      * is the correct title, change it here and in messages/*.json
      * (meta.description and home.heroRoles).
      */
-    "founder and General Manager of Da Mario's Fashion and Technology Institute",
+    "founder and General Manager of Da Mario’s Fashion and Technology Institute",
   ],
   based: 'Rome, Italy',
   origin: 'Born and raised in Wolaita Sodo, southern Ethiopia',

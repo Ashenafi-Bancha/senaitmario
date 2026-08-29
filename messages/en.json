@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "Dr. Senait Mario",
     "titleTemplate": "Dr. Senait Mario",
-    "description": "Dr. Senait Mario: international fashion designer and model, sociologist and UN Peace Ambassador. Founder and General Manager of Da Mario's Fashion and Technology Institute, Addis Ababa. Based in Rome.",
+    "description": "Dr. Senait Mario: international fashion designer and model, sociologist and UN Peace Ambassador. Founder and General Manager of Da Mario’s Fashion and Technology Institute, Addis Ababa. Based in Rome.",
     "pages": {
       "home": {
         "title": "Dr. Senait Mario",
@@ -18,7 +18,7 @@
       },
       "story": {
         "title": "Story",
-        "description": "From Wolaita Sodo to Rome and back to Addis Ababa: the arc of Dr. Senait Mario's life and work."
+        "description": "From Wolaita Sodo to Rome and back to Addis Ababa: the arc of Dr. Senait Mario’s life and work."
       },
       "peace": {
         "title": "Peace",
@@ -26,7 +26,7 @@
       },
       "institute": {
         "title": "The Institute",
-        "description": "Da Mario's Fashion and Technology Institute, founded 2024 in Addis Ababa."
+        "description": "Da Mario’s Fashion and Technology Institute, founded 2024 in Addis Ababa."
       },
       "press": {
         "title": "Press",
@@ -61,7 +61,7 @@
   },
   "footer": {
     "roles": "International fashion designer and model, sociologist and UN Peace Ambassador. Founder and General Manager of Da Mario’s Fashion and Technology Institute.",
-    "institute": "Da Mario's Fashion and Technology Institute, Addis Ababa",
+    "institute": "Da Mario’s Fashion and Technology Institute, Addis Ababa",
     "copyright": "© {year} Dr. Senait Mario. All rights reserved.",
     "navHeading": "Explore",
     "followHeading": "Follow",
@@ -101,7 +101,7 @@
       },
       "institute": {
         "title": "The Institute",
-        "lede": "Da Mario's Fashion and Technology Institute, founded 2024 in Addis Ababa.",
+        "lede": "Da Mario’s Fashion and Technology Institute, founded 2024 in Addis Ababa.",
         "cta": "Visit the institute"
       }
     }
@@ -128,7 +128,7 @@
       "rome": {
         "place": "Rome",
         "title": "A second home",
-        "body": "She settled in Rome and became an Italian citizen: Ethiopian by birth, Italian by citizenship. She kept studying, and as of 2019 was pursuing a master's degree in Agricultural Science."
+        "body": "She settled in Rome and became an Italian citizen: Ethiopian by birth, Italian by citizenship. She kept studying, and as of 2019 was pursuing a master’s degree in Agricultural Science."
       },
       "stages": {
         "place": "Milan · London · Paris",
@@ -138,7 +138,7 @@
       "addis": {
         "place": "Addis Ababa",
         "title": "The return",
-        "body": "In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa, the resolution of the arc. Her aim: to promote Ethiopia in the fashion industry while attracting investment that supports the empowerment of young Ethiopians."
+        "body": "In 2024 she founded Da Mario’s Fashion and Technology Institute in Addis Ababa, the resolution of the arc. Her aim: to promote Ethiopia in the fashion industry while attracting investment that supports the empowerment of young Ethiopians."
       }
     }
   },
@@ -171,11 +171,11 @@
   },
   "colour": {
     "heading": "The Colour Index",
-    "intro": "Her stated method: Ethiopia, promoted through the colours of the collections. This page is where the site's colour is explained, and where each garment colour will be indexed.",
+    "intro": "Her stated method: Ethiopia, promoted through the colours of the collections. This page is where the site’s colour is explained, and where each garment colour will be indexed.",
     "aboutHeading": "Ivory, brown and black",
     "aboutBody1": "The site stands on one pale ground of green-tinged ivory, written in deep brown, so nothing competes with the work. Prefer it darker? The header switch dresses every page in modern black, and the whole ground crosses over in a single smooth move.",
     "aboutBody2": "When the collections are photographed, their colours will be lifted directly from the garments and take over these grounds, each body of work owning its own palette, with every colour indexed below: its name, the collection it comes from, and what it carries.",
-    "aboutNoteTodo": "A note in her own words on the site's colours, to be written and approved with the client.",
+    "aboutNoteTodo": "A note in her own words on the site’s colours, to be written and approved with the client.",
     "indexHeading": "The index",
     "placeholderNote": "Swatches pending real collection photography. These placeholders demonstrate the index.",
     "filterAction": "See pieces in this colour",
@@ -227,7 +227,7 @@
     "pullQuoteConfirm": "Confirm wording with client",
     "sodoShowHeading": "Peace Fashion Show · Wolaita Sodo, June 2019",
     "sodoShowBody": "In June 2019 she staged a Peace Fashion Show in her hometown of Wolaita Sodo, alongside the annual cultural festival of the Southern Nations, Nationalities and Peoples' Regional State, where 56 southern Ethiopian nations showcased their cultural diversity. The show featured the work of eight Ethiopian designers.",
-    "sodoShowAttendance": "It was attended by Ethiopia's State Minister of Tourism and Culture, the Vice President of the Southern regional state, the head of the Addis Ababa Women, Children and Youth Affairs Bureau, and guests from embassies and international organisations.",
+    "sodoShowAttendance": "It was attended by Ethiopia’s State Minister of Tourism and Culture, the Vice President of the Southern regional state, the head of the Addis Ababa Women, Children and Youth Affairs Bureau, and guests from embassies and international organisations.",
     "eventsHeading": "Events she organises",
     "events": {
       "expo": "African Fashion Expo",
@@ -247,7 +247,7 @@
     }
   },
   "institute": {
-    "heading": "Da Mario's Fashion and Technology Institute",
+    "heading": "Da Mario’s Fashion and Technology Institute",
     "founded": "Founded 2024 · Bole Sub City, Addis Ababa",
     "body": "The institute teaches fashion design, modeling, cosmetology, nail technology, information technology and professional security officer training. It is accredited by the Addis Ababa City Administration Education and Training Quality Regulatory Authority and partnered with the Rome Business School.",
     "bridge": "This site is about the designer. The institute has its own home.",
@@ -265,7 +265,7 @@
   "press": {
     "heading": "Press",
     "bioHeading": "Short biography",
-    "bio": "Dr. Senait Mario is an international fashion designer and model, a sociologist and a UN Peace Ambassador, based in Rome. Born and raised in Wolaita Sodo in southern Ethiopia, she left the country around 2009, lived in Kenya and Uganda, and settled in Italy, where she is a citizen. Her work has been presented on the fashion stages of Milan, London and Paris; her stated method is to promote Ethiopia through the colours she uses in her collections. In 2024 she founded Da Mario's Fashion and Technology Institute in Addis Ababa.",
+    "bio": "Dr. Senait Mario is an international fashion designer and model, a sociologist and a UN Peace Ambassador, based in Rome. Born and raised in Wolaita Sodo in southern Ethiopia, she left the country around 2009, lived in Kenya and Uganda, and settled in Italy, where she is a citizen. Her work has been presented on the fashion stages of Milan, London and Paris; her stated method is to promote Ethiopia through the colours she uses in her collections. In 2024 she founded Da Mario’s Fashion and Technology Institute in Addis Ababa.",
     "recognitionHeading": "Recognition",
     "recognition": {
       "mice2016": {
@@ -340,6 +340,6 @@
     "heading": "Follow",
     "visitOn": "Dr. Senait Mario on {platform}",
     "unconfirmedTodo": "{platforms} details to be supplied by the client before the mark is linked.",
-    "pending": "Dr. Senait Mario on {platform} – link pending"
+    "pending": "Dr. Senait Mario on {platform}: link pending"
   }
 }
