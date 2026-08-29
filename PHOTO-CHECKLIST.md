@@ -34,9 +34,14 @@ rather than publish it.
 
 ## Priority 1 — the three that change everything (3 photos)
 
+> **The hero already has her real photograph** - the one supplied on
+> 2026-08-29. Two things are still needed on it: **who took it**, and a
+> **higher-resolution original** (it is 941px and renders soft on a large
+> desktop). Everything else in this list is still borrowed stock.
+
 | # | What | Where it appears | Notes |
 | --- | --- | --- | --- |
-| 1 | **Hero portrait** | Fills the whole home page screen | Landscape or square crop. Leave calm space on the LEFT: her name and the button sit over that side. 2000px+ long edge. |
+| 1 | **Hero portrait** | Fills the whole home page screen | **Portrait, not landscape** - tall, like the one already on the site. Her face in the upper third. Nothing important in the bottom half or at the far left; the type sits there. **2000px+ on the long edge** - the current file is 941px and goes soft on a large screen. |
 | 2 | **Masthead portrait** | Small circle beside her name in the header, every page | Square crop of her face, 256px+ |
 | 3 | **Press portrait** | Press page, and the photo press download | Her best formal shot. Highest resolution available. |
 
@@ -106,7 +111,7 @@ These three pages are currently text-only. Even one photo each lifts them.
 
 If you can only get a handful, get these five:
 
-1. Hero portrait (landscape, calm on the left)
+1. Hero portrait (tall portrait, face in the upper third, 2000px+)
 2. Masthead portrait (square, her face)
 3. One real collection, with 2+ photos and its name, year and city
 4. One photo of her in Wolaita Sodo
@@ -114,6 +119,25 @@ If you can only get a handful, get these five:
 
 That is enough to remove every borrowed image from the parts of the site
 people look at first.
+
+---
+
+## How the hero is cropped
+
+Worth knowing before choosing a replacement, because the same file is cropped
+two different ways:
+
+- **On a phone** the photograph fills the screen. Her face and hat sit clear at
+  the top; from about 40% down the image is darkened so the white type can sit
+  on it. So the lower half will be dark - do not pick a photo whose whole point
+  is in the bottom half.
+- **On a desktop** the frame is wide, so a tall portrait is cropped to a
+  horizontal band pinned near the top of the file (`heroFocalPoint`, currently
+  `50% 12%`). Her face needs to be in the upper third or it is cropped out.
+- The left third carries her name and the two buttons on desktop.
+
+If a photo she likes does not fit that, tell me: the focal point is one line in
+`content/hero.ts` and I can move the crop to suit the picture.
 
 ---
 

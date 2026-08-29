@@ -15,7 +15,7 @@ for audit history.
 
 | File | Used on | Source | Credit | Licence | Status |
 | --- | --- | --- | --- | --- | --- |
-| `public/images/portraits/hero-placeholder.jpg` | Home hero | [Commons: Detail, Traditional Ethiopian Garment](https://commons.wikimedia.org/wiki/File:Detail,_Traditional_Ethiopian_Garment_(2131600381).jpg) | A. Davey | CC BY 2.0 | LICENSED PLACEHOLDER |
+| `public/images/portraits/hero.jpg` | Home hero | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
 | `public/images/story/sodo.jpg` | /story (Wolaita Sodo) | [Commons: Wolaita Sodo](https://commons.wikimedia.org/wiki/File:Wolaita_Sodo.jpg) | Bernard Gagnon | CC BY-SA 3.0 | LICENSED PLACEHOLDER |
 | `public/images/story/nairobi.jpg` | /story (Nairobi) | [Commons: Nairobi Skyline Savannah Kenya May19](https://commons.wikimedia.org/wiki/File:Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg) | Timothy A. Gonsalves | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
 | `public/images/story/kampala.jpg` | /story (Kampala) | [Commons: Kampala skyline](https://commons.wikimedia.org/wiki/File:Kampala_skyline.jpg) | Todd Huffman | CC BY 2.0 | LICENSED PLACEHOLDER |
@@ -30,11 +30,24 @@ for audit history.
 | `public/images/collections/museum-costume-03.jpg` | /work placeholder-03 | [Commons: Traditional Costume, National Museum of Ethiopia 03](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_03_(8743136173).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
 | `app/[locale]/opengraph-image.tsx` (generated PNG) | OpenGraph/social cards | Typographic, generated at request time (no photograph) | n/a — no photography | n/a | UNCLEARED |
 
+### Outstanding on the hero
+
+`hero.jpg` is her own photograph, not a placeholder, so rule 2 is satisfied
+and it can stay up. Two things still block launch on it:
+
+1. **The photographer's name.** It reads as a professional shoot, and in that
+   case the copyright sits with whoever took it, not with her. `content/hero.ts`
+   carries `credit: 'TODO'` until this is known.
+2. **A higher-resolution original.** The file is 941x1672. A large desktop
+   stretches it about twice over and it renders soft. 2000px or more on the
+   long edge would fix it.
+
 ## Retired
 
 | File | Was used on | Note |
 | --- | --- | --- |
 | `public/images/placeholders/hero.svg` | Home hero | Generated SVG, replaced by licensed stock placeholder |
+| `public/images/portraits/hero-placeholder.jpg` | Home hero | Commons "Detail, Traditional Ethiopian Garment", A. Davey, CC BY 2.0. Deleted in be6f659 when the client supplied her own portrait. |
 | `public/images/placeholders/collection-01-a/b.svg` | /work placeholder-01 | Generated SVG, replaced |
 | `public/images/placeholders/collection-02-a/b.svg` | /work placeholder-02 | Generated SVG, replaced |
 | `public/images/placeholders/collection-03-a/b.svg` | /work placeholder-03 | Generated SVG, replaced by the museum-costume images |
