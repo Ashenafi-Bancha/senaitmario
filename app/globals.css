@@ -319,80 +319,41 @@ html {
 }
 
 /*
- * Desktop hero blend.
+ * Desktop scrim.
  *
- * The portrait is contained on the right, so without help it meets the page
- * on a hard vertical edge. A mask feathers its left side into the blurred
- * wash behind it, and the readability scrim is pulled back to finish before
- * the photograph starts, so she stays crisp instead of sitting under a veil.
- *
- * The portrait lands at roughly 65% across at every desktop shape (its width
- * is driven by the viewport height, not the width), so the feather is placed
- * just inside that.
+ * The photograph now covers the full width at every size, so the type sits
+ * on it. The scrim is angled from the type side and finishes before the
+ * right of the frame, so the headline stays readable without veiling her.
  */
 @media (min-width: 1024px) {
-  .hero-portrait img {
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 52%,
-      rgb(0 0 0 / 0.35) 62%,
-      #000 76%
-    );
-    mask-image: linear-gradient(
-      to right,
-      transparent 52%,
-      rgb(0 0 0 / 0.35) 62%,
-      #000 76%
-    );
-  }
-
-  /* Finish the scrim before the photograph, not across it. */
+  /*
+   * Held at 0.8 or better across the full width the type occupies (0-42vw),
+   * because with the photograph covering the whole frame the headline now
+   * sits over her hair, which is dark. Below about 0.65 the ink drops under
+   * AA against a dark subject.
+   */
   .hero-scrim-light {
     background: linear-gradient(
       100deg,
-      rgb(240 244 238 / 0.92) 0%,
-      rgb(240 244 238 / 0.86) 30%,
-      rgb(240 244 238 / 0.62) 46%,
-      rgb(240 244 238 / 0.22) 57%,
-      rgb(240 244 238 / 0) 66%
+      rgb(240 244 238 / 0.93) 0%,
+      rgb(240 244 238 / 0.88) 30%,
+      rgb(240 244 238 / 0.8) 44%,
+      rgb(240 244 238 / 0.6) 53%,
+      rgb(240 244 238 / 0.22) 64%,
+      rgb(240 244 238 / 0) 78%
     );
   }
   .hero-scrim-dark {
     background: linear-gradient(
       100deg,
-      rgb(16 17 18 / 0.9) 0%,
-      rgb(16 17 18 / 0.84) 30%,
-      rgb(16 17 18 / 0.66) 46%,
-      rgb(16 17 18 / 0.26) 57%,
-      rgb(16 17 18 / 0) 66%
+      rgb(16 17 18 / 0.92) 0%,
+      rgb(16 17 18 / 0.86) 30%,
+      rgb(16 17 18 / 0.78) 44%,
+      rgb(16 17 18 / 0.6) 53%,
+      rgb(16 17 18 / 0.24) 64%,
+      rgb(16 17 18 / 0) 78%
     );
   }
-}
-
-/*
- * A soft veil across the header band only.
- *
- * With the header transparent over the hero, its links sit directly on the
- * photograph. This keeps them legible whatever image is dropped in, and
- * softens the top edge rather than the photograph starting abruptly. Kept
- * light (0.4 falling to 0 within ~120px) so the top of the subject - the
- * crown of her hat - still reads clearly.
- */
-.hero-topscrim-light {
-  background: linear-gradient(
-    to bottom,
-    rgb(240 244 238 / 0.55) 0%,
-    rgb(240 244 238 / 0.28) 55%,
-    rgb(240 244 238 / 0) 100%
-  );
-}
-.hero-topscrim-dark {
-  background: linear-gradient(
-    to bottom,
-    rgb(16 17 18 / 0.6) 0%,
-    rgb(16 17 18 / 0.3) 55%,
-    rgb(16 17 18 / 0) 100%
-  );
 }
 
 .hero-cta {

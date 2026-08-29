@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import Image from 'next/image';
 import { ThemeSection } from '@/components/theme/ThemeSection';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { Parallax } from '@/components/ui/Parallax';
@@ -103,39 +102,19 @@ function Hero() {
         */}
       <div className="relative -mt-[var(--header-h)] h-[100svh] w-full overflow-hidden">
         {/*
-          * Her hero is a tall portrait and this frame is a wide landscape, so
-          * a plain object-cover crops roughly two thirds of it away and the
-          * garment is lost. Two layers solve that on desktop: the same
-          * photograph blurred right back as an ambient wash so the screen
-          * still fills edge to edge, and the complete portrait sitting sharp
-          * and uncropped on top of it. On phones the frame is already tall
-          * enough to show the whole photograph, so one covering layer does.
-          */}
-        <div aria-hidden="true" className="absolute inset-0 hidden lg:block">
-          <Image
-            src={heroImage.src}
-            alt=""
-            fill
-            sizes="100vw"
-            priority
-            className="scale-110 object-cover blur-3xl"
-            style={{ objectPosition: heroFocalPoint }}
-          />
-          <div className="absolute inset-0 bg-ground/55" />
-        </div>
-
-        {/*
-          * One image, one download. It covers on a phone, where the frame is
-          * already tall enough to show the whole portrait, and switches to
-          * contain on desktop, pinned right, so the garment is never cropped.
+          * The photograph is the background, edge to edge, at every screen
+          * size. An earlier attempt showed it uncropped on desktop, letterboxed
+          * on a blurred wash - it read as a small floating picture rather than
+          * a hero, so it is gone. Cover it is, with the focal point holding
+          * her face and hat in frame on wide screens.
           */}
         <CreditedImage
           asset={heroImage}
           variant="cover"
+          objectPosition={heroFocalPoint}
           sizes="100vw"
           priority
-          imgClassName="object-cover object-[50%_12%] lg:object-contain lg:object-[100%_50%]"
-          className="hero-credit hero-portrait absolute inset-0 h-full w-full"
+          className="hero-credit absolute inset-0 h-full w-full"
         />
 
         {/* Keeps the header links legible where they sit on the photograph. */}
@@ -166,7 +145,7 @@ function Hero() {
 
             <h1
               id="hero-name"
-              className={`rise rise-2 mt-5 max-w-2xl font-display lg:max-w-[42vw] text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
+              className={`rise rise-2 mt-5 max-w-2xl font-display lg:max-w-[40vw] text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
                 heroTone === 'light' ? 'text-ink' : 'text-onphoto'
               }`}
             >
