@@ -7,6 +7,7 @@ import { ThemeSection } from '@/components/theme/ThemeSection';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { Parallax } from '@/components/ui/Parallax';
 import { ScrollCue } from '@/components/ui/ScrollCue';
+import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
 import { heroFocalPoint, heroImage, heroTone } from '@/content/hero';
@@ -135,6 +136,14 @@ function Hero() {
           priority
           imgClassName="object-cover object-[50%_12%] lg:object-contain lg:object-[100%_50%]"
           className="hero-credit hero-portrait absolute inset-0 h-full w-full"
+        />
+
+        {/* Keeps the header links legible where they sit on the photograph. */}
+        <div
+          aria-hidden="true"
+          className={`absolute inset-x-0 top-0 h-[calc(var(--header-h)+56px)] ${
+            heroTone === 'light' ? 'hero-topscrim-light' : 'hero-topscrim-dark'
+          }`}
         />
 
         {/* Readability scrim, over the imagery and under the type. */}
@@ -281,6 +290,7 @@ export default async function HomePage({
 
   return (
     <>
+      <HeroHeaderSync />
       <Hero />
       {CHAPTERS.map((chapter, index) => (
         <Chapter key={chapter.key} chapter={chapter} index={index} />

@@ -289,6 +289,36 @@ html {
 }
 
 /*
+ * Header over a full-bleed hero.
+ *
+ * The hero photograph runs to the very top of the screen, so a translucent
+ * header sits on top of it - on her portrait that clipped the crown of her
+ * hat. While the page is at the top the header drops its background and lets
+ * the photograph through; it fades back in as soon as the reader scrolls, so
+ * the navigation stays legible over the content below.
+ *
+ * The scrim behind the hero type reaches up under the header, so the header
+ * links keep their contrast against the photograph.
+ */
+.site-header {
+  transition:
+    background-color 400ms var(--theme-ease),
+    border-color 400ms var(--theme-ease),
+    backdrop-filter 400ms var(--theme-ease);
+}
+[data-hero-top="true"] .site-header {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
+
+/*
  * Desktop hero blend.
  *
  * The portrait is contained on the right, so without help it meets the page
@@ -337,6 +367,32 @@ html {
       rgb(16 17 18 / 0) 66%
     );
   }
+}
+
+/*
+ * A soft veil across the header band only.
+ *
+ * With the header transparent over the hero, its links sit directly on the
+ * photograph. This keeps them legible whatever image is dropped in, and
+ * softens the top edge rather than the photograph starting abruptly. Kept
+ * light (0.4 falling to 0 within ~120px) so the top of the subject - the
+ * crown of her hat - still reads clearly.
+ */
+.hero-topscrim-light {
+  background: linear-gradient(
+    to bottom,
+    rgb(240 244 238 / 0.55) 0%,
+    rgb(240 244 238 / 0.28) 55%,
+    rgb(240 244 238 / 0) 100%
+  );
+}
+.hero-topscrim-dark {
+  background: linear-gradient(
+    to bottom,
+    rgb(16 17 18 / 0.6) 0%,
+    rgb(16 17 18 / 0.3) 55%,
+    rgb(16 17 18 / 0) 100%
+  );
 }
 
 .hero-cta {

@@ -11,7 +11,7 @@ export function Header() {
   const a11y = useTranslations('a11y');
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-ground/90 backdrop-blur-sm">
+    <header className="site-header sticky top-0 z-40 border-b border-line bg-ground/90 backdrop-blur-sm">
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-ground focus:px-4 focus:py-2 focus:font-utility focus:text-sm"
