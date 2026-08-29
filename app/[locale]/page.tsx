@@ -8,7 +8,7 @@ import { Parallax } from '@/components/ui/Parallax';
 import { ScrollCue } from '@/components/ui/ScrollCue';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
-import type { ImageAsset } from '@/content/types';
+import { heroImage, heroTone } from '@/content/hero';
 
 export async function generateMetadata({
   params,
@@ -27,21 +27,6 @@ export async function generateMetadata({
  * credited, logged in RIGHTS.md) — none of it is her work and none of it
  * depicts her. It is here so the layout can be judged; it all gets replaced.
  */
-/**
- * Whether the hero photograph is light enough for dark type ('light') or
- * needs pale type over a darkened scrim ('dark'). Flip this one value when
- * her real hero photograph goes in.
- */
-const HERO_TONE: 'light' | 'dark' = 'light';
-
-const HERO_IMAGE: ImageAsset = {
-  src: '/images/collections/weaver-pit-loom.jpg',
-  width: 1280,
-  height: 1811,
-  alt: 'Weaver at a traditional Ethiopian pit loom, placeholder image',
-  credit: 'Thomas Fuhrmann, CC BY-SA 4.0, via Wikimedia Commons',
-};
-
 const CHAPTERS = [
   {
     key: 'story',
@@ -116,7 +101,7 @@ function Hero() {
         */}
       <div className="relative -mt-[var(--header-h)] h-[100svh] w-full overflow-hidden">
         <CreditedImage
-          asset={HERO_IMAGE}
+          asset={heroImage}
           variant="cover"
           sizes="100vw"
           priority
@@ -126,12 +111,12 @@ function Hero() {
         {/*
           * Readability scrim. Text over an arbitrary photograph is a contrast
           * gamble, so a gradient guarantees the headline stays legible
-          * whatever image is dropped in. HERO_TONE picks the pairing.
+          * whatever image is dropped in. heroTone picks the pairing.
           */}
         <div
           aria-hidden="true"
           className={`absolute inset-0 ${
-            HERO_TONE === 'light' ? 'hero-scrim-light' : 'hero-scrim-dark'
+            heroTone === 'light' ? 'hero-scrim-light' : 'hero-scrim-dark'
           }`}
         />
 
@@ -139,7 +124,7 @@ function Hero() {
           <div className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8">
             <p
               className={`rise font-utility text-[0.7rem] uppercase tracking-[0.35em] ${
-                HERO_TONE === 'light' ? 'text-ink/70' : 'text-onphoto/75'
+                heroTone === 'light' ? 'text-ink/70' : 'text-onphoto/75'
               }`}
             >
               {t('heroTitlePrefix')}
@@ -148,7 +133,7 @@ function Hero() {
             <h1
               id="hero-name"
               className={`rise rise-2 mt-5 max-w-2xl font-display text-[clamp(2.5rem,8.5vw,6.5rem)] uppercase leading-[1.02] tracking-[0.04em] ${
-                HERO_TONE === 'light' ? 'text-ink' : 'text-onphoto'
+                heroTone === 'light' ? 'text-ink' : 'text-onphoto'
               }`}
             >
               {t('heroName')}
@@ -156,7 +141,7 @@ function Hero() {
 
             <p
               className={`rise rise-3 mt-6 max-w-md text-base leading-relaxed sm:text-lg ${
-                HERO_TONE === 'light' ? 'text-ink/80' : 'text-onphoto/85'
+                heroTone === 'light' ? 'text-ink/80' : 'text-onphoto/85'
               }`}
             >
               {t('heroRoles')}

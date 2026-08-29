@@ -206,6 +206,10 @@ with no claims attached. Details in `content/events.ts`.
 Every item below is rendered as a visible `TODO` in the UI or marked in code:
 
 1. **Contact email** and **booking contact** (`content/identity.ts`, footer, `/contact`).
+1. **Her hero photograph** — save as `public/images/portraits/hero.jpg` and set
+   `heroImage` in `content/hero.ts` (flip `heroTone` to `'dark'` for a dark
+   image). Full guidance, including what crop works for a full-screen hero, in
+   [`public/images/portraits/README.md`](public/images/portraits/README.md).
 1. **Her logo** and **a portrait for the masthead** — both are slots in
    `content/brand.ts`, both currently `null`. Save logo files in
    `public/images/brand/` and the tab icon as `app/icon.svg`; full instructions
