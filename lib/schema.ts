@@ -5,18 +5,24 @@
  * Do not add fields speculatively — this is structured data about a real
  * person and search engines will republish it.
  */
+
+import { identity } from '@/content/identity';
 export function personJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Dr. Senait Mario',
+    name: identity.name,
     honorificPrefix: 'Dr.',
-    jobTitle: [
-      'International fashion designer',
-      'Model',
-      'Sociologist',
-      'UN Peace Ambassador',
-    ],
+    /*
+     * Taken from identity.roles rather than restated here. The list was
+     * duplicated once and drifted: it lost the founder title entirely and so
+     * disagreed with what every page of the site says about her. Reading the
+     * one source keeps them together, including the sentence-case the rest
+     * of the structured data uses.
+     */
+    jobTitle: identity.roles.map(
+      (role) => role.charAt(0).toUpperCase() + role.slice(1),
+    ),
     nationality: [
       { '@type': 'Country', name: 'Italy' },
       { '@type': 'Country', name: 'Ethiopia' },
