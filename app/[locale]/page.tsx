@@ -8,7 +8,7 @@ import { Parallax } from '@/components/ui/Parallax';
 import { ScrollCue } from '@/components/ui/ScrollCue';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
-import { heroImage, heroTone } from '@/content/hero';
+import { heroFocalPoint, heroImage, heroTone } from '@/content/hero';
 
 export async function generateMetadata({
   params,
@@ -103,6 +103,7 @@ function Hero() {
         <CreditedImage
           asset={heroImage}
           variant="cover"
+          objectPosition={heroFocalPoint}
           sizes="100vw"
           priority
           className="hero-credit absolute inset-0 h-full w-full"

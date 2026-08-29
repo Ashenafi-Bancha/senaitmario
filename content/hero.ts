@@ -41,14 +41,34 @@ import type { ImageAsset } from './types';
 export const heroTone: 'light' | 'dark' = 'light';
 
 /**
- * TODO - replace with her real portrait. This is currently a licensed stock
- * photograph from Wikimedia Commons that does NOT depict her; it is a
- * placeholder so the layout can be judged. See RIGHTS.md.
+ * Her hero portrait, supplied by the client.
+ *
+ * TODO - CREDIT REQUIRED BEFORE LAUNCH. This looks like a professional
+ * shoot, and the photographer owns the copyright, not the subject. Replace
+ * 'TODO' below with the photographer's name once known, and add a row to
+ * RIGHTS.md. Until then the site renders a visible warning in development.
+ *
+ * TODO - a higher-resolution original would help. This file is 941px wide;
+ * on a large desktop the hero is stretched to roughly twice that, which
+ * softens it. Anything 2000px or wider on the long edge would render sharp.
  */
 export const heroImage: ImageAsset = {
-  src: '/images/collections/weaver-pit-loom.jpg',
-  width: 1280,
-  height: 1811,
-  alt: 'Weaver at a traditional Ethiopian pit loom, placeholder image',
-  credit: 'Thomas Fuhrmann, CC BY-SA 4.0, via Wikimedia Commons',
+  src: '/images/portraits/hero.jpg',
+  width: 941,
+  height: 1672,
+  alt: 'Dr. Senait Mario in a sequinned ensemble and wide-brimmed hat',
+  credit: 'TODO',
 };
+
+/**
+ * Which part of the photograph must stay in frame.
+ *
+ * The hero fills the screen, so a tall portrait gets cropped hard on a wide
+ * desktop. Cropping from the middle - the browser default - cut this
+ * portrait off at the shoulders and lost her face completely. '50% 12%'
+ * pins the crop near the top so her face survives at every screen shape.
+ *
+ * Adjust the second number if a future photograph sits differently: smaller
+ * keeps more of the top, larger keeps more of the bottom.
+ */
+export const heroFocalPoint = '50% 12%';

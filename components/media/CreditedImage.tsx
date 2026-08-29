@@ -20,6 +20,7 @@ export function CreditedImage({
   priority = false,
   className,
   variant = 'block',
+  objectPosition,
 }: {
   asset: ImageAsset;
   /** Responsive sizes attribute — required so nothing ships at full width by accident. */
@@ -28,6 +29,12 @@ export function CreditedImage({
   priority?: boolean;
   className?: string;
   variant?: 'block' | 'cover';
+  /**
+   * Focal point for a `cover` crop, e.g. 'center 10%'. A tall portrait in a
+   * wide frame crops from the middle by default, which can cut a face out
+   * entirely; this pins the part that must survive.
+   */
+  objectPosition?: string;
 }) {
   const t = useTranslations('credits');
   const creditMissing = !asset.credit || asset.credit === 'TODO';
@@ -50,6 +57,7 @@ export function CreditedImage({
             sizes={sizes}
             priority={priority}
             className="object-cover"
+            style={objectPosition ? { objectPosition } : undefined}
           />
         </div>
         <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted/60">
