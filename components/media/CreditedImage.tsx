@@ -76,7 +76,7 @@ export function CreditedImage({
             style={objectPosition ? { objectPosition } : undefined}
           />
         </div>
-        <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted/60">
+        <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted">
           {showDevWarning ? (
             <span
               role="alert"

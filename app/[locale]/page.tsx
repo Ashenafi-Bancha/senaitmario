@@ -104,11 +104,11 @@ function Hero() {
 
         <div className="relative z-10 flex h-full items-end pt-[var(--header-h)] lg:items-center">
           <div className="mx-auto w-full max-w-6xl px-6 pb-28 sm:px-8 lg:pb-0">
-            <p className="hero-onphoto rise flex items-center gap-4 font-display text-[clamp(1.2rem,1.8vw,1.5rem)] font-semibold uppercase leading-none tracking-[0.4em] text-onphoto-accent lg:text-accent">
+            <p className="hero-onphoto rise flex items-center gap-4 font-display text-[clamp(1.2rem,1.8vw,1.5rem)] font-bold uppercase leading-none tracking-[0.4em] text-onphoto lg:font-semibold lg:text-accent">
               {t('heroTitlePrefix')}
               <span
                 aria-hidden="true"
-                className="h-px w-10 shrink-0 bg-onphoto-accent/60 sm:w-14 lg:bg-accent/55"
+                className="h-px w-10 shrink-0 bg-onphoto/70 sm:w-14 lg:bg-accent/55"
               />
             </p>
 

@@ -308,16 +308,38 @@ html {
  * which leaves her face and hat under 0.2.
  */
 .hero-scrim {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgb(0 0 0 / 0.03) 24%,
-    rgb(0 0 0 / 0.26) 32%,
-    rgb(0 0 0 / 0.66) 40%,
-    rgb(0 0 0 / 0.76) 50%,
-    rgb(0 0 0 / 0.82) 62%,
-    rgb(0 0 0 / 0.88) 100%
-  );
+  background:
+    /*
+     * Foot of the hero, painted over the veil below.
+     *
+     * The photograph's own bottom is her dark trousers, so holding the veil at
+     * full strength down to the edge turned the last fifth into a featureless
+     * black slab that met the ivory page at a hard line. This dissolves that
+     * stretch into the theme ground instead, the way the desktop hero already
+     * does at its right edge, so the picture ends by joining the page rather
+     * than stopping against it. It follows --ground, so it lands ivory under
+     * the ivory theme and near-black under the black one.
+     */
+    linear-gradient(
+      to bottom,
+      transparent 80%,
+      color-mix(in srgb, var(--ground) 20%, transparent) 89%,
+      color-mix(in srgb, var(--ground) 58%, transparent) 95%,
+      color-mix(in srgb, var(--ground) 97%, transparent) 100%
+    ),
+    /* Readability veil, tapering once the last line of type has cleared. */
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(0 0 0 / 0.03) 24%,
+      rgb(0 0 0 / 0.26) 32%,
+      rgb(0 0 0 / 0.68) 40%,
+      rgb(0 0 0 / 0.78) 50%,
+      rgb(0 0 0 / 0.84) 62%,
+      rgb(0 0 0 / 0.82) 80%,
+      rgb(0 0 0 / 0.62) 90%,
+      rgb(0 0 0 / 0.24) 100%
+    );
 }
 
 /*
@@ -533,16 +555,19 @@ html {
 
 /*
  * The hero photograph fills the screen, so its credit is placed over the
- * image rather than beneath it - bottom left, inside the scrim, where
- * contrast is guaranteed. Everywhere else on the site credits sit under
- * their frame; this is the one exception the layout forces.
+ * image rather than beneath it - bottom left. It sits low enough that the
+ * foot of the hero has already dissolved into the page ground behind it, so
+ * it reads as ordinary muted type on the ground rather than as type on a
+ * photograph. Everywhere else on the site credits sit under their frame;
+ * this is the one exception the layout forces.
  */
 .hero-credit figcaption {
   position: absolute;
   left: 1.5rem;
-  bottom: 1.6rem;
+  bottom: 1rem;
   margin: 0;
   max-width: 22rem;
+  color: var(--ink);
 }
 @media (min-width: 640px) {
   .hero-credit figcaption {
