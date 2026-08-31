@@ -41,3 +41,10 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# photo intake - see photos-inbox/README.md
+# Deliberately outside public/ and out of git: a photograph nobody has cleared
+# yet must not be publicly reachable, and must not land in the repository
+# before it has a source and a licence.
+/photos-inbox/*
+!/photos-inbox/README.md
