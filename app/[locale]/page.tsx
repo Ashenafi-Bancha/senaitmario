@@ -10,6 +10,8 @@ import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
 import { heroFocalPoint, heroImage } from '@/content/hero';
+import { storyChapters } from '@/content/story';
+import { collections } from '@/content/collections';
 
 export async function generateMetadata({
   params,
@@ -28,67 +30,32 @@ export async function generateMetadata({
  * credited, logged in RIGHTS.md) — none of it is her work and none of it
  * depicts her. It is here so the layout can be judged; it all gets replaced.
  */
+/*
+ * The home cards borrow images that already belong to a chapter or a
+ * collection, so they look those up rather than restating src, dimensions and
+ * credit. Restating them meant a single file could be swapped in one place and
+ * keep the old photographer's name in the other, which on her site would be a
+ * wrong credit rather than a stale string.
+ */
+function storyImage(id: string) {
+  // StoryChapter.image is optional, so this narrows rather than assuming.
+  const image = storyChapters.find((c) => c.id === id)?.image;
+  if (!image) throw new Error(`Home chapter references a story image that is missing: ${id}`);
+  return image;
+}
+
+function collectionImage(slug: string, index: number) {
+  const image = collections.find((c) => c.slug === slug)?.images[index];
+  if (!image) throw new Error(`Home chapter references unknown image: ${slug}[${index}]`);
+  return image;
+}
+
 const CHAPTERS = [
-  {
-    key: 'story',
-    href: '/story',
-    paletteId: 'ivory',
-    image: {
-      src: '/images/story/sodo.jpg',
-      width: 1600,
-      height: 1115,
-      alt: 'Street view of Wolaita Sodo, southern Ethiopia, placeholder image',
-      credit: 'Bernard Gagnon, CC BY-SA 3.0, via Wikimedia Commons',
-    },
-  },
-  {
-    key: 'work',
-    href: '/work',
-    paletteId: 'ivory',
-    image: {
-      src: '/images/collections/museum-costume-01.jpg',
-      width: 1280,
-      height: 1707,
-      alt: 'Ceremonial Ethiopian costume, National Museum of Ethiopia, placeholder image',
-      credit: 'Adam Jones, CC BY-SA 2.0, via Wikimedia Commons',
-    },
-  },
-  {
-    key: 'colour',
-    href: '/colour',
-    paletteId: 'ivory',
-    image: {
-      src: '/images/collections/loom-blue-warp.jpg',
-      width: 1280,
-      height: 853,
-      alt: 'Loom threaded with blue and white warp, Ethiopia, placeholder image',
-      credit: 'Thomas Fuhrmann, CC BY-SA 4.0, via Wikimedia Commons',
-    },
-  },
-  {
-    key: 'peace',
-    href: '/peace',
-    paletteId: 'ivory',
-    image: {
-      src: '/images/story/addis.jpg',
-      width: 1600,
-      height: 900,
-      alt: 'Sunset over Addis Ababa, placeholder image',
-      credit: 'Jean Rebiffé, CC BY 2.0, via Wikimedia Commons',
-    },
-  },
-  {
-    key: 'institute',
-    href: '/institute',
-    paletteId: 'ivory',
-    image: {
-      src: '/images/collections/shiro-meda-market.jpg',
-      width: 1600,
-      height: 900,
-      alt: 'Ethiopian textiles at market, placeholder image',
-      credit: 'Rod Waddington, CC BY-SA 2.0, via Wikimedia Commons',
-    },
-  },
+  { key: 'story', href: '/story', paletteId: 'ivory', image: storyImage('sodo') },
+  { key: 'work', href: '/work', paletteId: 'ivory', image: collectionImage('placeholder-03', 0) },
+  { key: 'colour', href: '/colour', paletteId: 'ivory', image: collectionImage('placeholder-02', 0) },
+  { key: 'peace', href: '/peace', paletteId: 'ivory', image: storyImage('addis') },
+  { key: 'institute', href: '/institute', paletteId: 'ivory', image: collectionImage('placeholder-02', 1) },
 ] as const;
 
 function Hero() {
