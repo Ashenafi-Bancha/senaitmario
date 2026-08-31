@@ -52,8 +52,8 @@ export default async function CollectionPage({
   return (
     <>
       <RouteTheme paletteId={collection.paletteId} />
+      <BackLink href="/work" label={t('backToIndex')} />
       <article className="mx-auto max-w-6xl px-4 pb-24 pt-16 sm:px-6">
-        <BackLink href="/work" label={t('backToIndex')} className="mb-0" />
         <h1 className="mt-6 font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {tAll(`collections.${slug}.title`)}
         </h1>

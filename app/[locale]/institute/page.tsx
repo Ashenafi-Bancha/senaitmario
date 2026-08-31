@@ -40,9 +40,9 @@ export default async function InstitutePage({
 
   return (
     <>
+      <BackLink width="narrow" />
       <RouteTheme paletteId="ivory" />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
-        <BackLink />
         <h1 className="font-display text-[clamp(2rem,7vw,4.5rem)] leading-tight tracking-tight">
           {t('heading')}
         </h1>

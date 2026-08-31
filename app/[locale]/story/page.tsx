@@ -27,7 +27,6 @@ function StoryIntro() {
       className="flex min-h-[50svh] items-end"
     >
       <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
-        <BackLink />
         <h1
           id="story-heading"
           className="font-display text-[clamp(2.5rem,10vw,7rem)] leading-none tracking-tight"
@@ -118,6 +117,7 @@ export default async function StoryPage({
 
   return (
     <>
+      <BackLink />
       <StoryIntro />
       {storyChapters.map((chapter, index) => (
         <Chapter key={chapter.id} chapter={chapter} index={index} />

@@ -36,13 +36,13 @@ export default async function PressPage({
 
   return (
     <>
+      <BackLink width="narrow" />
       <RouteTheme paletteId="ivory" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}
       />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
-        <BackLink />
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}
         </h1>

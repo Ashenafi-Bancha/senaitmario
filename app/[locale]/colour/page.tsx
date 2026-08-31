@@ -32,13 +32,13 @@ export default async function ColourPage({
 
   return (
     <>
+      <BackLink />
       <ThemeSection
         paletteId="ivory"
         labelledBy="colour-heading"
         className="flex min-h-[45svh] items-end"
       >
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
-          <BackLink />
           <h1
             id="colour-heading"
             className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight"

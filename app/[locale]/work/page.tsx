@@ -48,9 +48,9 @@ export default async function WorkPage({
 
   return (
     <>
+      <BackLink />
       <RouteTheme paletteId={paletteId} />
       <div className="mx-auto max-w-6xl px-4 pb-24 pt-16 sm:px-6">
-        <BackLink />
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}
         </h1>

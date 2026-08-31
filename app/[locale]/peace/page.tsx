@@ -27,13 +27,13 @@ function PeaceContent({ locale }: { locale: string }) {
 
   return (
     <>
+      <BackLink />
       <ThemeSection
         paletteId="ivory"
         labelledBy="peace-heading"
         className="flex min-h-[45svh] items-end"
       >
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
-          <BackLink />
           <h1
             id="peace-heading"
             className="font-display text-[clamp(2.5rem,10vw,7rem)] leading-none tracking-tight"
