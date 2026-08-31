@@ -55,7 +55,8 @@
     "themeNoir": "ጥቁር",
     "themeIvory": "ብርሃናማ",
     "themeToNoir": "ወደ ዘመናዊው ጥቁር ገጽታ ቀይር",
-    "themeToIvory": "ወደ ብርሃናማው ገጽታ ቀይር"
+    "themeToIvory": "ወደ ብርሃናማው ገጽታ ቀይር",
+    "backHome": "ወደ መነሻ ገጽ ተመለስ"
   },
   "a11y": {
     "skipToContent": "ወደ ይዘቱ ዝለል"

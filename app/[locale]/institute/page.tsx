@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RouteTheme } from '@/components/theme/RouteTheme';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 
 export async function generateMetadata({
   params,
@@ -39,6 +40,7 @@ export default async function InstitutePage({
     <>
       <RouteTheme paletteId="ivory" />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
+        <BackLink />
         <h1 className="font-display text-[clamp(2rem,7vw,4.5rem)] leading-tight tracking-tight">
           {t('heading')}
         </h1>

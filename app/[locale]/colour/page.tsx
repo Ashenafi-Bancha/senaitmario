@@ -10,6 +10,7 @@ import { palettes } from '@/content/palettes';
 import { quotes } from '@/content/quotes';
 import { swatches } from '@/content/swatches';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 
 export async function generateMetadata({
   params,
@@ -37,6 +38,7 @@ export default async function ColourPage({
         className="flex min-h-[45svh] items-end"
       >
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
+          <BackLink />
           <h1
             id="colour-heading"
             className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight"

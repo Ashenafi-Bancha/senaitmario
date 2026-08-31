@@ -5,6 +5,7 @@ import { ContactForm } from '@/components/forms/ContactForm';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { SocialLinks } from '@/components/layout/SocialLinks';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 
 export async function generateMetadata({
   params,
@@ -29,6 +30,7 @@ export default async function ContactPage({
     <>
       <RouteTheme paletteId="ivory" />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
+        <BackLink />
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}
         </h1>

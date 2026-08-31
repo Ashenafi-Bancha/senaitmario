@@ -6,6 +6,7 @@ import { coverage } from '@/content/coverage';
 import { recognitions } from '@/content/recognition';
 import { personJsonLd } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 
 /*
  * CONFIRM BEFORE LAUNCH — the exact awarding body and full official title for
@@ -41,6 +42,7 @@ export default async function PressPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}
       />
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6">
+        <BackLink />
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}
         </h1>

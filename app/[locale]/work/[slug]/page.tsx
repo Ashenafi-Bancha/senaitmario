@@ -7,6 +7,7 @@ import { RouteTheme } from '@/components/theme/RouteTheme';
 import { CreditedImage } from '@/components/media/CreditedImage';
 import { TodoMark } from '@/components/ui/TodoMark';
 import { Reveal } from '@/components/ui/Reveal';
+import { BackLink } from '@/components/ui/BackLink';
 import { collections, getCollection } from '@/content/collections';
 import { getPalette } from '@/content/palettes';
 import { swatches } from '@/content/swatches';
@@ -52,14 +53,7 @@ export default async function CollectionPage({
     <>
       <RouteTheme paletteId={collection.paletteId} />
       <article className="mx-auto max-w-6xl px-4 pb-24 pt-16 sm:px-6">
-        <p>
-          <Link
-            href="/work"
-            className="font-utility text-xs uppercase tracking-widest text-accent underline underline-offset-4"
-          >
-            ← {t('backToIndex')}
-          </Link>
-        </p>
+        <BackLink href="/work" label={t('backToIndex')} className="mb-0" />
         <h1 className="mt-6 font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {tAll(`collections.${slug}.title`)}
         </h1>

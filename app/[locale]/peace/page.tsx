@@ -5,6 +5,7 @@ import { ThemeSection } from '@/components/theme/ThemeSection';
 import { PullQuote } from '@/components/ui/PullQuote';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 import { quotes } from '@/content/quotes';
 import { eventPlatforms } from '@/content/events';
 import { TodoMark } from '@/components/ui/TodoMark';
@@ -32,6 +33,7 @@ function PeaceContent({ locale }: { locale: string }) {
         className="flex min-h-[45svh] items-end"
       >
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
+          <BackLink />
           <h1
             id="peace-heading"
             className="font-display text-[clamp(2.5rem,10vw,7rem)] leading-none tracking-tight"

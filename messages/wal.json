@@ -55,7 +55,8 @@
     "themeNoir": "Black",
     "themeIvory": "Ivory",
     "themeToNoir": "Switch to the modern black theme",
-    "themeToIvory": "Switch to the ivory theme"
+    "themeToIvory": "Switch to the ivory theme",
+    "backHome": "Back to home"
   },
   "a11y": {
     "skipToContent": "Skip to content"

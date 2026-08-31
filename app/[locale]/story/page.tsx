@@ -7,6 +7,7 @@ import { Parallax } from '@/components/ui/Parallax';
 import { Reveal } from '@/components/ui/Reveal';
 import { storyChapters } from '@/content/story';
 import { pageMetadata } from '@/lib/metadata';
+import { BackLink } from '@/components/ui/BackLink';
 
 export async function generateMetadata({
   params,
@@ -26,6 +27,7 @@ function StoryIntro() {
       className="flex min-h-[50svh] items-end"
     >
       <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
+        <BackLink />
         <h1
           id="story-heading"
           className="font-display text-[clamp(2.5rem,10vw,7rem)] leading-none tracking-tight"
