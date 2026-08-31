@@ -58,9 +58,21 @@ export const brandLogo: BrandLogo | null = null;
  * logo: this is a photograph of her, the logo is her mark. Either, both or
  * neither can be set.
  *
- * TODO — set this to her real portrait once the client supplies one. It must
- * be a square-ish crop of her face (about 256x256 or larger), carry a proper
- * `credit`, and be registered in RIGHTS.md. Leave it null until then: a stock
- * face must never stand in for her.
+ * Supplied by the client on 2026-08-31 as `senait_mario.jpg`. It is a
+ * photograph, not a logo mark, so it belongs here rather than in `brandLogo`,
+ * which is still unset.
+ *
+ * TODO - photographer and usage terms. It reads as a professional headshot,
+ * and in that case the copyright sits with whoever took it. RIGHTS.md lists it
+ * as UNCLEARED until that is answered.
  */
-export const brandPortrait: ImageAsset | null = null;
+export const brandPortrait: ImageAsset | null = {
+  src: '/images/brand/senait_mario.jpg',
+  width: 1079,
+  height: 1375,
+  alt: 'Dr. Senait Mario',
+  credit: 'TODO',
+  // The masthead crops it to a small circle; no caption belongs beside a
+  // masthead portrait.
+  showCredit: false,
+};

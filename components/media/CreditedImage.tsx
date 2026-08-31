@@ -53,6 +53,17 @@ export function CreditedImage({
   const t = useTranslations('credits');
   const creditMissing = !asset.credit || asset.credit === 'TODO';
   const showDevWarning = creditMissing && process.env.NODE_ENV !== 'production';
+  /*
+   * Openly-licensed stock must print its attribution or the licence is
+   * breached, so the caption is on by default and an asset has to opt out.
+   * An asset that opts out still keeps its credit in the data and its row in
+   * RIGHTS.md; only the line on the page goes.
+   *
+   * The development warning ignores the opt-out. A missing credit is a problem
+   * whether or not the caption is drawn, and hiding it is how it would reach
+   * production unnoticed.
+   */
+  const showCaption = asset.showCredit !== false || showDevWarning;
 
   const creditText = creditMissing
     ? t('photo', { credit: 'TODO' })
@@ -76,18 +87,20 @@ export function CreditedImage({
             style={objectPosition ? { objectPosition } : undefined}
           />
         </div>
-        <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted">
-          {showDevWarning ? (
-            <span
-              role="alert"
-              className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
-            >
-              ⚠ {t('missing')}
-            </span>
-          ) : (
-            <span>{creditText}</span>
-          )}
-        </figcaption>
+        {showCaption ? (
+          <figcaption className="mt-2 shrink-0 font-utility text-[0.55rem] uppercase tracking-[0.2em] text-muted">
+            {showDevWarning ? (
+              <span
+                role="alert"
+                className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
+              >
+                ⚠ {t('missing')}
+              </span>
+            ) : (
+              <span>{creditText}</span>
+            )}
+          </figcaption>
+        ) : null}
       </figure>
     );
   }
@@ -104,21 +117,23 @@ export function CreditedImage({
         loading={priority ? undefined : 'lazy'}
         className="h-auto w-full"
       />
-      <figcaption className="mt-2 font-utility text-[0.6rem] uppercase tracking-[0.18em] text-muted/70">
-        {showDevWarning ? (
-          <span
-            role="alert"
-            className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
-          >
-            ⚠ {t('missing')}
-          </span>
-        ) : (
-          <span>{creditText}</span>
-        )}
-        {asset.usageNote ? (
-          <span className="ml-3 normal-case tracking-normal">{asset.usageNote}</span>
-        ) : null}
-      </figcaption>
+      {showCaption ? (
+        <figcaption className="mt-2 font-utility text-[0.6rem] uppercase tracking-[0.18em] text-muted/70">
+          {showDevWarning ? (
+            <span
+              role="alert"
+              className="inline-block border-2 border-accent px-2 py-1 font-medium text-accent"
+            >
+              ⚠ {t('missing')}
+            </span>
+          ) : (
+            <span>{creditText}</span>
+          )}
+          {asset.usageNote ? (
+            <span className="ml-3 normal-case tracking-normal">{asset.usageNote}</span>
+          ) : null}
+        </figcaption>
+      ) : null}
     </figure>
   );
 }

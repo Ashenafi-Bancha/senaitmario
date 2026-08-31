@@ -5,9 +5,15 @@
  * London and Paris → back to Addis Ababa. Editorial chapters, each owning a
  * colour field. The return to Addis is the resolution.
  *
- * Chapter images are LICENSED STOCK PLACEHOLDERS (Wikimedia Commons, credited)
- * showing the places themselves — to be replaced with her real photography.
- * None of them depicts Senait Mario. See RIGHTS.md.
+ * Chapter images show the places themselves; none of them depicts Senait
+ * Mario. Five were supplied by the client on 2026-08-31 and their source and
+ * licence are NOT YET KNOWN - they carry `credit: 'TODO'` until that is
+ * settled, which is why RIGHTS.md still lists them as UNCLEARED. Addis Ababa
+ * is still an openly-licensed Wikimedia placeholder and prints its attribution
+ * on the page, as its licence requires.
+ *
+ * The client asked for no caption under the pictures they supplied, so those
+ * set `showCredit: false`. That hides the line; it does not settle the rights.
  */
 export const storyChapters: StoryChapter[] = [
   {
@@ -18,10 +24,11 @@ export const storyChapters: StoryChapter[] = [
     bodyKey: 'story.chapters.sodo.body',
     image: {
       src: '/images/story/sodo.jpg',
-      width: 1600,
-      height: 1115,
-      alt: 'Street view of Wolaita Sodo, southern Ethiopia, placeholder image',
-      credit: 'Bernard Gagnon, CC BY-SA 3.0, via Wikimedia Commons',
+      width: 1683,
+      height: 935,
+      alt: 'The “I love Wolaita” landmark sign in Wolaita Sodo, the highlands rising behind it',
+      credit: 'TODO',
+      showCredit: false,
     },
   },
   {
@@ -32,10 +39,11 @@ export const storyChapters: StoryChapter[] = [
     bodyKey: 'story.chapters.nairobi.body',
     image: {
       src: '/images/story/nairobi.jpg',
-      width: 1600,
-      height: 900,
-      alt: 'Nairobi skyline rising beyond the savannah of Nairobi National Park, placeholder image',
-      credit: 'Timothy A. Gonsalves, CC BY-SA 4.0, via Wikimedia Commons',
+      width: 2000,
+      height: 1333,
+      alt: 'The central business district of Nairobi seen from above, towers running to the horizon',
+      credit: 'TODO',
+      showCredit: false,
     },
   },
   {
@@ -46,10 +54,11 @@ export const storyChapters: StoryChapter[] = [
     bodyKey: 'story.chapters.kampala.body',
     image: {
       src: '/images/story/kampala.jpg',
-      width: 1600,
-      height: 1200,
-      alt: 'Kampala skyline at dusk seen across green wetland, placeholder image',
-      credit: 'Todd Huffman, CC BY 2.0, via Wikimedia Commons',
+      width: 1800,
+      height: 830,
+      alt: 'Kampala seen across the green of a city park, office towers along the skyline',
+      credit: 'TODO',
+      showCredit: false,
     },
   },
   {
@@ -60,10 +69,11 @@ export const storyChapters: StoryChapter[] = [
     bodyKey: 'story.chapters.rome.body',
     image: {
       src: '/images/story/rome.jpg',
-      width: 1600,
-      height: 805,
-      alt: "St. Peter’s Basilica and Ponte Sant’Angelo over the Tiber at dusk, Rome, placeholder image",
-      credit: 'Jebulon, CC0, via Wikimedia Commons',
+      width: 800,
+      height: 530,
+      alt: 'St Peter’s Basilica at the end of Via della Conciliazione, Rome, lit at dusk',
+      credit: 'TODO',
+      showCredit: false,
     },
   },
   {
@@ -73,11 +83,12 @@ export const storyChapters: StoryChapter[] = [
     titleKey: 'story.chapters.stages.title',
     bodyKey: 'story.chapters.stages.body',
     image: {
-      src: '/images/story/stages-milan.jpg',
-      width: 1600,
-      height: 1067,
-      alt: 'Galleria Vittorio Emanuele II in Milan at night, placeholder image',
-      credit: 'Maurizio Moro5153, CC BY-SA 4.0, via Wikimedia Commons',
+      src: '/images/story/stages.jpg',
+      width: 2000,
+      height: 1333,
+      alt: 'Regent Street in London hung with Union flags, red buses along the curve',
+      credit: 'TODO',
+      showCredit: false,
     },
   },
   {

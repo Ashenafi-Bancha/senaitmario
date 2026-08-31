@@ -46,6 +46,17 @@ export interface ImageAsset {
   credit: string;
   /** Licensing or usage restriction notes, e.g. "editorial use only". */
   usageNote?: string;
+  /**
+   * Whether to print the credit beside the picture. Defaults to true, which is
+   * the safe default: openly-licensed stock has to carry its attribution on the
+   * page or the licence is breached.
+   *
+   * Set false only for a picture the client owns or has cleared, where the line
+   * is a legal formality rather than a licence condition and the page reads
+   * better without it. Turning it off never removes the credit from the data -
+   * RIGHTS.md is the register, not the page.
+   */
+  showCredit?: boolean;
 }
 
 export interface Collection {
