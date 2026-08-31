@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
-import { brandLogo, brandName, brandPortrait } from '@/content/brand';
+import {
+  brandLogo,
+  brandName,
+  brandPortrait,
+  brandPortraitFocalPoint,
+} from '@/content/brand';
 
 /**
  * The masthead. Renders, in order of what has been supplied:
@@ -32,9 +37,10 @@ export function Wordmark({ className }: { className?: string }) {
         <Image
           src={brandPortrait.src}
           alt=""
-          width={36}
-          height={36}
+          width={72}
+          height={72}
           className="h-9 w-9 shrink-0 rounded-full border border-line object-cover"
+          style={{ objectPosition: brandPortraitFocalPoint }}
           priority
         />
       ) : null}

@@ -15,18 +15,20 @@ for audit history.
 
 | File | Used on | Source | Credit | Licence | Status |
 | --- | --- | --- | --- | --- | --- |
-| `public/images/portraits/hero.jpg` | Home hero, frame 1 of 3 | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
-| `public/images/portraits/hero-wolaita.jpg` | Home hero, frame 2 of 3 | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
-| `public/images/portraits/hero-lake.jpg` | Home hero, frame 3 of 3 | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/portraits/hero.jpg` | Home hero | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
+| `public/images/portraits/hero-wolaita.jpg` | not in use - awaiting a placement | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/portraits/hero-lake.jpg` | not in use - awaiting a placement | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/institute/reception.jpg` | /institute | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
-| `public/images/story/sodo.jpg` | /story (Wolaita Sodo), second look | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
+ **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/nairobi.jpg` | /story (Nairobi) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/kampala.jpg` | /story (Kampala) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/rome.jpg` | /story (Rome) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/stages.jpg` | /story (Milan · London · Paris), lead photograph | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
-| `public/images/story/sodo-statue.jpg` | /story (Wolaita Sodo), lead photograph | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
+| `public/images/collections/runway-dinguze.jpg` | Home, first spread below the hero | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/story/sodo.jpg` | /story (Wolaita Sodo) | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/paris.jpg` | /story (Milan · London · Paris), second look | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
-| `public/images/brand/senait_mario.jpg` | Masthead portrait, every page | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/brand/portrait-mark.jpg` | Masthead portrait, every page (square crop of senait_mario.jpg) | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/brand/senait_mario.jpg` | not in use - full frame, kept for the press page | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/story/addis.jpg` | /story (Addis Ababa) | [Commons: Sunset on the rising city, Addis Ababa](https://commons.wikimedia.org/wiki/File:Sunset_on_the_rising_city,_Addis_Ababa_-_Flickr_-_jeanotr.jpg) | Jean Rebiffé | CC BY 2.0 | LICENSED PLACEHOLDER |
 | `public/images/collections/weaver-pit-loom.jpg` | /work placeholder-01 | [Commons: Waving in Ethiopia 01](https://commons.wikimedia.org/wiki/File:Waving_in_Ethiopia_01.jpg) | Thomas Fuhrmann | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
 | `public/images/collections/weaving-fibres.jpg` | /work placeholder-01 | [Commons: Weaving Supplies, Adigrat](https://commons.wikimedia.org/wiki/File:Weaving_Supplies,_Adigrat_(11831170076).jpg) | Rod Waddington | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
@@ -51,18 +53,16 @@ to come back, and if any turn out to be unlicensed stock they have to come down.
 
 ### Outstanding on the hero
 
-The hero now cross-fades three photographs, all of them hers, so rule 2 is
-satisfied and they can stay up. None of the three carries a caption on the
-page: a line naming one photographer while a different picture was showing
-would be worse than none, so the credits live here instead. Two things still
-block launch on all three:
+`hero.jpg` is her own photograph, so rule 2 is satisfied and it can stay up.
+It carries no caption on the page; the credit lives here instead. Two things
+still block launch on it:
 
 1. **The photographer's name.** It reads as a professional shoot, and in that
    case the copyright sits with whoever took it, not with her. `content/hero.ts`
    carries `credit: 'TODO'` until this is known.
-2. **Higher-resolution originals.** They are 941, 1022 and 1179px wide. A
-   large desktop stretches the hero past that and they render soft. 2000px or
-   more on the long edge would fix it.
+2. **A higher-resolution original.** The file is 941px wide. A large desktop
+   stretches the hero about twice over and it renders soft. 2000px or more on
+   the long edge would fix it.
 
 ## Retired
 
@@ -76,6 +76,7 @@ block launch on all three:
 | `public/images/story/rome.jpg` (old) | /story (Rome) | Commons "Sant'Angelo bridge", Jebulon, CC0. Replaced by the client's own file. |
 | `public/images/story/stages-milan.jpg` | /story (the stages) | Commons "Galleria Vittorio Emanuele", Maurizio Moro5153, CC BY-SA 4.0. Deleted; the chapter now uses stages.jpg. |
 | `public/images/story/milan.jpg` | never published | A 270x148 Shutterstock comp with the watermark still across it. Deleted rather than committed: publishing it would have been a straight copyright breach. |
+| `public/images/story/sodo-statue.jpg` | /story (Wolaita Sodo) | The gilded Kawo Tona statue. Used briefly as the chapter's lead; the client asked for it removed. Deleted. |
 | `public/images/placeholders/collection-01-a/b.svg` | /work placeholder-01 | Generated SVG, replaced |
 | `public/images/placeholders/collection-02-a/b.svg` | /work placeholder-02 | Generated SVG, replaced |
 | `public/images/placeholders/collection-03-a/b.svg` | /work placeholder-03 | Generated SVG, replaced by the museum-costume images |

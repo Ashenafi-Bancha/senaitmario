@@ -24,14 +24,6 @@ export const storyChapters: StoryChapter[] = [
     bodyKey: 'story.chapters.sodo.body',
     images: [
       {
-        src: '/images/story/sodo-statue.jpg',
-        width: 1086,
-        height: 1448,
-        alt: 'The gilded equestrian statue of the Wolaita king, spear raised, on its mosaic plinth in Wolaita Sodo',
-        credit: 'TODO',
-        showCredit: false,
-      },
-      {
         src: '/images/story/sodo.jpg',
         width: 1683,
         height: 935,

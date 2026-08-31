@@ -9,7 +9,8 @@ import { ScrollCue } from '@/components/ui/ScrollCue';
 import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
-import { heroPhotos } from '@/content/hero';
+import { heroFocalPoint, heroImage } from '@/content/hero';
+import { featuredWorkFocalPoint, featuredWorkImage } from '@/content/collections';
 import { storyChapters } from '@/content/story';
 import { collections } from '@/content/collections';
 
@@ -51,7 +52,15 @@ function collectionImage(slug: string, index: number) {
 }
 
 const CHAPTERS = [
-  { key: 'story', href: '/story', paletteId: 'ivory', image: storyImage('sodo') },
+  {
+    key: 'story',
+    href: '/story',
+    paletteId: 'ivory',
+    // The first thing below the hero is a garment of hers on the runway, at
+    // the client's direction. It is the strongest picture of the work we have.
+    image: featuredWorkImage,
+    focalPoint: featuredWorkFocalPoint,
+  },
   { key: 'work', href: '/work', paletteId: 'ivory', image: collectionImage('placeholder-03', 0) },
   { key: 'colour', href: '/colour', paletteId: 'ivory', image: collectionImage('placeholder-02', 0) },
   { key: 'peace', href: '/peace', paletteId: 'ivory', image: storyImage('addis') },
@@ -75,26 +84,14 @@ function Hero() {
           * a hero, so it is gone. Cover it is, with the focal point holding
           * her face and hat in frame on wide screens.
           */}
-        {/*
-          * The photographs are stacked and cross-faded by CSS. Only the first
-          * is given priority: it is the one on screen at load and the one the
-          * browser measures the page's largest paint against, so the others
-          * must not compete with it for bandwidth.
-          */}
-        <div className="absolute inset-0">
-          {heroPhotos.map((photo, index) => (
-            <div key={photo.image.src} className="hero-frame absolute inset-0">
-              <CreditedImage
-                asset={photo.image}
-                variant="cover"
-                objectPosition={photo.focalPoint}
-                sizes="100vw"
-                priority={index === 0}
-                className="hero-credit absolute inset-0 h-full w-full"
-              />
-            </div>
-          ))}
-        </div>
+        <CreditedImage
+          asset={heroImage}
+          variant="cover"
+          objectPosition={heroFocalPoint}
+          sizes="100vw"
+          priority
+          className="hero-credit absolute inset-0 h-full w-full"
+        />
 
         {/* Keeps the header links legible where they sit on the photograph. */}
         <div
@@ -190,6 +187,7 @@ function Chapter({
               <CreditedImage
                 asset={chapter.image}
                 variant="cover"
+                objectPosition={'focalPoint' in chapter ? chapter.focalPoint : undefined}
                 sizes="(min-width: 1024px) 46vw, 92vw"
                 className="h-full w-full"
               />

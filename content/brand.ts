@@ -67,12 +67,28 @@ export const brandLogo: BrandLogo | null = null;
  * as UNCLEARED until that is answered.
  */
 export const brandPortrait: ImageAsset | null = {
-  src: '/images/brand/senait_mario.jpg',
-  width: 1079,
-  height: 1375,
+  /*
+   * A square crop of her face, cut from senait_mario.jpg.
+   *
+   * The full portrait is nearly square, so `object-fit: cover` only trimmed a
+   * fifth off the height and her face still sat small in a 36px circle -
+   * repositioning could not fix that, because cover cannot zoom in. The crop
+   * does. The full portrait stays in this folder for the press page, which
+   * wants the whole frame.
+   */
+  src: '/images/brand/portrait-mark.jpg',
+  width: 512,
+  height: 512,
   alt: 'Dr. Senait Mario',
   credit: 'TODO',
   // The masthead crops it to a small circle; no caption belongs beside a
   // masthead portrait.
   showCredit: false,
 };
+
+/**
+ * The mark file is already square and already centred on her face, so the
+ * circle needs no repositioning. Kept as a knob in case the file is replaced
+ * with one that does.
+ */
+export const brandPortraitFocalPoint = '50% 50%';
