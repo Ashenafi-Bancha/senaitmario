@@ -253,7 +253,6 @@
     "founded": "Fondato nel 2024 · Bole Sub City, Addis Abeba",
     "body": "L’istituto insegna fashion design, modeling, cosmetologia, nail technology, informatica e formazione professionale per addetti alla sicurezza. È accreditato dall’Autorità di Regolamentazione della Qualità dell’Istruzione e della Formazione dell’Amministrazione della Città di Addis Abeba ed è partner della Rome Business School.",
     "bridge": "Questo sito racconta la stilista. L’istituto ha una casa propria.",
-    "ctaTodo": "Link esterno in attesa della pubblicazione del sito dell’istituto",
     "programmesHeading": "Programmi",
     "programmes": {
       "fashionDesign": "Fashion design",
@@ -262,7 +261,8 @@
       "nailTechnology": "Nail technology",
       "it": "Informatica",
       "security": "Formazione professionale per addetti alla sicurezza"
-    }
+    },
+    "cta": "Visita l’istituto"
   },
   "press": {
     "heading": "Stampa",

@@ -15,7 +15,10 @@ for audit history.
 
 | File | Used on | Source | Credit | Licence | Status |
 | --- | --- | --- | --- | --- | --- |
-| `public/images/portraits/hero.jpg` | Home hero | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
+| `public/images/portraits/hero.jpg` | Home hero, frame 1 of 3 | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
+| `public/images/portraits/hero-wolaita.jpg` | Home hero, frame 2 of 3 | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/portraits/hero-lake.jpg` | Home hero, frame 3 of 3 | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/institute/reception.jpg` | /institute | Supplied by the client, 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/story/sodo.jpg` | /story (Wolaita Sodo), second look | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/nairobi.jpg` | /story (Nairobi) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/kampala.jpg` | /story (Kampala) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
@@ -48,15 +51,18 @@ to come back, and if any turn out to be unlicensed stock they have to come down.
 
 ### Outstanding on the hero
 
-`hero.jpg` is her own photograph, not a placeholder, so rule 2 is satisfied
-and it can stay up. Two things still block launch on it:
+The hero now cross-fades three photographs, all of them hers, so rule 2 is
+satisfied and they can stay up. None of the three carries a caption on the
+page: a line naming one photographer while a different picture was showing
+would be worse than none, so the credits live here instead. Two things still
+block launch on all three:
 
 1. **The photographer's name.** It reads as a professional shoot, and in that
    case the copyright sits with whoever took it, not with her. `content/hero.ts`
    carries `credit: 'TODO'` until this is known.
-2. **A higher-resolution original.** The file is 941x1672. A large desktop
-   stretches it about twice over and it renders soft. 2000px or more on the
-   long edge would fix it.
+2. **Higher-resolution originals.** They are 941, 1022 and 1179px wide. A
+   large desktop stretches the hero past that and they render soft. 2000px or
+   more on the long edge would fix it.
 
 ## Retired
 

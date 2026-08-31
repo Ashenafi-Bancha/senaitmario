@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RouteTheme } from '@/components/theme/RouteTheme';
-import { TodoMark } from '@/components/ui/TodoMark';
 import { pageMetadata } from '@/lib/metadata';
 import { BackLink } from '@/components/ui/BackLink';
+import { Reveal } from '@/components/ui/Reveal';
+import { CreditedImage } from '@/components/media/CreditedImage';
+import { instituteImage, instituteUrl } from '@/content/institute';
 
 export async function generateMetadata({
   params,
@@ -49,6 +51,14 @@ export default async function InstitutePage({
         </p>
         <p className="mt-8 text-lg leading-relaxed">{t('body')}</p>
 
+        {instituteImage ? (
+          <Reveal className="mt-12">
+            <div className="card-media">
+              <CreditedImage asset={instituteImage} sizes="(min-width: 768px) 56rem, 92vw" />
+            </div>
+          </Reveal>
+        ) : null}
+
         <h2 className="mt-12 font-utility text-xs uppercase tracking-widest text-muted">
           {t('programmesHeading')}
         </h2>
@@ -66,10 +76,19 @@ export default async function InstitutePage({
         <p className="mt-16 max-w-xl text-lg leading-relaxed text-muted">
           {t('bridge')}
         </p>
-        <p className="mt-4 text-sm text-muted">
-          {/* TODO: outbound link pending the institute site going live. */}
-          <TodoMark /> {t('ctaTodo')}
-        </p>
+        {instituteUrl ? (
+          <p className="mt-6">
+            <a
+              href={instituteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-cta hero-cta-ghost inline-flex min-h-12 items-center gap-3 rounded-full border border-ink/45 px-7 font-utility text-[0.7rem] uppercase tracking-[0.25em] text-ink no-underline"
+            >
+              {t('cta')}
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </p>
+        ) : null}
       </div>
     </>
   );

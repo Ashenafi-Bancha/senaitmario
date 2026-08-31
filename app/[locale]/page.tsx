@@ -9,7 +9,7 @@ import { ScrollCue } from '@/components/ui/ScrollCue';
 import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
-import { heroFocalPoint, heroImage } from '@/content/hero';
+import { heroPhotos } from '@/content/hero';
 import { storyChapters } from '@/content/story';
 import { collections } from '@/content/collections';
 
@@ -75,14 +75,26 @@ function Hero() {
           * a hero, so it is gone. Cover it is, with the focal point holding
           * her face and hat in frame on wide screens.
           */}
-        <CreditedImage
-          asset={heroImage}
-          variant="cover"
-          objectPosition={heroFocalPoint}
-          sizes="100vw"
-          priority
-          className="hero-credit absolute inset-0 h-full w-full"
-        />
+        {/*
+          * The photographs are stacked and cross-faded by CSS. Only the first
+          * is given priority: it is the one on screen at load and the one the
+          * browser measures the page's largest paint against, so the others
+          * must not compete with it for bandwidth.
+          */}
+        <div className="absolute inset-0">
+          {heroPhotos.map((photo, index) => (
+            <div key={photo.image.src} className="hero-frame absolute inset-0">
+              <CreditedImage
+                asset={photo.image}
+                variant="cover"
+                objectPosition={photo.focalPoint}
+                sizes="100vw"
+                priority={index === 0}
+                className="hero-credit absolute inset-0 h-full w-full"
+              />
+            </div>
+          ))}
+        </div>
 
         {/* Keeps the header links legible where they sit on the photograph. */}
         <div

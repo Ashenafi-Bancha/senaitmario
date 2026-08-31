@@ -1,66 +1,83 @@
 import type { ImageAsset } from './types';
 
 /**
- * ── HER HERO PHOTOGRAPH ─────────────────────────────────────────────────
+ * ── THE HOME HERO ───────────────────────────────────────────────────────
  *
- * This is the single big image that fills the screen on the home page. It is
- * the first thing anyone sees, so it should be her strongest portrait.
+ * The hero holds a set of photographs rather than one. They cross-fade
+ * slowly, a third of a minute each, and the fade is pure CSS - there is no
+ * JavaScript behind it, which matters because the home page runs close to
+ * the bundle budget.
  *
- * TO REPLACE IT:
- *   1. Save the photograph as  public/images/portraits/hero.jpg
- *   2. Point `heroImage.src` at '/images/portraits/hero.jpg'
- *   3. Set `width` and `height` to the file's real pixel dimensions
- *   4. Write a real `alt` and the photographer's name in `credit`
- *   5. Add a row for it in RIGHTS.md
+ * To change the hero, edit this list. The FIRST entry is the one that loads
+ * first and is what a visitor sees before anything fades, so it should be the
+ * strongest picture. It is also the one the browser treats as the page's main
+ * image for loading priority.
  *
- * There is no light/dark switch to set. The scrims behind the type are mixed
- * from the live --ground token, so they are ivory under the ivory theme and
- * near-black under the black one, and the type is always --ink against them.
- * A per-photograph tone constant used to exist and was a trap: it was chosen
- * at build time, so switching theme left pale ink on a pale wash.
+ * Adding a fourth is a one-line change here; the fade timing adapts to the
+ * count through --hero-frames in globals.css, which has to be kept in step.
  *
- * The path starts at '/images/...', not '/public/images/...' - that is how
- * files inside public/ are addressed.
+ * TODO - PHOTOGRAPHERS. Every one of these carries `credit: 'TODO'`. They read
+ * as professional shoots, and in that case the copyright sits with whoever
+ * took them rather than with her. RIGHTS.md lists them all as UNCLEARED.
  *
- * WHAT MAKES A GOOD HERO HERE:
- *  - Landscape or square crops work best; a tall portrait gets cropped at the
- *    top and bottom on desktop, because the image fills the whole screen.
- *  - Leave some calm space on the LEFT of the frame. Her name and the button
- *    sit over that side, so a busy left edge fights the type.
- *  - At least 2000px on the long edge. Export as JPG at about quality 80;
- *    the site converts and resizes it for every device automatically.
- *  - Aim under 400 KB.
+ * TODO - RESOLUTION. All three are around 1000-1200px wide. A large desktop
+ * stretches the hero past that, which softens them. Anything 2000px or wider
+ * on the long edge would render sharp.
  */
+export interface HeroPhoto {
+  image: ImageAsset;
+  /**
+   * Which part of the photograph must stay in frame.
+   *
+   * The hero fills the screen, so a tall portrait is cropped hard on a wide
+   * desktop, and cropping from the middle - the browser default - cuts the
+   * subject off at the shoulders. The second number pins the crop: smaller
+   * keeps more of the top, larger keeps more of the bottom.
+   */
+  focalPoint: string;
+}
 
-/**
- * Her hero portrait, supplied by the client.
- *
- * TODO - CREDIT REQUIRED BEFORE LAUNCH. This looks like a professional
- * shoot, and the photographer owns the copyright, not the subject. Replace
- * 'TODO' below with the photographer's name once known, and add a row to
- * RIGHTS.md. Until then the site renders a visible warning in development.
- *
- * TODO - a higher-resolution original would help. This file is 941px wide;
- * on a large desktop the hero is stretched to roughly twice that, which
- * softens it. Anything 2000px or wider on the long edge would render sharp.
- */
-export const heroImage: ImageAsset = {
-  src: '/images/portraits/hero.jpg',
-  width: 941,
-  height: 1672,
-  alt: 'Dr. Senait Mario in a sequinned ensemble and wide-brimmed hat',
-  credit: 'TODO',
-};
+export const heroPhotos: HeroPhoto[] = [
+  {
+    image: {
+      src: '/images/portraits/hero.jpg',
+      width: 941,
+      height: 1672,
+      alt: 'Dr. Senait Mario in a sequinned ensemble and a wide-brimmed hat',
+      credit: 'TODO',
+      // The hero frames carry no caption; a line that named one photographer
+      // while a different picture was showing would be worse than none.
+      showCredit: false,
+    },
+    focalPoint: '50% 12%',
+  },
+  {
+    image: {
+      src: '/images/portraits/hero-wolaita.jpg',
+      width: 1022,
+      height: 1539,
+      alt: 'Dr. Senait Mario walking with a child, both in matching waistcoats and ties woven in red, gold and black',
+      credit: 'TODO',
+      showCredit: false,
+    },
+    // Her face sits high in this frame; the child is lower left and is lost on
+    // a wide crop, which is why this one reads best on a phone.
+    focalPoint: '55% 12%',
+  },
+  {
+    image: {
+      src: '/images/portraits/hero-lake.jpg',
+      width: 1179,
+      height: 1334,
+      alt: 'Dr. Senait Mario walking the shore of a lake at sunset, swans on the water beside her',
+      credit: 'TODO',
+      showCredit: false,
+    },
+    // She stands left of centre and lower in this frame than the other two.
+    focalPoint: '38% 26%',
+  },
+];
 
-/**
- * Which part of the photograph must stay in frame.
- *
- * The hero fills the screen, so a tall portrait gets cropped hard on a wide
- * desktop. Cropping from the middle - the browser default - cut this
- * portrait off at the shoulders and lost her face completely. '50% 12%'
- * pins the crop near the top so her face survives at every screen shape.
- *
- * Adjust the second number if a future photograph sits differently: smaller
- * keeps more of the top, larger keeps more of the bottom.
- */
-export const heroFocalPoint = '50% 12%';
+/** The picture that loads first and carries the page. */
+export const heroImage = heroPhotos[0]!.image;
+export const heroFocalPoint = heroPhotos[0]!.focalPoint;

@@ -253,7 +253,6 @@
     "founded": "Founded 2024 · Bole Sub City, Addis Ababa",
     "body": "The institute teaches fashion design, modeling, cosmetology, nail technology, information technology and professional security officer training. It is accredited by the Addis Ababa City Administration Education and Training Quality Regulatory Authority and partnered with the Rome Business School.",
     "bridge": "This site is about the designer. The institute has its own home.",
-    "ctaTodo": "Outbound link pending the institute site going live",
     "programmesHeading": "Programmes",
     "programmes": {
       "fashionDesign": "Fashion design",
@@ -262,7 +261,8 @@
       "nailTechnology": "Nail technology",
       "it": "Information technology",
       "security": "Professional security officer training"
-    }
+    },
+    "cta": "Visit the institute"
   },
   "press": {
     "heading": "Press",
