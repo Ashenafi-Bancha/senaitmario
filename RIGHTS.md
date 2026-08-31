@@ -16,13 +16,13 @@ for audit history.
 | File | Used on | Source | Credit | Licence | Status |
 | --- | --- | --- | --- | --- | --- |
 | `public/images/portraits/hero.jpg` | Home hero | Supplied by the client, 2026-08-29 | **TODO - photographer** | **TODO - usage terms** | UNCLEARED |
-| `public/images/story/sodo.jpg` | /story (Wolaita Sodo) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
+| `public/images/story/sodo.jpg` | /story (Wolaita Sodo), second look | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/nairobi.jpg` | /story (Nairobi) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/kampala.jpg` | /story (Kampala) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/rome.jpg` | /story (Rome) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
-| `public/images/story/stages.jpg` | /story (Milan · London · Paris) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
-| `public/images/story/sodo-statue.jpg` | not in use - alternative for Wolaita Sodo | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
-| `public/images/story/paris.jpg` | not in use - 605px, too small for a chapter frame | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
+| `public/images/story/stages.jpg` | /story (Milan · London · Paris), lead photograph | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
+| `public/images/story/sodo-statue.jpg` | /story (Wolaita Sodo), lead photograph | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
+| `public/images/story/paris.jpg` | /story (Milan · London · Paris), second look | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
 | `public/images/brand/senait_mario.jpg` | Masthead portrait, every page | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/story/addis.jpg` | /story (Addis Ababa) | [Commons: Sunset on the rising city, Addis Ababa](https://commons.wikimedia.org/wiki/File:Sunset_on_the_rising_city,_Addis_Ababa_-_Flickr_-_jeanotr.jpg) | Jean Rebiffé | CC BY 2.0 | LICENSED PLACEHOLDER |
 | `public/images/collections/weaver-pit-loom.jpg` | /work placeholder-01 | [Commons: Waving in Ethiopia 01](https://commons.wikimedia.org/wiki/File:Waving_in_Ethiopia_01.jpg) | Thomas Fuhrmann | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
@@ -35,7 +35,7 @@ for audit history.
 
 ### Outstanding on the story photographs and the portrait
 
-Six files arrived on 2026-08-31 with no source or photographer stated. They are
+Seven files arrived on 2026-08-31 with no source or photographer stated. They are
 generic city views and a studio headshot, and several carry the signs of stock
 libraries, so they are recorded UNCLEARED and none of them can launch until
 somebody says where each came from and on what terms.

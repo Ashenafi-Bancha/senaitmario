@@ -11,6 +11,16 @@ Save them straight into this folder:
 public/images/story/
 ```
 
+## More than one per chapter
+
+A chapter can carry as many photographs as there are. The first one leads at
+full size; the rest are set smaller and pulled up beneath its left edge, as a
+second look at the same place rather than a gallery.
+
+Wolaita Sodo and the runway chapter each carry two today. If you have a second
+picture for any of the others, send it with a name like `rome-2.jpg` and say
+which order they should run in.
+
 ## What to call them
 
 **Keep the existing names and overwrite the file.** Nothing else has to be
@@ -18,17 +28,18 @@ renamed, and the site picks the new picture up on the next build.
 
 | Save it as | Chapter | Heading on the page | What the chapter is about |
 | --- | --- | --- | --- |
-| `sodo.jpg` | 1 | Wolaita Sodo | Where it begins |
+| `sodo-statue.jpg`, `sodo.jpg` | 1 | Wolaita Sodo | Where it begins |
 | `nairobi.jpg` | 2 | Nairobi | Leaving |
 | `kampala.jpg` | 3 | Kampala | In transit |
 | `rome.jpg` | 4 | Rome | A second home |
-| `stages-milan.jpg` | 5 | Milan &middot; London &middot; Paris | The stages |
+| `stages.jpg`, `paris.jpg` | 5 | Milan &middot; London &middot; Paris | The stages |
 | `addis.jpg` | 6 | Addis Ababa | The return |
 
-Two of these also carry cards on the home page: `sodo.jpg` on the story card
-and `addis.jpg` on the peace card. That happens automatically now &mdash; the
-home page reads the same record, so there is no second place to update and no
-way for the credit to fall out of step.
+Two of these also carry cards on the home page: the **lead** photograph of
+Wolaita Sodo on the story card, and `addis.jpg` on the peace card. That happens
+automatically &mdash; the home page reads the same record, so there is no second
+place to update and no way for the credit to fall out of step. Reordering a
+chapter's photographs therefore changes the home card too.
 
 ## What each photograph should be
 

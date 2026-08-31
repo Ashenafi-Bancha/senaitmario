@@ -39,7 +39,7 @@ export async function generateMetadata({
  */
 function storyImage(id: string) {
   // StoryChapter.image is optional, so this narrows rather than assuming.
-  const image = storyChapters.find((c) => c.id === id)?.image;
+  const image = storyChapters.find((c) => c.id === id)?.images?.[0];
   if (!image) throw new Error(`Home chapter references a story image that is missing: ${id}`);
   return image;
 }

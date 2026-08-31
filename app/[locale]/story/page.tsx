@@ -47,6 +47,7 @@ function Chapter({
 }) {
   const t = useTranslations();
   const headingId = `story-${chapter.id}`;
+  const images = chapter.images ?? [];
   return (
     <ThemeSection
       paletteId={chapter.paletteId}
@@ -55,7 +56,7 @@ function Chapter({
     >
       <div
         className={`mx-auto w-full max-w-6xl gap-12 px-4 py-24 sm:px-6 ${
-          chapter.image ? 'grid items-center lg:grid-cols-[3fr_2fr]' : ''
+          images.length > 0 ? 'grid items-center lg:grid-cols-[3fr_2fr]' : ''
         }`}
       >
         <div>
@@ -70,15 +71,33 @@ function Chapter({
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">{t(chapter.bodyKey)}</p>
         </div>
-        {chapter.image ? (
+        {images.length > 0 ? (
           <Reveal className="mt-10 max-w-md lg:mt-0 lg:justify-self-end">
             <Parallax amount={30}>
+              {/*
+                * The first photograph carries the chapter. Any after it are set
+                * smaller and pulled up beneath its left edge, so the pair reads
+                * as a second look at the same place rather than a gallery. The
+                * ring is the page ground, so the overlap stays legible against
+                * whatever is underneath, in either theme.
+                */}
               <div className="card-media">
                 <CreditedImage
-                  asset={chapter.image}
+                  asset={images[0]}
                   sizes="(min-width: 1024px) 38vw, 92vw"
                 />
               </div>
+              {images.slice(1).map((image) => (
+                <div
+                  key={image.src}
+                  className="card-media relative z-10 -mt-10 w-[58%] ring-8 ring-ground sm:-mt-14"
+                >
+                  <CreditedImage
+                    asset={image}
+                    sizes="(min-width: 1024px) 22vw, 54vw"
+                  />
+                </div>
+              ))}
             </Parallax>
           </Reveal>
         ) : null}

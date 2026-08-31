@@ -93,7 +93,12 @@ export interface StoryChapter {
   /** Message keys — chapter body copy lives in messages/, not here. */
   titleKey: string;
   bodyKey: string;
-  image?: ImageAsset;
+  /**
+   * One or more photographs for the chapter. The first carries the chapter and
+   * is the one the home page borrows; any after it are set smaller and offset
+   * beneath, as a second look at the same place rather than a gallery.
+   */
+  images?: ImageAsset[];
 }
 
 export interface Recognition {

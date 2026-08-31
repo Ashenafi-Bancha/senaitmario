@@ -22,14 +22,24 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.sodo.title',
     bodyKey: 'story.chapters.sodo.body',
-    image: {
-      src: '/images/story/sodo.jpg',
-      width: 1683,
-      height: 935,
-      alt: 'The “I love Wolaita” landmark sign in Wolaita Sodo, the highlands rising behind it',
-      credit: 'TODO',
-      showCredit: false,
-    },
+    images: [
+      {
+        src: '/images/story/sodo-statue.jpg',
+        width: 1086,
+        height: 1448,
+        alt: 'The gilded equestrian statue of the Wolaita king, spear raised, on its mosaic plinth in Wolaita Sodo',
+        credit: 'TODO',
+        showCredit: false,
+      },
+      {
+        src: '/images/story/sodo.jpg',
+        width: 1683,
+        height: 935,
+        alt: 'The “I love Wolaita” landmark sign in Wolaita Sodo, the highlands rising behind it',
+        credit: 'TODO',
+        showCredit: false,
+      },
+    ],
   },
   {
     id: 'nairobi',
@@ -37,14 +47,16 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.nairobi.title',
     bodyKey: 'story.chapters.nairobi.body',
-    image: {
-      src: '/images/story/nairobi.jpg',
-      width: 2000,
-      height: 1333,
-      alt: 'The central business district of Nairobi seen from above, towers running to the horizon',
-      credit: 'TODO',
-      showCredit: false,
-    },
+    images: [
+      {
+        src: '/images/story/nairobi.jpg',
+        width: 2000,
+        height: 1333,
+        alt: 'The central business district of Nairobi seen from above, towers running to the horizon',
+        credit: 'TODO',
+        showCredit: false,
+      },
+    ],
   },
   {
     id: 'kampala',
@@ -52,14 +64,16 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.kampala.title',
     bodyKey: 'story.chapters.kampala.body',
-    image: {
-      src: '/images/story/kampala.jpg',
-      width: 1800,
-      height: 830,
-      alt: 'Kampala seen across the green of a city park, office towers along the skyline',
-      credit: 'TODO',
-      showCredit: false,
-    },
+    images: [
+      {
+        src: '/images/story/kampala.jpg',
+        width: 1800,
+        height: 830,
+        alt: 'Kampala seen across the green of a city park, office towers along the skyline',
+        credit: 'TODO',
+        showCredit: false,
+      },
+    ],
   },
   {
     id: 'rome',
@@ -67,14 +81,16 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.rome.title',
     bodyKey: 'story.chapters.rome.body',
-    image: {
-      src: '/images/story/rome.jpg',
-      width: 800,
-      height: 530,
-      alt: 'St Peter’s Basilica at the end of Via della Conciliazione, Rome, lit at dusk',
-      credit: 'TODO',
-      showCredit: false,
-    },
+    images: [
+      {
+        src: '/images/story/rome.jpg',
+        width: 800,
+        height: 530,
+        alt: 'St Peter’s Basilica at the end of Via della Conciliazione, Rome, lit at dusk',
+        credit: 'TODO',
+        showCredit: false,
+      },
+    ],
   },
   {
     id: 'stages',
@@ -82,14 +98,26 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.stages.title',
     bodyKey: 'story.chapters.stages.body',
-    image: {
-      src: '/images/story/stages.jpg',
-      width: 2000,
-      height: 1333,
-      alt: 'Regent Street in London hung with Union flags, red buses along the curve',
-      credit: 'TODO',
-      showCredit: false,
-    },
+    images: [
+      {
+        src: '/images/story/stages.jpg',
+        width: 2000,
+        height: 1333,
+        alt: 'Regent Street in London hung with Union flags, red buses along the curve',
+        credit: 'TODO',
+        showCredit: false,
+      },
+      {
+        src: '/images/story/paris.jpg',
+        width: 605,
+        height: 507,
+        alt: 'The Eiffel Tower seen from the Trocadéro gardens, Paris',
+        credit: 'TODO',
+        showCredit: false,
+        // 605px is small; it holds at the second look's size but would be soft
+        // if it ever led a chapter.
+      },
+    ],
   },
   {
     // The resolution returns to the primary ground.
@@ -98,12 +126,14 @@ export const storyChapters: StoryChapter[] = [
     paletteId: 'ivory',
     titleKey: 'story.chapters.addis.title',
     bodyKey: 'story.chapters.addis.body',
-    image: {
-      src: '/images/story/addis.jpg',
-      width: 1600,
-      height: 900,
-      alt: 'Construction crane silhouetted against sunset over Addis Ababa, placeholder image',
-      credit: 'Jean Rebiffé, CC BY 2.0, via Wikimedia Commons',
-    },
+    images: [
+      {
+        src: '/images/story/addis.jpg',
+        width: 1600,
+        height: 900,
+        alt: 'Construction crane silhouetted against sunset over Addis Ababa, placeholder image',
+        credit: 'Jean Rebiffé, CC BY 2.0, via Wikimedia Commons',
+      },
+    ],
   },
 ];
