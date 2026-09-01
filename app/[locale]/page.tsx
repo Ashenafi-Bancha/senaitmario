@@ -12,7 +12,8 @@ import { pageMetadata } from '@/lib/metadata';
 import { heroFocalPoint, heroImage } from '@/content/hero';
 import { featuredWorkFocalPoint, featuredWorkImage } from '@/content/collections';
 import { storyChapters } from '@/content/story';
-import { collections } from '@/content/collections';
+import { pieces } from '@/content/pieces';
+import { instituteImage } from '@/content/institute';
 
 export async function generateMetadata({
   params,
@@ -27,28 +28,32 @@ export async function generateMetadata({
  * The home page is a set of editorial spreads, not a list of links: every
  * chapter is carried by a full-bleed image with the type set against it.
  *
- * All imagery is LICENSED PLACEHOLDER photography (Wikimedia Commons,
- * credited, logged in RIGHTS.md) — none of it is her work and none of it
- * depicts her. It is here so the layout can be judged; it all gets replaced.
- */
-/*
- * The home cards borrow images that already belong to a chapter or a
- * collection, so they look those up rather than restating src, dimensions and
- * credit. Restating them meant a single file could be swapped in one place and
- * keep the old photographer's name in the other, which on her site would be a
- * wrong credit rather than a stale string.
+ * Four of the five cards now carry her own work or her institute. Only the
+ * peace card is still an openly-licensed placeholder, which RIGHTS.md records.
+ *
+ * The cards borrow pictures that already belong to a piece or a story chapter
+ * and look them up rather than restating src, dimensions and credit. Restating
+ * them meant a file could be swapped in one place and keep the old
+ * photographer's name in the other, which on her site would be a wrong credit
+ * rather than a stale string.
  */
 function storyImage(id: string) {
-  // StoryChapter.image is optional, so this narrows rather than assuming.
+  // StoryChapter.images is optional, so this narrows rather than assuming.
   const image = storyChapters.find((c) => c.id === id)?.images?.[0];
   if (!image) throw new Error(`Home chapter references a story image that is missing: ${id}`);
   return image;
 }
 
-function collectionImage(slug: string, index: number) {
-  const image = collections.find((c) => c.slug === slug)?.images[index];
-  if (!image) throw new Error(`Home chapter references unknown image: ${slug}[${index}]`);
+function pieceImage(id: string) {
+  const image = pieces.find((piece) => piece.id === id)?.image;
+  if (!image) throw new Error(`Home chapter references a piece that is missing: ${id}`);
   return image;
+}
+
+/** instituteImage is nullable, so the card narrows rather than assuming. */
+function requireInstituteImage() {
+  if (!instituteImage) throw new Error('The institute card needs instituteImage set');
+  return instituteImage;
 }
 
 const CHAPTERS = [
@@ -61,10 +66,29 @@ const CHAPTERS = [
     image: featuredWorkImage,
     focalPoint: featuredWorkFocalPoint,
   },
-  { key: 'work', href: '/work', paletteId: 'ivory', image: collectionImage('placeholder-03', 0) },
-  { key: 'colour', href: '/colour', paletteId: 'ivory', image: collectionImage('placeholder-02', 0) },
+  {
+    key: 'work',
+    href: '/work',
+    paletteId: 'ivory',
+    // The most complete look there is: jacket, skirt and train in one frame.
+    image: pieceImage('gown-ruffled'),
+  },
+  {
+    key: 'colour',
+    href: '/colour',
+    paletteId: 'ivory',
+    // The colour card should be carried by the most saturated cloth we have.
+    image: pieceImage('blazer-dress'),
+  },
   { key: 'peace', href: '/peace', paletteId: 'ivory', image: storyImage('addis') },
-  { key: 'institute', href: '/institute', paletteId: 'ivory', image: collectionImage('placeholder-02', 1) },
+  {
+    key: 'institute',
+    href: '/institute',
+    paletteId: 'ivory',
+    // Her own building, rather than a market stall standing in for it.
+    image: requireInstituteImage(),
+    focalPoint: '50% 30%',
+  },
 ] as const;
 
 function Hero() {

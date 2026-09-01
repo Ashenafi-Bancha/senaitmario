@@ -3,9 +3,13 @@ import { Link } from '@/i18n/navigation';
 import type { Swatch } from '@/content/types';
 
 /**
- * One entry in the Colour Index: the colour itself, its name, the collection
- * it was lifted from, and the short line on what it carries. The whole card
- * is a link that filters the work index to pieces using this colour.
+ * One entry in the Colour Index: the colour itself, its name, and the short
+ * line on what it carries. The collection it was lifted from is printed only
+ * once there are collections to name.
+ *
+ * The card links to the work index. It used to filter that index by swatch;
+ * with the collections gone there is nothing to filter by, and the filter
+ * comes back with them.
  */
 export function SwatchCard({ swatch }: { swatch: Swatch }) {
   const t = useTranslations();
@@ -13,7 +17,7 @@ export function SwatchCard({ swatch }: { swatch: Swatch }) {
 
   return (
     <Link
-      href={`/work?swatch=${swatch.id}`}
+      href="/work"
       className="group block border border-line no-underline transition-colors hover:border-accent focus-visible:border-accent"
     >
       <span
@@ -26,11 +30,14 @@ export function SwatchCard({ swatch }: { swatch: Swatch }) {
           {name}
         </span>
         <span className="mt-1 block font-utility text-[0.65rem] uppercase tracking-widest text-muted">
-          {swatch.hex} ·{' '}
-          {t(
-            `colour.fromCollection`,
-            { collection: t(`collections.${swatch.collectionSlug}.title`) },
-          )}
+          {swatch.hex}
+          {/*
+            * The collection a colour came from is only printed once there are
+            * collections to name. See content/collections.ts.
+            */}
+          {swatch.collectionSlug
+            ? ` · ${t('colour.fromCollection', { collection: t(`collections.${swatch.collectionSlug}.title`) })}`
+            : null}
         </span>
         <span className="mt-3 block font-utility text-[0.65rem] uppercase tracking-widest text-accent">
           {t(`colour.carriesLabels.${swatch.carries}`)}

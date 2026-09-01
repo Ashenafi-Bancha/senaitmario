@@ -25,18 +25,38 @@ for audit history.
 | `public/images/story/rome.jpg` | /story (Rome) | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/stages.jpg` | /story (Milan · London · Paris), lead photograph | **TODO** - supplied by the client 2026-08-31, origin not stated | **TODO** | **TODO** | UNCLEARED |
 | `public/images/collections/runway-dinguze.jpg` | Home, first spread below the hero | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/wolaita-dinguza.jpg` | /work (worn) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/wolaita-dinguza-2.jpg` | /work (illustration) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-4.jpg` | /work (garment) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/senait-wolaita.jpg` | /work (worn) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-3.jpg` | /work (garment) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-2.jpg` | /work (garment) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-5.jpg` | /work (worn) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-1.jpg` | /work (illustration) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/kaftan-blue-trim.jpg` | /work (worn) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
+| `public/images/collections/collection-6.jpg` | /work (worn) | Gathered by the client from her social media, 2026-09-01 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/story/sodo.jpg` | /story (Wolaita Sodo) | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
 | `public/images/story/paris.jpg` | /story (Milan · London · Paris), second look | **TODO** - supplied by the client 2026-08-31 | **TODO** | **TODO** | UNCLEARED |
 | `public/images/brand/portrait-mark.jpg` | Masthead portrait, every page (square crop of senait_mario.jpg) | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/brand/senait_mario.jpg` | not in use - full frame, kept for the press page | Supplied by the client 2026-08-31 | **TODO - photographer** | **TODO** | UNCLEARED |
 | `public/images/story/addis.jpg` | /story (Addis Ababa) | [Commons: Sunset on the rising city, Addis Ababa](https://commons.wikimedia.org/wiki/File:Sunset_on_the_rising_city,_Addis_Ababa_-_Flickr_-_jeanotr.jpg) | Jean Rebiffé | CC BY 2.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/weaver-pit-loom.jpg` | /work placeholder-01 | [Commons: Waving in Ethiopia 01](https://commons.wikimedia.org/wiki/File:Waving_in_Ethiopia_01.jpg) | Thomas Fuhrmann | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/weaving-fibres.jpg` | /work placeholder-01 | [Commons: Weaving Supplies, Adigrat](https://commons.wikimedia.org/wiki/File:Weaving_Supplies,_Adigrat_(11831170076).jpg) | Rod Waddington | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/loom-blue-warp.jpg` | /work placeholder-02 | [Commons: Waving in Ethiopia 03](https://commons.wikimedia.org/wiki/File:Waving_in_Ethiopia_03.jpg) | Thomas Fuhrmann | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/shiro-meda-market.jpg` | /work placeholder-02 | [Commons: Shiro Meda clothing market](https://commons.wikimedia.org/wiki/File:Shiro_Meda_clothing_market.jpg) | Lucy Shaw | CC BY-SA 4.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/museum-costume-01.jpg` | /work placeholder-03 | [Commons: Traditional Costume, National Museum of Ethiopia 01](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_01_(8743136699).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
-| `public/images/collections/museum-costume-03.jpg` | /work placeholder-03 | [Commons: Traditional Costume, National Museum of Ethiopia 03](https://commons.wikimedia.org/wiki/File:Traditional_Costume_-_National_Museum_of_Ethiopia_-_Addis_Ababa_-_Ethiopia_-_03_(8743136173).jpg) | Adam Jones | CC BY-SA 2.0 | LICENSED PLACEHOLDER |
 | `app/[locale]/opengraph-image.tsx` (generated PNG) | OpenGraph/social cards | Typographic, generated at request time (no photograph) | n/a — no photography | n/a | UNCLEARED |
+
+### Outstanding on the work
+
+Eleven pieces, gathered by the client from her social media on 2026-09-01,
+with no photographer named for any of them. Runway and editorial photography
+almost always belongs to whoever shot it rather than to the designer, so this
+is the page most exposed on rights and the least resolved.
+
+Two of the eleven are worth a second look before launch: `collection-6.jpg`
+and `kaftan-blue-trim.jpg` read as generic e-commerce photography rather than
+as the Ethiopian-banded pieces beside them. They may be reposts rather than
+her own work. Worth confirming.
+
+None of them is attached to a collection, and that is deliberate: the
+photographs came without a show or a season, and a name, a year and a city are
+not details to guess at. See content/pieces.ts.
 
 ### Outstanding on the story photographs and the portrait
 
@@ -77,6 +97,7 @@ still block launch on it:
 | `public/images/story/stages-milan.jpg` | /story (the stages) | Commons "Galleria Vittorio Emanuele", Maurizio Moro5153, CC BY-SA 4.0. Deleted; the chapter now uses stages.jpg. |
 | `public/images/story/milan.jpg` | never published | A 270x148 Shutterstock comp with the watermark still across it. Deleted rather than committed: publishing it would have been a straight copyright breach. |
 | `public/images/story/sodo-statue.jpg` | /story (Wolaita Sodo) | The gilded Kawo Tona statue. Used briefly as the chapter's lead; the client asked for it removed. Deleted. |
+| `public/images/collections/*` (six Wikimedia files) | /work placeholders | Weaving, a market stall and museum costume, credited to Thomas Fuhrmann, Rod Waddington, Lucy Shaw and Adam Jones under CC BY-SA. None of it was her work. Deleted once her own pieces arrived. |
 | `public/images/placeholders/collection-01-a/b.svg` | /work placeholder-01 | Generated SVG, replaced |
 | `public/images/placeholders/collection-02-a/b.svg` | /work placeholder-02 | Generated SVG, replaced |
 | `public/images/placeholders/collection-03-a/b.svg` | /work placeholder-03 | Generated SVG, replaced by the museum-costume images |

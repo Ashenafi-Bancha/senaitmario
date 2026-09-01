@@ -1,13 +1,9 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
 import { RouteTheme } from '@/components/theme/RouteTheme';
 import { CreditedImage } from '@/components/media/CreditedImage';
-import { TodoMark } from '@/components/ui/TodoMark';
 import { Reveal } from '@/components/ui/Reveal';
-import { TiltCard } from '@/components/ui/TiltCard';
-import { collections } from '@/content/collections';
-import { getSwatch } from '@/content/swatches';
+import { pieces } from '@/content/pieces';
 import { pageMetadata } from '@/lib/metadata';
 import { BackLink } from '@/components/ui/BackLink';
 
@@ -20,91 +16,75 @@ export async function generateMetadata({
   return pageMetadata(locale, 'work');
 }
 
+/**
+ * The work index.
+ *
+ * An index of individual pieces rather than a set of collections, because the
+ * photographs arrived without a show or a season attached and those are not
+ * details to invent. See content/pieces.ts.
+ *
+ * The layout is a CSS column masonry. Every piece keeps its own proportions -
+ * a drawing on paper, a garment shot square on, a runway frame - and a fixed
+ * grid would have had to crop all of them to one shape, which is exactly the
+ * wrong thing to do to a lookbook. Columns also need no JavaScript and fall
+ * from three to two to one on their own.
+ */
 export default async function WorkPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ swatch?: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const { swatch: swatchId } = await searchParams;
 
   const t = await getTranslations('work');
-  const tAll = await getTranslations();
-
-  // A swatch on /colour links here with ?swatch=<id>; the index narrows to
-  // the pieces using that colour. The active swatch's collection palette
-  // takes over the colour field, so the filter is felt, not just listed.
-  const activeSwatch = swatchId ? getSwatch(swatchId) : undefined;
-  const visibleCollections = activeSwatch
-    ? collections.filter((c) => c.slug === activeSwatch.collectionSlug)
-    : collections;
-  const paletteId = activeSwatch
-    ? collections.find((c) => c.slug === activeSwatch.collectionSlug)?.paletteId ??
-      'ivory'
-    : 'ivory';
 
   return (
     <>
       <BackLink />
-      <RouteTheme paletteId={paletteId} />
-      <div className="mx-auto max-w-6xl px-4 pb-24 pt-16 sm:px-6">
+      <RouteTheme paletteId="ivory" />
+      <div className="mx-auto max-w-6xl px-4 pb-28 pt-16 sm:px-6">
         <h1 className="font-display text-[clamp(2.5rem,9vw,6rem)] leading-none tracking-tight">
           {t('heading')}
         </h1>
         <p className="mt-4 max-w-xl text-lg text-muted">{t('intro')}</p>
-        <p className="mt-3 text-sm text-muted">
-          <TodoMark /> {t('placeholderNote')}
+        <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
+          {t('piecesIntro')}
         </p>
 
-        {activeSwatch ? (
-          <div className="mt-8 flex flex-wrap items-center gap-4 border border-line px-4 py-3">
-            <span
-              aria-hidden="true"
-              className="h-6 w-6 border border-line"
-              style={{ backgroundColor: activeSwatch.hex }}
-            />
-            <span className="font-utility text-xs uppercase tracking-widest">
-              {t('filteredBy', { swatch: tAll(`swatches.${activeSwatch.id}.name`) })}
-            </span>
-            <Link
-              href="/work"
-              className="font-utility text-xs uppercase tracking-widest text-accent underline underline-offset-4"
-            >
-              {t('clearFilter')}
-            </Link>
-          </div>
-        ) : null}
+        <p className="mt-10 font-utility text-[0.65rem] uppercase tracking-[0.28em] text-muted">
+          {t('countLabel', { count: pieces.length })}
+        </p>
 
-        <ul className="mt-14 grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleCollections.map((collection, index) => (
-            <li key={collection.slug}>
-              <Reveal delay={index * 0.08}>
-                <Link
-                  href={`/work/${collection.slug}`}
-                  className="group block no-underline"
-                >
-                  <TiltCard className="card-media">
+        {/*
+          * `columns` rather than `grid`: the pieces are 0.56 to 1.07 in aspect
+          * and a grid would crop them all to one shape. break-inside-avoid
+          * keeps a picture and its label together in a column.
+          */}
+        <div className="mt-6 columns-1 gap-5 sm:columns-2 sm:gap-6 lg:columns-3">
+          {pieces.map((piece, index) => (
+            <div key={piece.id} className="mb-5 break-inside-avoid sm:mb-6">
+              <Reveal delay={Math.min(index, 5) * 0.06}>
+                {/*
+                  * CreditedImage renders its own <figure>, so this wrapper is a
+                  * plain div: nesting one figure inside another gave every
+                  * piece two of them.
+                  */}
+                <div className="group">
+                  <div className="card-media overflow-hidden border border-line">
                     <CreditedImage
-                      asset={collection.images[0]}
+                      asset={piece.image}
                       sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
                     />
-                  </TiltCard>
-                  <h2 className="mt-4 font-display text-2xl tracking-tight text-ink transition-colors group-hover:text-accent">
-                    {tAll(`collections.${collection.slug}.title`)}
-                  </h2>
-                  <p className="mt-1 font-utility text-xs uppercase tracking-widest text-muted">
-                    {collection.year === 'TODO' ? <TodoMark /> : collection.year}
-                    {' · '}
-                    {collection.city === 'TODO' ? <TodoMark /> : collection.city}
+                  </div>
+                  <p className="mt-3 font-utility text-[0.62rem] uppercase tracking-[0.24em] text-muted transition-colors group-hover:text-accent">
+                    {t(`kinds.${piece.kind}`)}
                   </p>
-                </Link>
+                </div>
               </Reveal>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );

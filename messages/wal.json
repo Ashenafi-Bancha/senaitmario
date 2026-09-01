@@ -11,7 +11,7 @@
       },
       "work": {
         "title": "Work",
-        "description": "Collections by Dr. Senait Mario, presented on the fashion stages of Milan, London and Paris."
+        "description": "Garments, design drawings and runway frames by Dr. Senait Mario, whose work has been presented on the fashion stages of Milan, London and Paris."
       },
       "colour": {
         "title": "The Colour Index",
@@ -88,8 +88,8 @@
       },
       "work": {
         "title": "The Work",
-        "lede": "Collections presented on the fashion stages of Milan, London and Paris.",
-        "cta": "See the collections"
+        "lede": "Garments in Ethiopian cloth, the drawings behind them, and frames from the runway.",
+        "cta": "See the work"
       },
       "colour": {
         "title": "The Colour Index",
@@ -145,31 +145,22 @@
     }
   },
   "work": {
-    "heading": "Collections",
-    "intro": "Bodies of work, each owning its own palette.",
-    "placeholderNote": "Collection data pending. These three entries are layout placeholders.",
-    "filteredBy": "Showing pieces using {swatch}",
-    "clearFilter": "Clear filter",
+    "heading": "The Work",
+    "intro": "Garments, the drawings behind them, and frames from the runway.",
     "viewCollection": "View collection",
     "backToIndex": "All collections",
     "detail": {
       "imagesHeading": "Images",
       "paletteHeading": "Palette"
-    }
-  },
-  "collections": {
-    "placeholder-01": {
-      "title": "TODO: Collection one",
-      "description": "TODO: collection description pending from client. This placeholder exists so the layout can be reviewed."
     },
-    "placeholder-02": {
-      "title": "TODO: Collection two",
-      "description": "TODO: collection description pending from client. This placeholder exists so the layout can be reviewed."
+    "kinds": {
+      "illustration": "Illustration",
+      "garment": "The garment",
+      "worn": "Worn",
+      "runway": "On the runway"
     },
-    "placeholder-03": {
-      "title": "TODO: Collection three",
-      "description": "TODO: collection description pending from client. This placeholder exists so the layout can be reviewed."
-    }
+    "piecesIntro": "Individual pieces. They have not been grouped into collections: the photographs came without a show or a season attached, and those are not details to guess at.",
+    "countLabel": "{count} pieces"
   },
   "colour": {
     "heading": "The Colour Index",

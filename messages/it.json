@@ -11,7 +11,7 @@
       },
       "work": {
         "title": "Lavori",
-        "description": "Le collezioni della Dr.ssa Senait Mario, presentate sulle passerelle di Milano, Londra e Parigi."
+        "description": "Capi, disegni e immagini di passerella di Dr.ssa Senait Mario, il cui lavoro è stato presentato sulle passerelle di Milano, Londra e Parigi."
       },
       "colour": {
         "title": "L’Indice dei Colori",
@@ -88,8 +88,8 @@
       },
       "work": {
         "title": "Il Lavoro",
-        "lede": "Collezioni presentate sulle passerelle di Milano, Londra e Parigi.",
-        "cta": "Vedi le collezioni"
+        "lede": "Capi in tessuto etiope, i disegni che li precedono e immagini dalla passerella.",
+        "cta": "Guarda il lavoro"
       },
       "colour": {
         "title": "L’Indice dei Colori",
@@ -145,31 +145,22 @@
     }
   },
   "work": {
-    "heading": "Collezioni",
-    "intro": "Corpi di lavoro, ognuno con la propria palette.",
-    "placeholderNote": "Dati delle collezioni in attesa. Queste tre voci sono segnaposto di layout.",
-    "filteredBy": "Pezzi che usano {swatch}",
-    "clearFilter": "Rimuovi filtro",
+    "heading": "Il lavoro",
+    "intro": "Capi, i disegni che li precedono e immagini dalla passerella.",
     "viewCollection": "Vedi la collezione",
     "backToIndex": "Tutte le collezioni",
     "detail": {
       "imagesHeading": "Immagini",
       "paletteHeading": "Palette"
-    }
-  },
-  "collections": {
-    "placeholder-01": {
-      "title": "TODO: Collezione uno",
-      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
     },
-    "placeholder-02": {
-      "title": "TODO: Collezione due",
-      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
+    "kinds": {
+      "illustration": "Illustrazione",
+      "garment": "Il capo",
+      "worn": "Indossato",
+      "runway": "In passerella"
     },
-    "placeholder-03": {
-      "title": "TODO: Collezione tre",
-      "description": "TODO: descrizione della collezione in attesa dal cliente. Questo segnaposto esiste per la revisione del layout."
-    }
+    "piecesIntro": "Pezzi singoli. Non sono stati raggruppati in collezioni: le fotografie sono arrivate senza una sfilata o una stagione, e non sono dettagli da indovinare.",
+    "countLabel": "{count} pezzi"
   },
   "colour": {
     "heading": "L’Indice dei Colori",

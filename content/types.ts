@@ -79,7 +79,8 @@ export interface Swatch {
   hex: string;
   name: string;
   /** Which collection this colour was lifted from. */
-  collectionSlug: string;
+  /** Which collection the colour was lifted from, once there are collections. */
+  collectionSlug?: string;
   carries: SwatchCarries;
   /** Message key for the short line on what the colour carries. */
   carriesKey: string;
