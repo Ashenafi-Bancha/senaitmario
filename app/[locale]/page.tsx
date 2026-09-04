@@ -10,7 +10,7 @@ import { HeroHeaderSync } from '@/components/layout/HeroHeaderSync';
 import { Reveal } from '@/components/ui/Reveal';
 import { pageMetadata } from '@/lib/metadata';
 import { heroFocalPoint, heroImage } from '@/content/hero';
-import { featuredWorkFocalPoint, featuredWorkImage } from '@/content/collections';
+import { featuredWorkImage } from '@/content/collections';
 import { storyChapters } from '@/content/story';
 import { pieces } from '@/content/pieces';
 import { instituteImage, instituteUrl } from '@/content/institute';
@@ -64,7 +64,6 @@ const CHAPTERS = [
     // The first thing below the hero is a garment of hers on the runway, at
     // the client's direction. It is the strongest picture of the work we have.
     image: featuredWorkImage,
-    focalPoint: featuredWorkFocalPoint,
   },
   {
     key: 'work',
@@ -87,7 +86,6 @@ const CHAPTERS = [
     paletteId: 'ivory',
     // Her own building, rather than a market stall standing in for it.
     image: requireInstituteImage(),
-    focalPoint: '50% 30%',
     /*
      * This card leads off the site to the institute's own home. The site's
      * own institute page stays where it is and is still reached from the
@@ -260,13 +258,17 @@ function Chapter({
           className={imageFirst ? 'lg:order-1' : 'lg:order-2'}
         >
           <ChapterLink chapter={chapter} className="block" tabIndex={-1} ariaHidden>
-            <div className="card-media relative h-[46svh] w-full lg:h-[62svh]">
+            {/*
+              * No fixed height and no crop. These cards carry garments, and a
+              * frame of a set height cropped every tall one at the head and
+              * the hem - which is the one thing a photograph of a garment must
+              * not lose. Each picture now sets the card's height from its own
+              * proportions, so the column varies and every piece is whole.
+              */}
+            <div className="card-media w-full">
               <CreditedImage
                 asset={chapter.image}
-                variant="cover"
-                objectPosition={'focalPoint' in chapter ? chapter.focalPoint : undefined}
                 sizes="(min-width: 1024px) 46vw, 92vw"
-                className="h-full w-full"
               />
             </div>
           </ChapterLink>
