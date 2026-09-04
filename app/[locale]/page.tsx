@@ -13,7 +13,7 @@ import { heroFocalPoint, heroImage } from '@/content/hero';
 import { featuredWorkFocalPoint, featuredWorkImage } from '@/content/collections';
 import { storyChapters } from '@/content/story';
 import { pieces } from '@/content/pieces';
-import { instituteImage } from '@/content/institute';
+import { instituteImage, instituteUrl } from '@/content/institute';
 
 export async function generateMetadata({
   params,
@@ -88,6 +88,12 @@ const CHAPTERS = [
     // Her own building, rather than a market stall standing in for it.
     image: requireInstituteImage(),
     focalPoint: '50% 30%',
+    /*
+     * This card leads off the site to the institute's own home. The site's
+     * own institute page stays where it is and is still reached from the
+     * header, which is where someone looking for her side of it will go.
+     */
+    externalHref: instituteUrl,
   },
 ] as const;
 
@@ -184,6 +190,53 @@ function Hero() {
   );
 }
 
+/**
+ * A chapter's link. Most go to a route on this site; the institute card leads
+ * off to the institute's own home, which needs a plain anchor rather than the
+ * localised router link, and opens in a new tab so her site is not lost.
+ */
+function ChapterLink({
+  chapter,
+  className,
+  children,
+  tabIndex,
+  ariaHidden,
+}: {
+  chapter: (typeof CHAPTERS)[number];
+  className?: string;
+  children: React.ReactNode;
+  tabIndex?: number;
+  ariaHidden?: boolean;
+}) {
+  const external = 'externalHref' in chapter ? chapter.externalHref : null;
+
+  if (external) {
+    return (
+      <a
+        href={external}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        tabIndex={tabIndex}
+        aria-hidden={ariaHidden}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={chapter.href}
+      className={className}
+      tabIndex={tabIndex}
+      aria-hidden={ariaHidden}
+    >
+      {children}
+    </Link>
+  );
+}
+
 function Chapter({
   chapter,
   index,
@@ -206,7 +259,7 @@ function Chapter({
           amount={26}
           className={imageFirst ? 'lg:order-1' : 'lg:order-2'}
         >
-          <Link href={chapter.href} className="block" tabIndex={-1} aria-hidden="true">
+          <ChapterLink chapter={chapter} className="block" tabIndex={-1} ariaHidden>
             <div className="card-media relative h-[46svh] w-full lg:h-[62svh]">
               <CreditedImage
                 asset={chapter.image}
@@ -216,7 +269,7 @@ function Chapter({
                 className="h-full w-full"
               />
             </div>
-          </Link>
+          </ChapterLink>
         </Parallax>
 
         <Reveal className={imageFirst ? 'lg:order-2' : 'lg:order-1'}>
@@ -224,23 +277,23 @@ function Chapter({
             {String(index + 1).padStart(2, '0')}
           </p>
           <h2 id={headingId} className="mt-4">
-            <Link
-              href={chapter.href}
+            <ChapterLink
+              chapter={chapter}
               className="font-display text-[clamp(2.25rem,5vw,4.25rem)] leading-[0.95] tracking-[-0.015em] text-ink no-underline transition-colors hover:text-accent"
             >
               {t('title')}
-            </Link>
+            </ChapterLink>
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
             {t('lede')}
           </p>
           <p className="mt-8">
-            <Link
-              href={chapter.href}
+            <ChapterLink
+              chapter={chapter}
               className="lux-link font-utility text-[0.65rem] uppercase tracking-[0.25em] text-accent no-underline"
             >
               {t('cta')} →
-            </Link>
+            </ChapterLink>
           </p>
         </Reveal>
       </div>

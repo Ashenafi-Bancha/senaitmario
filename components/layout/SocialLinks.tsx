@@ -44,9 +44,19 @@ export function SocialLinks({
           const Icon = BRAND_ICONS[account.platform];
 
           if (!account.url) {
+            /*
+             * Drawn at full strength beside the other two, at the client's
+             * request, but still not a link: there is no number to link to.
+             * The title and the screen-reader line say so, since an icon that
+             * looks identical to its neighbours and does nothing is otherwise
+             * just a dead end.
+             */
             return (
               <li key={account.platform}>
-                <span className={`inline-flex ${box} items-center justify-center opacity-40`}>
+                <span
+                  className={`inline-flex ${box} items-center justify-center`}
+                  title={t('pending', { platform: account.label })}
+                >
                   <Icon className={glyph} />
                   <span className="sr-only">
                     {t('pending', { platform: account.label })}
